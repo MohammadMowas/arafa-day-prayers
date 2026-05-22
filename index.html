@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>أدعية يوم عرفة</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #C8952A;
+      --gold-light: #E8B84B;
+      --gold-pale: #F5E6C0;
+      --deep: #0D1B2A;
+      --dark: #12243A;
+      --mid: #1A3352;
+      --accent: #2A5C8A;
+      --text: #F0E6D0;
+      --muted: #A89070;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      min-height: 100%;
+      background: var(--deep);
+      color: var(--text);
+      font-family: 'Noto Naskh Arabic', serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* ── Starfield background ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 20%, rgba(200,149,42,0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(42,92,138,0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 0%,  rgba(200,149,42,0.05) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Stars ── */
+    .stars {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .stars span {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: rgba(255,255,255,0.7);
+      border-radius: 50%;
+      animation: twinkle var(--d, 3s) ease-in-out infinite var(--delay, 0s);
+    }
+    @keyframes twinkle {
+      0%,100% { opacity: 0.2; transform: scale(1); }
+      50%      { opacity: 1;   transform: scale(1.4); }
+    }
+
+    /* ── Container ── */
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 0 0 60px;
+    }
+
+    /* ── Hero Header ── */
+    .hero {
+      text-align: center;
+      padding: 50px 24px 40px;
+      position: relative;
+    }
+    .hero-moon {
+      font-size: 52px;
+      display: block;
+      margin-bottom: 12px;
+      animation: floatMoon 4s ease-in-out infinite;
+      filter: drop-shadow(0 0 20px rgba(200,149,42,0.6));
+    }
+    @keyframes floatMoon {
+      0%,100% { transform: translateY(0) rotate(-5deg); }
+      50%      { transform: translateY(-8px) rotate(5deg); }
+    }
+    .hero-title {
+      font-family: 'Amiri', serif;
+      font-size: clamp(26px, 7vw, 34px);
+      color: var(--gold-light);
+      text-shadow: 0 0 30px rgba(200,149,42,0.5);
+      letter-spacing: 0.02em;
+      line-height: 1.4;
+    }
+    .hero-sub {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 8px;
+      letter-spacing: 0.1em;
+    }
+    .divider-hero {
+      width: 80px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 18px auto 0;
+    }
+
+    /* ── Hadith card ── */
+    .hadith-card {
+      margin: 0 16px 32px;
+      background: linear-gradient(135deg, rgba(200,149,42,0.12), rgba(200,149,42,0.04));
+      border: 1px solid rgba(200,149,42,0.3);
+      border-radius: 18px;
+      padding: 22px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hadith-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(200,149,42,0.1), transparent 70%);
+      pointer-events: none;
+    }
+    .hadith-text {
+      font-family: 'Amiri', serif;
+      font-size: 15px;
+      line-height: 2;
+      color: var(--gold-pale);
+      position: relative;
+    }
+    .hadith-icon {
+      font-size: 22px;
+      display: block;
+      margin-bottom: 10px;
+      color: var(--gold);
+    }
+
+    /* ── Section label ── */
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0 20px;
+      margin: 28px 0 14px;
+    }
+    .section-label span {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(200,149,42,0.4));
+    }
+    .section-label span:first-child {
+      background: linear-gradient(270deg, transparent, rgba(200,149,42,0.4));
+    }
+    .section-label-text {
+      font-size: 11px;
+      color: var(--gold);
+      letter-spacing: 0.15em;
+      white-space: nowrap;
+    }
+
+    /* ── Dua Card ── */
+    .dua-card {
+      margin: 0 16px 20px;
+      border-radius: 20px;
+      overflow: hidden;
+      background: var(--dark);
+      border: 1px solid rgba(255,255,255,0.06);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .dua-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .dua-card-inner {
+      padding: 22px 20px 20px;
+    }
+
+    /* card accent bar */
+    .dua-card::before {
+      content: '';
+      display: block;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--accent), var(--gold));
+      background-size: 200% 100%;
+      animation: shimmer 3s linear infinite;
+    }
+    @keyframes shimmer {
+      0%   { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    .dua-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), #9B6E1A);
+      color: var(--deep);
+      font-size: 11px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      flex-shrink: 0;
+    }
+    .dua-text {
+      font-family: 'Amiri', serif;
+      font-size: clamp(16px, 4.5vw, 19px);
+      line-height: 2.1;
+      color: var(--text);
+      text-align: right;
+      direction: rtl;
+    }
+
+    /* ── Tahlil (special repeating phrase) ── */
+    .tahlil-card {
+      margin: 10px 16px 20px;
+      background: linear-gradient(135deg, rgba(42,92,138,0.25), rgba(26,51,82,0.4));
+      border: 1px solid rgba(42,92,138,0.5);
+      border-radius: 16px;
+      padding: 18px 20px;
+      text-align: center;
+    }
+    .tahlil-text {
+      font-family: 'Amiri', serif;
+      font-size: clamp(15px, 4.2vw, 18px);
+      line-height: 2;
+      color: #B8D4F0;
+    }
+    .tahlil-icon { color: var(--gold); margin-left: 6px; }
+
+    /* ── Ornamental separator ── */
+    .ornament {
+      text-align: center;
+      color: var(--gold);
+      font-size: 18px;
+      opacity: 0.5;
+      margin: 8px 0;
+      letter-spacing: 8px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      text-align: center;
+      padding: 30px 24px 20px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.8;
+    }
+    .footer-icon {
+      font-size: 28px;
+      display: block;
+      margin-bottom: 8px;
+      animation: floatMoon 5s ease-in-out infinite 1s;
+    }
+
+    /* ── Scroll Progress ── */
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 3px;
+      height: 0%;
+      background: linear-gradient(180deg, var(--gold-light), var(--accent));
+      z-index: 100;
+      border-radius: 0 0 3px 3px;
+      transition: height 0.1s;
+    }
+
+    /* ── Floating Bismillah button ── */
+    .bismillah-fab {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, var(--gold), #9B6E1A);
+      color: var(--deep);
+      font-family: 'Amiri', serif;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 10px 24px;
+      border-radius: 50px;
+      border: none;
+      cursor: default;
+      box-shadow: 0 4px 20px rgba(200,149,42,0.4);
+      z-index: 50;
+      white-space: nowrap;
+      animation: pulse-glow 2.5s ease-in-out infinite;
+    }
+    @keyframes pulse-glow {
+      0%,100% { box-shadow: 0 4px 20px rgba(200,149,42,0.4); }
+      50%      { box-shadow: 0 4px 32px rgba(200,149,42,0.8); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Stars -->
+<div class="stars" id="stars"></div>
+
+<!-- Progress bar -->
+<div class="progress-bar" id="progressBar"></div>
+
+<div class="container">
+
+  <!-- Hero -->
+  <header class="hero">
+    <span class="hero-moon">🌙</span>
+    <h1 class="hero-title">أدعية يوم عرفة</h1>
+    <p class="hero-sub">يوم المغفرة والعتق من النار</p>
+    <div class="divider-hero"></div>
+  </header>
+
+  <!-- Hadith opener -->
+  <div class="hadith-card">
+    <span class="hadith-icon">✦</span>
+    <p class="hadith-text">
+      روى أن النبي ﷺ قال: خير الدعاء دعاء يوم عرفة، وخير ما قلت أنا والنبيون من قبلي:
+    </p>
+  </div>
+
+  <!-- Tahlil -->
+  <div class="tahlil-card">
+    <p class="tahlil-text">
+      <span class="tahlil-icon">❁</span>
+      لا إله إلا اللهُ وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير
+    </p>
+  </div>
+
+  <div class="section-label">
+    <span></span>
+    <p class="section-label-text">الأدعية المأثورة</p>
+    <span></span>
+  </div>
+
+  <!-- Dua 1 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">١</div>
+      <p class="dua-text">
+        اللهم لك الحمد حتى ترضى، ولك الحمد إذا رضيت، ولك الحمد بعد الرضا، ولك الحمد على كل حال، وفي كل حين، اللهم لك الحمد حمدًا كثيرًا طيبًا مباركًا فيه
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 2 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٢</div>
+      <p class="dua-text">
+        اللهم لك الحمد كما ينبغي لجلال وجهك وعظيم سلطانك
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 3 - Salah -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٣</div>
+      <p class="dua-text">
+        اللهم صلِّ على محمد وعلى آل محمد كما صليتَ على إبراهيم وعلى آل إبراهيم إنك حميد مجيد، اللهم بارك على محمد وعلى آل محمد كما باركتَ على إبراهيم وعلى آل إبراهيم إنك حميد مجيد
+      </p>
+    </div>
+  </div>
+
+  <div class="ornament">❋ ❋ ❋</div>
+
+  <!-- Dua 4 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٤</div>
+      <p class="dua-text">
+        اللهم آتِنا في الدنيا حسنةً وفي الآخرة حسنةً، وقِنا عذاب النار
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 5 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٥</div>
+      <p class="dua-text">
+        ربنا لا تؤاخذنا إن نسينا أو أخطأنا، ربنا ولا تحمل علينا إصرًا كما حملته على الذين من قبلنا
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 6 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٦</div>
+      <p class="dua-text">
+        اللهم لا تدع لنا ذنبًا إلا غفرته، ولا عيبًا إلا سترته، ولا همًّا إلا فرَّجته، ولا دينًا إلا قضيته يا أرحم الراحمين
+      </p>
+    </div>
+  </div>
+
+  <div class="tahlil-card">
+    <p class="tahlil-text">
+      <span class="tahlil-icon">❁</span>
+      لا إله إلا اللهُ وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير
+    </p>
+  </div>
+
+  <div class="section-label">
+    <span></span>
+    <p class="section-label-text">دعاء الاستغفار</p>
+    <span></span>
+  </div>
+
+  <!-- Dua 7 - Sayyidul Istighfar -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٧</div>
+      <p class="dua-text">
+        اللهم أنت ربي لا إله إلا أنت، خلقتني وأنا عبدك، وأنا على عهدك ووعدك ما استطعت، أعوذ بك من شر ما صنعت، أبوء لك بنعمتك علي، وأبوء بذنبي فاغفر لي، فإنه لا يغفر الذنوب إلا أنت
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 8 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٨</div>
+      <p class="dua-text">
+        اللهم إنك عفوٌّ كريم تحب العفو فاعفُ عنا
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 9 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٩</div>
+      <p class="dua-text">
+        اللهم إني أسألك الجنة وما قرَّب إليها من قول أو عمل، وأعوذ بك من النار وما قرَّب إليها من قول أو عمل، وأسألك أن تجعل كل قضاء قضيته لي خيرًا
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 10 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">١٠</div>
+      <p class="dua-text">
+        ربنا لا تزغ قلوبنا بعد أن هديتنا وهب لنا من لدنك رحمةً إنك أنت الوهاب، ربنا ظلمنا أنفسنا وإن لم تغفر لنا وترحمنا لنكوننَّ من الخاسرين
+      </p>
+    </div>
+  </div>
+
+  <div class="ornament">❋ ❋ ❋</div>
+
+  <!-- Dua 11 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">١١</div>
+      <p class="dua-text">
+        اللهم باعِد بيني وبين خطاياي كما باعدتَ بين المشرق والمغرب، اللهم نقِّني من خطاياي كما يُنقَّى الثوب الأبيض من الدنَس، اللهم اغسلني من خطاياي بالثلج والماء والبَرَد
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 12 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">١٢</div>
+      <p class="dua-text">
+        اللهم إني أعوذ بك من عذاب القبر، ومن عذاب النار، ومن فتنة المحيا والممات، ومن فتنة المسيح الدجال
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 13 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">١٣</div>
+      <p class="dua-text">
+        اللهم إني أعوذ بك من زوال نعمتك وتحوُّل عافيتك وفجاءة نقمتك وجميع سخطك
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 14 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">١٤</div>
+      <p class="dua-text">
+        ربنا نسألك عفوًا لا يُبقي ذنبًا، ونسألك سترًا لا تخرقه الرياح ولا تمزِّقه الرماح، ونسألك رحمةً تحجبنا عن النار وتُدخلنا بها الجنة إنك سميع الدعاء
+      </p>
+    </div>
+  </div>
+
+  <div class="tahlil-card">
+    <p class="tahlil-text">
+      <span class="tahlil-icon">❁</span>
+      لا إله إلا اللهُ وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير
+    </p>
+  </div>
+
+  <div class="section-label">
+    <span></span>
+    <p class="section-label-text">دعاء الصلاح والهداية</p>
+    <span></span>
+  </div>
+
+  <!-- Dua 15 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">١٥</div>
+      <p class="dua-text">
+        اللهم أصلِح لي ديني الذي هو عصمة أمري، وأصلح لي دنياي التي فيها معاشي، وأصلح لي آخرتي التي فيها معادي، واجعل الحياة زيادةً لي في كل خير، واجعل الموت راحةً لي من كل شر
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 16 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">١٦</div>
+      <p class="dua-text">
+        رب اجعلني مقيم الصلاة ومن ذريتي، ربنا وتقبَّل دعاء، ربنا اغفر لي ولوالديَّ وللمؤمنين يوم يقوم الحساب
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 17 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">١٧</div>
+      <p class="dua-text">
+        أستغفر الله الذي لا إله إلا هو الحيُّ القيُّوم وأتوب إليه
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 18 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">١٨</div>
+      <p class="dua-text">
+        ربنا آتِنا من لدنك رحمةً وهيِّئ لنا من أمرنا رشَدًا، ربنا آمنَّا فاغفر لنا وارحمنا وأنت خير الراحمين
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 19 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">١٩</div>
+      <p class="dua-text">
+        رب أوزعني أن أشكر نعمتك التي أنعمتَ علي وعلى والديَّ وأن أعمل صالحًا ترضاه وأصلح لي في ذريتي إني تبتُ إليك وإني من المسلمين
+      </p>
+    </div>
+  </div>
+
+  <div class="tahlil-card">
+    <p class="tahlil-text">
+      <span class="tahlil-icon">❁</span>
+      لا إله إلا اللهُ وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير
+    </p>
+  </div>
+
+  <div class="section-label">
+    <span></span>
+    <p class="section-label-text">دعاء الآخرة والقبر</p>
+    <span></span>
+  </div>
+
+  <!-- Dua 20 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٢٠</div>
+      <p class="dua-text">
+        اللهم ثبِّتني عند سؤال الملكين، اللهم اجعل قبري روضةً من رياض الجنة ولا تجعله حفرةً من حفر النار، اللهم إني أعوذ بك من فتن الدنيا
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 21 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٢١</div>
+      <p class="dua-text">
+        اللهم أنت الملك لا إله إلا أنت، أنت ربي وأنا عبدك، ظلمتُ نفسي واعترفتُ بذنبي، فاغفر لي ذنوبي جميعًا إنه لا يغفر الذنوب إلا أنت، واهدني لأحسن الأخلاق لا يهدي لأحسنها إلا أنت، واصرف عني سيئها لا يصرف عني سيئها إلا أنت، لبيك وسعديك والخير كله في يديك أستغفرك ربي وأتوب إليك
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 22 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٢٢</div>
+      <p class="dua-text">
+        ربنا اغفر لي ولوالديَّ وللمؤمنين يوم يقوم الحساب
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 23 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٢٣</div>
+      <p class="dua-text">
+        اللهم اكفِني بحلالك عن حرامك، وأغنِني بفضلك عمَّن سواك
+      </p>
+    </div>
+  </div>
+
+  <div class="ornament">❋ ❋ ❋</div>
+
+  <!-- Dua 24 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٢٤</div>
+      <p class="dua-text">
+        اللهم آتِ نفسي تقواها وزكِّها يا خير من زكَّاها أنت وليُّها ومولاها يا رب العالمين، اللهم إني أسألك مسألة البائس الفقير وأدعوك دعاء المفتقر الذليل
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 25 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٢٥</div>
+      <p class="dua-text">
+        اللهم مصرِّف القلوب والأبصار، صرِّف قلوبنا على طاعتك. اللهم زِدنا ولا تنقصنا، وأعطِنا ولا تحرمنا، وآثِرنا ولا تؤثِر علينا. اللهم أحسِن عاقبتنا في الأمور كلها، وأجِرنا من خزي الدنيا وعذاب الآخرة
+      </p>
+    </div>
+  </div>
+
+  <div class="tahlil-card">
+    <p class="tahlil-text">
+      <span class="tahlil-icon">❁</span>
+      لا إله إلا اللهُ وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير
+    </p>
+  </div>
+
+  <div class="section-label">
+    <span></span>
+    <p class="section-label-text">الدعاء الختامي</p>
+    <span></span>
+  </div>
+
+  <!-- Dua 26 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٢٦</div>
+      <p class="dua-text">
+        اللهم أدخِلنا الجنة من غير حساب ولا سابقة عذاب
+      </p>
+    </div>
+  </div>
+
+  <!-- Takbeer -->
+  <div class="hadith-card" style="margin-top: 8px;">
+    <span class="hadith-icon">🕌</span>
+    <p class="hadith-text">
+      الله أكبر الله أكبر الله أكبر، لا إله إلا الله وحده لا شريك له، له الملك، وله الحمد، وهو على كل شيء قدير، لا إله إلا الله وحده لا شريك له
+    </p>
+  </div>
+
+  <!-- Dua 27 - Parents -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٢٧</div>
+      <p class="dua-text">
+        اللهم ارحم آباءنا وأمهاتنا واغفر لهم وتجاوز عن سيئاتهم وأدخِلهم فسيح جناتك، وألحِقنا بهم يا رب العالمين
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 28 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٢٨</div>
+      <p class="dua-text">
+        اللهم أعِنِّي على ذكرك وشكرك وحسن عبادتك
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 29 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٢٩</div>
+      <p class="dua-text">
+        اللهم إني أسألك الجنة وما قرَّب إليها من قول أو عمل وأسألك أن تجعل كل قضاء تقضيه لي خيرًا
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 30 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٣٠</div>
+      <p class="dua-text">
+        يا واسع العطاء ندعوك أن تطهِّرنا من جميع السيئات وأن ترفعنا عندك أعلى الدرجات وأن تُبلِّغنا أقصى الغايات من جميع الخيرات في الحياة وبعد الممات
+      </p>
+    </div>
+  </div>
+
+  <div class="tahlil-card">
+    <p class="tahlil-text">
+      <span class="tahlil-icon">❁</span>
+      لا إله إلا اللهُ وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير
+    </p>
+  </div>
+
+  <!-- Dua 31 - Long beautiful dua -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٣١</div>
+      <p class="dua-text">
+        اللهم إني عبدك، ابن عبدك، ابن أمتك، ناصيتي بيدك، ماضٍ في حكمك، عدلٌ في قضاؤك، أسألك بكل اسم هو لك سمَّيتَ به نفسك، أو أنزلتَه في كتابك، أو علَّمتَه أحدًا من خلقك، أو استأثرتَ به في علم الغيب عندك: أن تجعل القرآن العظيم ربيعَ قلبي، ونور صدري، وجلاء حزني، وذهاب همِّي وغمِّي
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 32 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٣٢</div>
+      <p class="dua-text">
+        اللهم إني أسألك الرضى بعد القضاء، وبرد العيش بعد الموت، ولذة النظر إلى وجهك الكريم، والشوق إلى لقائك، في غير ضراء مضرة، ولا فتنة مضلة. اللهم إني أعوذ بك أن أُرَدَّ إلى أرذل العمر
+      </p>
+    </div>
+  </div>
+
+  <!-- Dua 33 -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٣٣</div>
+      <p class="dua-text">
+        اللهم إني أعوذ بك من زوال نعمتك، وتحوُّل عافيتك، وفجاءة نقمتك، وجميع سخطك. اللهم إني أعوذ بك من الهدم والتردِّي ومن الغرق والحرق والهرَم، وأعوذ بك من أن يتخبَّطني الشيطان عند الموت، وأعوذ بك من أن أموت لديغًا، وأعوذ بك من طمع يهدي إلى طبَع
+      </p>
+    </div>
+  </div>
+
+  <!-- Final dua -->
+  <div class="dua-card">
+    <div class="dua-card-inner">
+      <div class="dua-number">٣٤</div>
+      <p class="dua-text">
+        اللهم اجعل خيرَ أعمالنا خواتمَها، وخير أعمارنا أواخرَها، وخير أيامنا يوم نلقاك، اللهم اغفر لنا ما مضى وأصلح لنا ما تبقَّى
+      </p>
+    </div>
+  </div>
+
+  <!-- Closing Takbeer -->
+  <div class="hadith-card" style="margin-top: 8px; margin-bottom: 8px;">
+    <span class="hadith-icon">🌟</span>
+    <p class="hadith-text">
+      الله أكبر الله أكبر الله أكبر، لا إله إلا الله وحده لا شريك له، له الملك، وله الحمد، وهو على كل شيء قدير، لا إله إلا الله وحده لا شريك له
+    </p>
+  </div>
+
+  <!-- Closing blessing -->
+  <div class="hadith-card" style="background: linear-gradient(135deg, rgba(42,92,138,0.2), rgba(26,51,82,0.3)); border-color: rgba(42,92,138,0.4);">
+    <span class="hadith-icon" style="color: #8BB8D8;">❦</span>
+    <p class="hadith-text" style="color: #B8D4F0;">
+      الحمد لله الذي أمرنا بالدعاء، ووعدنا بالإجابة، تقدَّستْ أسماؤه وصفاته، وصلَّى الله على خير من دعاه، رسولنا محمد ﷺ، وعلى آله وصحبه ومن والاه
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span class="footer-icon">🌙</span>
+    تقبَّل الله دعاءكم<br>وأعتق رقابكم من النار
+  </footer>
+
+</div>
+
+<!-- Floating label -->
+<div class="bismillah-fab">بسم الله الرحمن الرحيم</div>
+
+<script>
+  // Generate stars
+  const starsContainer = document.getElementById('stars');
+  for (let i = 0; i < 80; i++) {
+    const star = document.createElement('span');
+    star.style.cssText = `
+      top: ${Math.random() * 100}%;
+      left: ${Math.random() * 100}%;
+      --d: ${2 + Math.random() * 4}s;
+      --delay: ${Math.random() * 5}s;
+      width: ${Math.random() < 0.2 ? 3 : 2}px;
+      height: ${Math.random() < 0.2 ? 3 : 2}px;
+      opacity: ${0.3 + Math.random() * 0.7};
+    `;
+    starsContainer.appendChild(star);
+  }
+
+  // Scroll progress
+  const progressBar = document.getElementById('progressBar');
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    progressBar.style.height = pct + '%';
+  });
+
+  // Intersection Observer for card animations
+  const cards = document.querySelectorAll('.dua-card');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  cards.forEach(card => observer.observe(card));
+</script>
+</body>
+</html>
