@@ -1,0 +1,8 @@
+node_modules/
+package.json
+package-lock.json
+build-og.js
+og-render.html
+og-image.svg
+ادعية يوم عرفة package/
+*.zip

@@ -1,877 +1,1767 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <title>أدعية يوم عرفة</title>
-  <meta name="description" content="مجموعة من أدعية يوم عرفة المباركة — يوم المغفرة والعتق من النار">
-  <meta name="theme-color" content="#0D1B2A">
-
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="ar_SA">
-  <meta property="og:url" content="https://arafa-day-prayers.is-mohammad.workers.dev/">
-  <meta property="og:site_name" content="أدعية يوم عرفة">
-  <meta property="og:title" content="أدعية يوم عرفة">
-  <meta property="og:description" content="يوم المغفرة والعتق من النار — مجموعة من أدعية يوم عرفة المباركة">
-  <meta property="og:image" content="https://arafa-day-prayers.is-mohammad.workers.dev/og-image.png">
-  <meta property="og:image:secure_url" content="https://arafa-day-prayers.is-mohammad.workers.dev/og-image.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="أدعية يوم عرفة">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="أدعية يوم عرفة">
-  <meta name="twitter:description" content="يوم المغفرة والعتق من النار">
-  <meta name="twitter:image" content="https://arafa-day-prayers.is-mohammad.workers.dev/og-image.png">
-
-  <link rel="preload" href="fonts/noto-naskh-arabic-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/amiri-400.woff2" as="font" type="font/woff2" crossorigin>
-  <style>
-    @font-face {
-      font-family: 'Noto Naskh Arabic';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: url('fonts/noto-naskh-arabic-400.woff2') format('woff2');
-      unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<meta name="theme-color" content="#070B14" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#070B14">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="أدعية عرفة">
+<meta name="description" content="٣٤ دعاءً مأثوراً ليوم عرفة بسبع لغات — عربي، English، Français، اردو، বাংলা، Bahasa، ਪੰਜਾਬੀ">
+<meta name="keywords" content="دعاء يوم عرفة, Arafat Day supplications, Islam, prayer, دعا">
+<meta property="og:type" content="website">
+<meta property="og:title" content="أدعية يوم عرفة | Arafat Day Supplications">
+<meta property="og:description" content="٣٤ دعاءً مأثوراً بسبع لغات — يوم المغفرة والعتق من النار">
+<meta property="og:url" content="https://arafa-day-prayers.pages.dev">
+<meta property="og:image" content="https://arafa-day-prayers.pages.dev/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="أدعية يوم عرفة | Arafat Day Supplications">
+<meta name="twitter:description" content="٣٤ دعاءً مأثوراً بسبع لغات — يوم المغفرة والعتق من النار">
+<meta name="twitter:image" content="https://arafa-day-prayers.pages.dev/og-image.png">
+<link rel="canonical" href="https://arafa-day-prayers.pages.dev">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<title>أدعية يوم عرفة | Arafat Day Supplications</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;600;700&family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Noto+Sans+Bengali:wght@400;600;700&family=Noto+Sans+Gurmukhi:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<script>
+// Auto-update OG tags from SITE_CONFIG when page loads
+(function(){
+  var base = typeof SITE_URL !== 'undefined' && SITE_URL !== 'YOUR_SITE_URL_HERE'
+    ? SITE_URL
+    : window.location.href.split('#')[0];
+  var metas = document.querySelectorAll('meta[property="og:url"],meta[property="og:image"],meta[name="twitter:image"],link[rel="canonical"]');
+  metas.forEach(function(m){
+    var attr = m.tagName === 'LINK' ? 'href' : 'content';
+    var val = m.getAttribute(attr);
+    if (val && val.indexOf('YOUR_SITE_URL_HERE') !== -1) {
+      m.setAttribute(attr, val.replace('YOUR_SITE_URL_HERE', base));
     }
-    @font-face {
-      font-family: 'Amiri';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: url('fonts/amiri-400.woff2') format('woff2');
-      unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC;
-    }
-    @font-face {
-      font-family: 'Amiri';
-      font-style: normal;
-      font-weight: 700;
-      font-display: swap;
-      src: url('fonts/amiri-700.woff2') format('woff2');
-      unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC;
-    }
-  </style>
-  <style>
-    :root {
-      --gold: #C8952A;
-      --gold-light: #E8B84B;
-      --gold-pale: #F5E6C0;
-      --deep: #0D1B2A;
-      --dark: #12243A;
-      --mid: #1A3352;
-      --accent: #2A5C8A;
-      --text: #F0E6D0;
-      --muted: #A89070;
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    html, body {
-      min-height: 100%;
-      background: var(--deep);
-      color: var(--text);
-      font-family: 'Noto Naskh Arabic', serif;
-      -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
-    }
-
-    /* ── Starfield background ── */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background:
-        radial-gradient(ellipse at 20% 20%, rgba(200,149,42,0.08) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 80%, rgba(42,92,138,0.15) 0%, transparent 50%),
-        radial-gradient(ellipse at 50% 0%,  rgba(200,149,42,0.05) 0%, transparent 60%);
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    /* ── Stars ── */
-    .stars {
-      position: fixed;
-      inset: 0;
-      z-index: 0;
-      overflow: hidden;
-      pointer-events: none;
-    }
-    .stars span {
-      position: absolute;
-      width: 2px;
-      height: 2px;
-      background: rgba(255,255,255,0.7);
-      border-radius: 50%;
-      animation: twinkle var(--d, 3s) ease-in-out infinite var(--delay, 0s);
-    }
-    @keyframes twinkle {
-      0%,100% { opacity: 0.2; transform: scale(1); }
-      50%      { opacity: 1;   transform: scale(1.4); }
-    }
-
-    /* ── Container ── */
-    .container {
-      position: relative;
-      z-index: 1;
-      max-width: 480px;
-      margin: 0 auto;
-      padding: 0 0 60px;
-    }
-
-    /* ── Hero Header ── */
-    .hero {
-      text-align: center;
-      padding: 50px 24px 40px;
-      position: relative;
-    }
-    .hero-moon {
-      font-size: 52px;
-      display: block;
-      margin-bottom: 12px;
-      animation: floatMoon 4s ease-in-out infinite;
-      filter: drop-shadow(0 0 20px rgba(200,149,42,0.6));
-    }
-    @keyframes floatMoon {
-      0%,100% { transform: translateY(0) rotate(-5deg); }
-      50%      { transform: translateY(-8px) rotate(5deg); }
-    }
-    .hero-title {
-      font-family: 'Amiri', serif;
-      font-size: clamp(26px, 7vw, 34px);
-      color: var(--gold-light);
-      text-shadow: 0 0 30px rgba(200,149,42,0.5);
-      letter-spacing: 0.02em;
-      line-height: 1.4;
-    }
-    .hero-sub {
-      font-size: 13px;
-      color: var(--muted);
-      margin-top: 8px;
-      letter-spacing: 0.1em;
-    }
-    .divider-hero {
-      width: 80px;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--gold), transparent);
-      margin: 18px auto 0;
-    }
-
-    /* ── Hadith card ── */
-    .hadith-card {
-      margin: 0 16px 32px;
-      background: linear-gradient(135deg, rgba(200,149,42,0.12), rgba(200,149,42,0.04));
-      border: 1px solid rgba(200,149,42,0.3);
-      border-radius: 18px;
-      padding: 22px 20px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .hadith-card::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse at 50% 0%, rgba(200,149,42,0.1), transparent 70%);
-      pointer-events: none;
-    }
-    .hadith-text {
-      font-family: 'Amiri', serif;
-      font-size: 15px;
-      line-height: 2;
-      color: var(--gold-pale);
-      position: relative;
-    }
-    .hadith-icon {
-      font-size: 22px;
-      display: block;
-      margin-bottom: 10px;
-      color: var(--gold);
-    }
-
-    /* ── Section label ── */
-    .section-label {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 0 20px;
-      margin: 28px 0 14px;
-    }
-    .section-label span {
-      flex: 1;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(200,149,42,0.4));
-    }
-    .section-label span:first-child {
-      background: linear-gradient(270deg, transparent, rgba(200,149,42,0.4));
-    }
-    .section-label-text {
-      font-size: 11px;
-      color: var(--gold);
-      letter-spacing: 0.15em;
-      white-space: nowrap;
-    }
-
-    /* ── Dua Card ── */
-    .dua-card {
-      margin: 0 16px 20px;
-      border-radius: 20px;
-      overflow: hidden;
-      background: var(--dark);
-      border: 1px solid rgba(255,255,255,0.06);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    .dua-card.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .dua-card-inner {
-      padding: 22px 20px 20px;
-    }
-
-    /* card accent bar */
-    .dua-card::before {
-      content: '';
-      display: block;
-      height: 3px;
-      background: linear-gradient(90deg, var(--gold), var(--accent), var(--gold));
-      background-size: 200% 100%;
-      animation: shimmer 3s linear infinite;
-    }
-    @keyframes shimmer {
-      0%   { background-position: 200% 0; }
-      100% { background-position: -200% 0; }
-    }
-
-    .dua-number {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 26px;
-      height: 26px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--gold), #9B6E1A);
-      color: var(--deep);
-      font-size: 11px;
-      font-weight: 700;
-      margin-bottom: 14px;
-      flex-shrink: 0;
-    }
-    .dua-text {
-      font-family: 'Amiri', serif;
-      font-size: clamp(16px, 4.5vw, 19px);
-      line-height: 2.1;
-      color: var(--text);
-      text-align: right;
-      direction: rtl;
-    }
-
-    /* ── Tahlil (special repeating phrase) ── */
-    .tahlil-card {
-      margin: 10px 16px 20px;
-      background: linear-gradient(135deg, rgba(42,92,138,0.25), rgba(26,51,82,0.4));
-      border: 1px solid rgba(42,92,138,0.5);
-      border-radius: 16px;
-      padding: 18px 20px;
-      text-align: center;
-    }
-    .tahlil-text {
-      font-family: 'Amiri', serif;
-      font-size: clamp(15px, 4.2vw, 18px);
-      line-height: 2;
-      color: #B8D4F0;
-    }
-    .tahlil-icon { color: var(--gold); margin-left: 6px; }
-
-    /* ── Ornamental separator ── */
-    .ornament {
-      text-align: center;
-      color: var(--gold);
-      font-size: 18px;
-      opacity: 0.5;
-      margin: 8px 0;
-      letter-spacing: 8px;
-    }
-
-    /* ── Footer ── */
-    .footer {
-      text-align: center;
-      padding: 30px 24px 20px;
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.8;
-    }
-    .footer-icon {
-      font-size: 28px;
-      display: block;
-      margin-bottom: 8px;
-      animation: floatMoon 5s ease-in-out infinite 1s;
-    }
-
-    /* ── Scroll Progress ── */
-    .progress-bar {
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 3px;
-      height: 0%;
-      background: linear-gradient(180deg, var(--gold-light), var(--accent));
-      z-index: 100;
-      border-radius: 0 0 3px 3px;
-      transition: height 0.1s;
-    }
-
-    /* ── Floating Bismillah button ── */
-    .bismillah-fab {
-      position: fixed;
-      bottom: 24px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: linear-gradient(135deg, var(--gold), #9B6E1A);
-      color: var(--deep);
-      font-family: 'Amiri', serif;
-      font-size: 13px;
-      font-weight: 700;
-      padding: 10px 24px;
-      border-radius: 50px;
-      border: none;
-      cursor: default;
-      box-shadow: 0 4px 20px rgba(200,149,42,0.4);
-      z-index: 50;
-      white-space: nowrap;
-      animation: pulse-glow 2.5s ease-in-out infinite;
-    }
-    @keyframes pulse-glow {
-      0%,100% { box-shadow: 0 4px 20px rgba(200,149,42,0.4); }
-      50%      { box-shadow: 0 4px 32px rgba(200,149,42,0.8); }
-    }
-  </style>
+  });
+})();
+</script>
 </head>
+<style>::selection{background:rgba(212,168,67,.28);color:#fff}
+
+/* ═══════════════════════════════════════════════
+   DESIGN TOKENS
+═══════════════════════════════════════════════ */
+:root {
+  --gold:#D4A843; --gold-l:#F0C96A; --gold-d:#A07818;
+  --bg:#070B14;
+  --w90:rgba(255,255,255,.92); --w70:rgba(255,255,255,.70);
+  --w50:rgba(255,255,255,.50); --w30:rgba(255,255,255,.30);
+  --gold-a15:rgba(212,168,67,.15); --gold-a28:rgba(212,168,67,.28);
+  --gold-a45:rgba(212,168,67,.45);
+  --sb:env(safe-area-inset-bottom,0px); --st:env(safe-area-inset-top,0px);
+  --sl:env(safe-area-inset-left,0px);  --sr:env(safe-area-inset-right,0px);
+  --r-card:22px; --r-pill:50px; --r-sm:14px;
+  --shadow-card:0 8px 32px rgba(0,0,0,.55),0 2px 8px rgba(0,0,0,.3);
+  --shadow-float:0 4px 24px rgba(0,0,0,.6);
+  --t-fast:.18s; --t-med:.28s; --t-slow:.55s;
+  --font-ar:"Noto Naskh Arabic","Amiri",serif;
+  --font-display:"Amiri",serif;
+  --font-latin:"Crimson Pro","Georgia",serif;
+  --font-ur:"Noto Nastaliq Urdu",serif;
+  --font-bn:"Noto Sans Bengali",sans-serif;
+  --font-pa:"Noto Sans Gurmukhi",sans-serif;
+}
+
+/* ═══════════════════════════════════════════════
+   RESET & BASE
+═══════════════════════════════════════════════ */
+*,*::before,*::after { margin:0; padding:0; box-sizing:border-box; }
+html {
+  -webkit-text-size-adjust:100%;
+  scroll-behavior:smooth;
+  overscroll-behavior:none;
+}
+body {
+  min-height:100dvh;
+  background:var(--bg);
+  color:#fff;
+  font-family:var(--font-ar);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+  overflow-y:scroll;
+  -webkit-overflow-scrolling:touch;
+  overscroll-behavior-y:none;
+  scroll-padding-top:64px;
+}
+
+/* ═══════════════════════════════════════════════
+   COSMOS BACKGROUND
+═══════════════════════════════════════════════ */
+.cosmos {
+  position:fixed; inset:0; z-index:0;
+  pointer-events:none; overflow:hidden;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -10%,rgba(100,60,0,.35) 0%,transparent 60%),
+    radial-gradient(ellipse 60% 50% at 15% 40%,rgba(20,50,100,.28) 0%,transparent 55%),
+    radial-gradient(ellipse 70% 60% at 85% 70%,rgba(50,10,80,.22) 0%,transparent 55%),
+    var(--bg);
+}
+.aurora {
+  position:absolute; left:-20%; width:140%;
+  border-radius:50%; filter:blur(65px);
+  animation:aurShift linear infinite;
+}
+.a1 { top:-8%; height:18%; background:linear-gradient(90deg,transparent 10%,rgba(120,70,0,.18) 35%,rgba(160,100,5,.22) 50%,rgba(120,70,0,.18) 65%,transparent 90%); animation-duration:22s; }
+.a2 { top:28%; height:14%; background:linear-gradient(90deg,transparent 5%,rgba(20,60,120,.15) 30%,rgba(30,80,150,.18) 50%,rgba(20,60,120,.15) 70%,transparent 95%); animation-duration:31s; animation-delay:-12s; }
+.a3 { bottom:10%; height:12%; background:linear-gradient(90deg,transparent 10%,rgba(70,10,110,.14) 35%,rgba(90,15,140,.17) 55%,rgba(70,10,110,.14) 75%,transparent 90%); animation-duration:27s; animation-delay:-8s; }
+@keyframes aurShift { 0%{transform:translateX(-8%) scaleX(1)} 50%{transform:translateX(8%) scaleX(1.05)} 100%{transform:translateX(-8%) scaleX(1)} }
+
+.stars { position:fixed; inset:0; z-index:0; overflow:hidden; pointer-events:none; }
+.stars span { position:absolute; border-radius:50%; background:#fff; animation:twk var(--d,3s) ease-in-out infinite var(--dl,0s); }
+@keyframes twk { 0%,100%{opacity:.1;transform:scale(1)} 50%{opacity:1;transform:scale(1.7)} }
+
+/* ═══════════════════════════════════════════════
+   SCROLL PROGRESS BAR
+═══════════════════════════════════════════════ */
+.progress-bar {
+  position:fixed; top:0; right:0;
+  width:3px; height:0%;
+  z-index:500;
+  background:linear-gradient(180deg,var(--gold-l),rgba(100,30,160,.9));
+  border-radius:0 0 3px 3px;
+  transition:height .06s linear;
+  pointer-events:none;
+}
+
+/* ═══════════════════════════════════════════════
+   LANGUAGE BAR
+═══════════════════════════════════════════════ */
+.lang-bar {
+  position:fixed;
+  top:calc(10px + var(--st));
+  left:50%; transform:translateX(-50%);
+  z-index:300;
+  display:flex; gap:3px;
+  background:rgba(7,11,20,.92);
+  border:1px solid var(--gold-a28);
+  border-radius:var(--r-pill);
+  padding:4px 6px;
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  box-shadow:0 4px 24px rgba(0,0,0,.5),0 1px 0 rgba(255,255,255,.04) inset;
+  max-width:calc(100vw - 100px);
+  overflow-x:auto;
+  overscroll-behavior-x:contain;
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+  -webkit-overflow-scrolling:touch;
+}
+.lang-bar::-webkit-scrollbar { display:none; }
+.lang-btn {
+  padding:6px 11px;
+  border-radius:var(--r-pill);
+  border:none; cursor:pointer;
+  font-size:clamp(9px,2.5vw,12px);
+  font-weight:700;
+  font-family:var(--font-ar);
+  background:transparent;
+  color:var(--w50);
+  transition:color var(--t-fast),background var(--t-fast),box-shadow var(--t-fast);
+  -webkit-tap-highlight-color:transparent;
+  touch-action:manipulation;
+  flex-shrink:0;
+  white-space:nowrap;
+  min-height:32px;
+  display:inline-flex; align-items:center;
+}
+.lang-btn.active {
+  background:linear-gradient(135deg,var(--gold),var(--gold-d));
+  color:#07090F;
+  box-shadow:0 2px 12px var(--gold-a45);
+}
+.lang-btn:not(.active):hover { color:#fff; }
+
+/* ═══════════════════════════════════════════════
+   FIXED UI BUTTONS
+═══════════════════════════════════════════════ */
+.ui-btn {
+  position:fixed;
+  z-index:250;
+  width:44px; height:44px;
+  border-radius:50%;
+  background:rgba(7,11,20,.88);
+  border:1px solid var(--gold-a28);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  display:flex; align-items:center; justify-content:center;
+  cursor:pointer;
+  box-shadow:var(--shadow-float);
+  transition:border-color var(--t-med),transform var(--t-fast),box-shadow var(--t-med);
+  -webkit-tap-highlight-color:transparent;
+  touch-action:manipulation;
+  -webkit-user-select:none; user-select:none;
+}
+.ui-btn:active { transform:scale(.88); }
+.ui-btn:hover { border-color:rgba(212,168,67,.55); }
+
+.sound-btn { top:calc(14px + var(--st)); left:calc(16px + var(--sl)); }
+.sound-btn.on { border-color:rgba(212,168,67,.7); box-shadow:0 2px 20px var(--gold-a28); }
+.sound-icon { font-size:19px; line-height:1; }
+
+.back-btn { top:calc(14px + var(--st)); right:calc(16px + var(--sr)); display:none; font-size:18px; color:var(--gold); }
+.back-btn.visible { display:flex; }
+
+/* ═══════════════════════════════════════════════
+   BISMILLAH PILL
+═══════════════════════════════════════════════ */
+.bismillah-fab {
+  position:fixed;
+  bottom:calc(18px + var(--sb));
+  left:50%; transform:translateX(-50%);
+  background:linear-gradient(135deg,var(--gold),var(--gold-d));
+  color:#07090F;
+  font-family:var(--font-display);
+  font-size:clamp(10px,2.8vw,13px);
+  font-weight:700;
+  padding:9px clamp(14px,4vw,22px);
+  border-radius:var(--r-pill);
+  border:none;
+  box-shadow:0 4px 20px var(--gold-a45);
+  z-index:100;
+  white-space:nowrap;
+  animation:fabGlow 2.8s ease-in-out infinite;
+  pointer-events:none;
+  -webkit-user-select:none; user-select:none;
+}
+[data-lang="en"] .bismillah-fab,
+[data-lang="fr"] .bismillah-fab,
+[data-lang="id"] .bismillah-fab { font-family:var(--font-latin); letter-spacing:.04em; }
+[data-lang="ur"] .bismillah-fab { font-family:var(--font-ur); font-size:clamp(11px,3vw,14px); }
+[data-lang="bn"] .bismillah-fab { font-family:var(--font-bn); }
+[data-lang="pa"] .bismillah-fab { font-family:var(--font-pa); }
+@keyframes fabGlow {
+  0%,100%{box-shadow:0 4px 20px var(--gold-a45)}
+  50%{box-shadow:0 4px 36px rgba(212,168,67,.85)}
+}
+
+/* ═══════════════════════════════════════════════
+   MAIN CONTAINER
+═══════════════════════════════════════════════ */
+.container {
+  position:relative; z-index:1;
+  width:100%; max-width:520px;
+  margin:0 auto;
+  padding:0 0 calc(80px + var(--sb));
+}
+
+/* ═══════════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════════ */
+.hero {
+  text-align:center;
+  padding:clamp(64px,16vw,88px) clamp(16px,5vw,28px) clamp(32px,9vw,48px);
+  position:relative;
+}
+.hero::after {
+  content:"";
+  position:absolute; bottom:0; left:10%; right:10%; height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold-a45),transparent);
+}
+.hero-moon {
+  font-size:clamp(50px,14vw,72px);
+  display:block; margin-bottom:14px;
+  animation:floatMoon 4.5s ease-in-out infinite;
+  filter:drop-shadow(0 0 30px rgba(212,168,67,.75));
+  will-change:transform;
+  contain:layout style;
+}
+@keyframes floatMoon {
+  0%,100%{transform:translateY(0) rotate(-6deg)}
+  50%{transform:translateY(-14px) rotate(6deg)}
+}
+.hero-title {
+  font-family:var(--font-display);
+  font-size:clamp(22px,7vw,38px);
+  color:#fff;
+  text-shadow:0 0 40px rgba(212,168,67,.5),0 2px 4px rgba(0,0,0,.5);
+  line-height:1.4;
+  letter-spacing:.02em;
+}
+.hero-title em { color:var(--gold-l); font-style:normal; }
+.hero-sub {
+  font-size:clamp(11px,2.7vw,13px);
+  color:var(--w50);
+  margin-top:10px;
+  letter-spacing:.1em;
+}
+
+/* ═══════════════════════════════════════════════
+   SECTION DIVIDERS
+═══════════════════════════════════════════════ */
+.sl {
+  display:flex; align-items:center; gap:10px;
+  padding:0 clamp(14px,4vw,22px);
+  margin:30px 0 14px;
+}
+.sl .ln {
+  flex:1; height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold-a28));
+}
+.sl .ln-r {
+  background:linear-gradient(270deg,transparent,var(--gold-a28));
+}
+[data-lang="en"] .sl .ln,
+[data-lang="fr"] .sl .ln,
+[data-lang="id"] .sl .ln,
+[data-lang="bn"] .sl .ln,
+[data-lang="pa"] .sl .ln { background:linear-gradient(270deg,transparent,var(--gold-a28)); }
+[data-lang="en"] .sl .ln-r,
+[data-lang="fr"] .sl .ln-r,
+[data-lang="id"] .sl .ln-r,
+[data-lang="bn"] .sl .ln-r,
+[data-lang="pa"] .sl .ln-r { background:linear-gradient(90deg,transparent,var(--gold-a28)); }
+.sl-t {
+  font-size:clamp(10px,2.6vw,12px);
+  color:var(--gold);
+  letter-spacing:.14em;
+  white-space:nowrap;
+}
+.ornament {
+  text-align:center;
+  color:var(--gold); opacity:.35;
+  font-size:14px;
+  margin:6px 0;
+  letter-spacing:12px;
+}
+
+/* ═══════════════════════════════════════════════
+   BASE CARD — reveal animation
+═══════════════════════════════════════════════ */
+.card {
+  margin:0 clamp(12px,3.5vw,18px) clamp(12px,3.5vw,16px);
+  border-radius:var(--r-card);
+  overflow:hidden;
+  position:relative;
+  opacity:0;
+  transform:translateY(20px);
+  transition:
+    opacity var(--t-slow) ease,
+    transform var(--t-slow) ease,
+    box-shadow var(--t-med) ease;
+  will-change:opacity,transform;
+}
+.card.visible { opacity:1; transform:translateY(0); }
+@media (hover:hover) {
+  .card:hover {
+    transform:translateY(-3px) !important;
+    box-shadow:0 18px 48px rgba(0,0,0,.7) !important;
+  }
+}
+.card::before {
+  content:""; display:block; height:2px;
+  background:var(--cline);
+  background-size:200% 100%;
+  animation:shimmer 4s linear infinite;
+}
+@keyframes shimmer {
+  0%{background-position:200% 0}
+  100%{background-position:-200% 0}
+}
+.cg {
+  position:absolute; inset:0;
+  pointer-events:none;
+  background:var(--cglow); z-index:0;
+}
+.ci {
+  position:relative; z-index:1;
+  padding:clamp(16px,4.5vw,22px) clamp(14px,4vw,20px);
+}
+.dn {
+  display:inline-flex; align-items:center; justify-content:center;
+  width:30px; height:30px;
+  border-radius:50%;
+  background:var(--dbg);
+  color:var(--dc,#07090F);
+  font-size:11px; font-weight:700;
+  margin-bottom:10px; flex-shrink:0;
+  box-shadow:0 2px 10px rgba(0,0,0,.4);
+}
+.dt {
+  font-family:var(--font-display);
+  font-size:clamp(17px,5.2vw,22px);
+  line-height:2.2;
+  color:#fff;
+  font-weight:700;
+  text-align:right;
+  direction:rtl;
+  word-break:break-word;
+}
+
+/* Per-language font overrides */
+[data-lang="en"] .dt,
+[data-lang="fr"] .dt,
+[data-lang="id"] .dt {
+  font-family:var(--font-latin);
+  font-size:clamp(15px,4.3vw,19px);
+  line-height:1.85;
+  text-align:left; direction:ltr;
+}
+[data-lang="ur"] .dt {
+  font-family:var(--font-ur);
+  font-size:clamp(16px,4.8vw,20px);
+  line-height:2.4;
+}
+[data-lang="bn"] .dt {
+  font-family:var(--font-bn);
+  font-size:clamp(15px,4.3vw,18px);
+  line-height:2;
+  text-align:left; direction:ltr;
+}
+[data-lang="pa"] .dt {
+  font-family:var(--font-pa);
+  font-size:clamp(14px,4vw,17px);
+  line-height:2;
+  text-align:left; direction:ltr;
+}
+
+/* ═══════════════════════════════════════════════
+   CARD COLOUR THEMES (8)
+═══════════════════════════════════════════════ */
+.ta{background:linear-gradient(150deg,#1C1405,#2A1E08 55%,#14100A);border:1px solid rgba(212,168,67,.32);box-shadow:var(--shadow-card);--cline:linear-gradient(90deg,var(--gold),var(--gold-l),var(--gold));--cglow:radial-gradient(ellipse at 50% 0%,rgba(212,168,67,.13),transparent 62%);--dbg:linear-gradient(135deg,var(--gold),var(--gold-d));--dc:#07090F}
+.tb{background:linear-gradient(150deg,#0D1535,#111D48 55%,#0A1228);border:1px solid rgba(80,110,220,.22);box-shadow:var(--shadow-card);--cline:linear-gradient(90deg,#4466DD,#7090FF,#4466DD);--cglow:radial-gradient(ellipse at 50% 0%,rgba(70,100,220,.14),transparent 62%);--dbg:linear-gradient(135deg,#4466DD,#2244AA);--dc:#fff}
+.tc{background:linear-gradient(150deg,#061A1E,#0C2A32 55%,#051418);border:1px solid rgba(30,160,170,.22);box-shadow:var(--shadow-card);--cline:linear-gradient(90deg,#1A9AA8,#40C8D8,#1A9AA8);--cglow:radial-gradient(ellipse at 50% 0%,rgba(30,150,165,.13),transparent 62%);--dbg:linear-gradient(135deg,#1A9AA8,#0D6070);--dc:#fff}
+.td{background:linear-gradient(150deg,#120A22,#1C1040 55%,#0E0818);border:1px solid rgba(130,70,210,.22);box-shadow:var(--shadow-card);--cline:linear-gradient(90deg,#8844CC,#B070F0,#8844CC);--cglow:radial-gradient(ellipse at 50% 0%,rgba(120,60,200,.14),transparent 62%);--dbg:linear-gradient(135deg,#8844CC,#5522AA);--dc:#fff}
+.te{background:linear-gradient(150deg,#061A10,#0C2C1A 55%,#051210);border:1px solid rgba(30,160,90,.22);box-shadow:var(--shadow-card);--cline:linear-gradient(90deg,#1A9A55,#40D880,#1A9A55);--cglow:radial-gradient(ellipse at 50% 0%,rgba(25,150,80,.13),transparent 62%);--dbg:linear-gradient(135deg,#1A9A55,#0D6030);--dc:#fff}
+.tf{background:linear-gradient(150deg,#1A0608,#280A12 55%,#140408);border:1px solid rgba(200,40,70,.2);box-shadow:var(--shadow-card);--cline:linear-gradient(90deg,#CC2244,#EE4466,#CC2244);--cglow:radial-gradient(ellipse at 50% 0%,rgba(190,35,60,.14),transparent 62%);--dbg:linear-gradient(135deg,#CC2244,#881122);--dc:#fff}
+.tg{background:linear-gradient(150deg,#080E1C,#0E1A30 55%,#060B16);border:1px solid rgba(60,110,180,.2);box-shadow:var(--shadow-card);--cline:linear-gradient(90deg,#3A6EB0,#5A90D8,#3A6EB0);--cglow:radial-gradient(ellipse at 50% 0%,rgba(50,100,170,.12),transparent 62%);--dbg:linear-gradient(135deg,#3A6EB0,#1A3E70);--dc:#fff}
+.th{background:linear-gradient(150deg,#0E180A,#162212 55%,#0A1208);border:1px solid rgba(100,160,60,.2);box-shadow:var(--shadow-card);--cline:linear-gradient(90deg,#6AA030,#90C850,#6AA030);--cglow:radial-gradient(ellipse at 50% 0%,rgba(90,150,45,.12),transparent 62%);--dbg:linear-gradient(135deg,#6AA030,#3A6010);--dc:#fff}
+
+/* ═══════════════════════════════════════════════
+   QURAN CARD VARIANT
+═══════════════════════════════════════════════ */
+.card[data-type="quran"] { border-color:rgba(80,200,120,.35) !important; }
+.card[data-type="quran"]::after {
+  content:attr(data-qlabel);
+  position:absolute; top:10px;
+  inset-inline-start:14px;
+  font-size:9px; color:#6ee8a0; opacity:.8;
+  font-family:var(--font-ar);
+  letter-spacing:.06em;
+  pointer-events:none;
+}
+.quran-mark { font-size:13px; opacity:.75; margin-bottom:6px; display:block; line-height:1; }
+
+/* ═══════════════════════════════════════════════
+   SOURCE BADGES
+═══════════════════════════════════════════════ */
+.src-badge {
+  display:inline-flex; align-items:center; gap:4px;
+  font-size:10px;
+  padding:2px 9px;
+  border-radius:var(--r-pill);
+  margin-bottom:9px;
+  margin-inline-start:6px;
+  opacity:.88;
+  font-family:var(--font-ar);
+  white-space:nowrap;
+  letter-spacing:.02em;
+  vertical-align:middle;
+}
+[data-lang="en"] .src-badge,
+[data-lang="fr"] .src-badge,
+[data-lang="id"] .src-badge,
+[data-lang="bn"] .src-badge,
+[data-lang="pa"] .src-badge { font-family:var(--font-latin); font-size:10.5px; }
+.src-hadith { background:var(--gold-a15); color:var(--gold-l); border:1px solid rgba(212,168,67,.25); }
+.src-quran  { background:rgba(80,200,120,.12); color:#6ee8a0; border:1px solid rgba(80,200,120,.22); }
+.src-salaf  { background:rgba(140,120,255,.12); color:#c0b0ff; border:1px solid rgba(140,120,255,.22); }
+
+/* ═══════════════════════════════════════════════
+   SPECIAL CARDS — shared reveal behaviour
+═══════════════════════════════════════════════ */
+.hcard, .tlcard, .tkcard, .clcard, .vcounter-card, .adaab-card {
+  opacity:0;
+  transform:translateY(20px);
+  transition:opacity var(--t-slow) ease, transform var(--t-slow) ease;
+}
+.hcard.visible, .tlcard.visible, .tkcard.visible,
+.clcard.visible, .vcounter-card.visible, .adaab-card.visible {
+  opacity:1; transform:translateY(0);
+}
+
+/* ── hadith intro card ── */
+.hcard {
+  margin:0 clamp(12px,3.5vw,18px) 18px;
+  background:linear-gradient(150deg,#1C1405,#2A1E08 55%,#161002);
+  border:1px solid rgba(212,168,67,.35);
+  border-radius:var(--r-card);
+  padding:clamp(16px,4.5vw,24px) clamp(14px,4vw,20px);
+  text-align:center;
+  overflow:hidden; position:relative;
+  box-shadow:var(--shadow-card);
+}
+.hcard::before {
+  content:""; display:block; height:2px;
+  background:linear-gradient(90deg,var(--gold),var(--gold-l),var(--gold));
+  background-size:200% 100%;
+  animation:shimmer 4s linear infinite;
+  margin-bottom:0;
+}
+.hg {
+  position:absolute; inset:0; pointer-events:none;
+  background:radial-gradient(ellipse at 50% 0%,rgba(212,168,67,.1),transparent 62%);
+}
+.hi { font-size:22px; display:block; margin:10px 0 12px; color:var(--gold); position:relative; z-index:1; }
+.ht {
+  font-family:var(--font-display);
+  font-size:clamp(15px,4.5vw,18px);
+  line-height:2.1; color:#fff; font-weight:700;
+  position:relative; z-index:1;
+}
+[data-lang="en"] .ht,[data-lang="fr"] .ht,[data-lang="id"] .ht { font-family:var(--font-latin); font-size:clamp(14px,4vw,17px); line-height:1.8; }
+[data-lang="ur"] .ht { font-family:var(--font-ur); font-size:clamp(15px,4.3vw,18px); line-height:2.3; }
+[data-lang="bn"] .ht { font-family:var(--font-bn); font-size:clamp(13px,3.8vw,16px); line-height:1.9; }
+[data-lang="pa"] .ht { font-family:var(--font-pa); font-size:clamp(13px,3.8vw,16px); line-height:1.9; }
+
+/* ── adaab card ── */
+.adaab-card {
+  margin:0 clamp(12px,3.5vw,18px) 18px;
+  background:linear-gradient(150deg,#0D1820,#122230 55%,#0A1218);
+  border:1px solid rgba(100,180,220,.22);
+  border-radius:var(--r-card);
+  padding:clamp(16px,4.5vw,22px) clamp(14px,4vw,20px);
+  overflow:hidden; position:relative;
+  box-shadow:var(--shadow-card);
+}
+.adaab-card::before {
+  content:""; display:block; height:2px; margin-bottom:0;
+  background:linear-gradient(90deg,#3A88BB,#70C0E8,#3A88BB);
+  background-size:200% 100%;
+  animation:shimmer 3.5s linear infinite;
+}
+.adaab-glow {
+  position:absolute; inset:0; pointer-events:none;
+  background:radial-gradient(ellipse at 50% 0%,rgba(60,140,200,.1),transparent 62%);
+}
+.adaab-inner { position:relative; z-index:1; padding-top:10px; }
+.adaab-list { list-style:none; margin-top:10px; }
+.adaab-list li {
+  font-size:clamp(12px,3.2vw,14px);
+  color:var(--w70);
+  padding:7px 0;
+  border-bottom:1px solid rgba(100,180,220,.1);
+  display:flex; align-items:flex-start; gap:9px;
+  line-height:1.65;
+}
+.adaab-list li:last-child { border-bottom:none; padding-bottom:0; }
+.adaab-list li::before {
+  content:"✦"; color:var(--gold);
+  font-size:10px; flex-shrink:0; margin-top:3px;
+}
+[data-lang="ar"] .adaab-list,
+[data-lang="ur"] .adaab-list { direction:rtl; text-align:right; }
+[data-lang="ar"] .adaab-list li,
+[data-lang="ur"] .adaab-list li { flex-direction:row-reverse; }
+[data-lang="ur"] .adaab-list li { font-family:var(--font-ur); font-size:clamp(13px,3.5vw,15px); line-height:2.1; }
+[data-lang="bn"] .adaab-list li { font-family:var(--font-bn); }
+[data-lang="pa"] .adaab-list li { font-family:var(--font-pa); }
+
+/* ── tahlil card ── */
+.tlcard {
+  margin:8px clamp(12px,3.5vw,18px) 16px;
+  background:linear-gradient(150deg,#0A0D28,#101440 55%,#080A1E);
+  border:1px solid rgba(100,130,255,.3);
+  border-radius:var(--r-sm);
+  padding:clamp(14px,4.5vw,20px);
+  text-align:center; overflow:hidden; position:relative;
+  box-shadow:0 6px 28px rgba(0,0,0,.5);
+}
+.tlcard::before {
+  content:""; display:block; height:2px;
+  background:linear-gradient(90deg,#4466DD,#7090FF,#AA66FF,#7090FF,#4466DD);
+  background-size:200% 100%; animation:shimmer 3s linear infinite;
+}
+.tlg { position:absolute; inset:0; pointer-events:none; background:radial-gradient(ellipse at 50% 0%,rgba(90,110,255,.12),transparent 62%); }
+.tlt {
+  font-family:var(--font-display);
+  font-size:clamp(15px,4.5vw,19px);
+  line-height:2.1; color:#fff; font-weight:700;
+  position:relative; z-index:1;
+}
+.tli { color:var(--gold-l); margin-inline-end:6px; }
+[data-lang="en"] .tlt,[data-lang="fr"] .tlt,[data-lang="id"] .tlt { font-family:var(--font-latin); font-size:clamp(13px,4vw,17px); line-height:1.85; }
+[data-lang="ur"] .tlt { font-family:var(--font-ur); font-size:clamp(14px,4.3vw,18px); line-height:2.3; }
+[data-lang="bn"] .tlt { font-family:var(--font-bn); font-size:clamp(13px,4vw,17px); line-height:1.9; }
+[data-lang="pa"] .tlt { font-family:var(--font-pa); font-size:clamp(12px,3.8vw,16px); line-height:1.9; }
+
+/* ── takbeer card ── */
+.tkcard {
+  margin:8px clamp(12px,3.5vw,18px) 16px;
+  background:linear-gradient(150deg,#150824,#1E0E38 55%,#0F0618);
+  border:1px solid rgba(160,80,255,.28);
+  border-radius:var(--r-card);
+  padding:clamp(16px,4.5vw,24px) clamp(14px,4vw,20px);
+  text-align:center; overflow:hidden; position:relative;
+  box-shadow:0 8px 36px rgba(0,0,0,.6);
+}
+.tkcard::before {
+  content:""; display:block; height:2px;
+  background:linear-gradient(90deg,#8844CC,#CC88FF,#EE66AA,#CC88FF,#8844CC);
+  background-size:200% 100%; animation:shimmer 3s linear infinite;
+}
+.tkg { position:absolute; inset:0; pointer-events:none; background:radial-gradient(ellipse at 50% 0%,rgba(140,60,240,.12),transparent 62%); }
+.tki { font-size:22px; display:block; margin-bottom:10px; color:#CC88FF; position:relative; z-index:1; }
+.tkt {
+  font-family:var(--font-display);
+  font-size:clamp(15px,4.5vw,19px);
+  line-height:2.1; color:#fff; font-weight:700;
+  position:relative; z-index:1;
+}
+[data-lang="en"] .tkt,[data-lang="fr"] .tkt,[data-lang="id"] .tkt { font-family:var(--font-latin); font-size:clamp(14px,4vw,17px); line-height:1.85; }
+[data-lang="ur"] .tkt { font-family:var(--font-ur); font-size:clamp(14px,4.3vw,18px); line-height:2.3; }
+[data-lang="bn"] .tkt { font-family:var(--font-bn); font-size:clamp(13px,4vw,17px); line-height:1.9; }
+[data-lang="pa"] .tkt { font-family:var(--font-pa); font-size:clamp(12px,3.8vw,16px); line-height:1.9; }
+
+/* ── closing doxology card ── */
+.clcard {
+  margin:8px clamp(12px,3.5vw,18px) 16px;
+  background:linear-gradient(150deg,#050E22,#0A1840 55%,#040A18);
+  border:1px solid rgba(60,120,220,.28);
+  border-radius:var(--r-card);
+  padding:clamp(16px,4.5vw,24px) clamp(14px,4vw,20px);
+  text-align:center; overflow:hidden; position:relative;
+  box-shadow:0 8px 36px rgba(0,0,0,.6);
+}
+.clcard::before {
+  content:""; display:block; height:2px;
+  background:linear-gradient(90deg,#2255AA,#4488EE,#6699FF,#4488EE,#2255AA);
+  background-size:200% 100%; animation:shimmer 3.5s linear infinite;
+}
+.clg { position:absolute; inset:0; pointer-events:none; background:radial-gradient(ellipse at 50% 0%,rgba(50,100,210,.12),transparent 62%); }
+.clci { font-size:22px; display:block; margin-bottom:10px; color:#88AAEE; position:relative; z-index:1; }
+.clct {
+  font-family:var(--font-display);
+  font-size:clamp(14px,4.3vw,17px);
+  line-height:2.1; color:#fff; font-weight:700;
+  position:relative; z-index:1;
+}
+[data-lang="en"] .clct,[data-lang="fr"] .clct,[data-lang="id"] .clct { font-family:var(--font-latin); font-size:clamp(13px,3.8vw,16px); line-height:1.8; }
+[data-lang="ur"] .clct { font-family:var(--font-ur); font-size:clamp(13px,4vw,16px); line-height:2.2; }
+[data-lang="bn"] .clct { font-family:var(--font-bn); font-size:clamp(12px,3.8vw,15px); line-height:1.85; }
+[data-lang="pa"] .clct { font-family:var(--font-pa); font-size:clamp(12px,3.5vw,15px); line-height:1.85; }
+
+/* ═══════════════════════════════════════════════
+   VISITOR COUNTER
+═══════════════════════════════════════════════ */
+.vcounter-wrap { margin:18px clamp(12px,3.5vw,18px) 0; }
+.vcounter-card {
+  background:linear-gradient(150deg,#080E22,#0D1638 55%,#060A18);
+  border:1px solid rgba(80,120,220,.28);
+  border-radius:var(--r-card);
+  overflow:hidden;
+  padding:clamp(18px,5vw,24px) clamp(14px,4vw,20px);
+  box-shadow:0 8px 36px rgba(0,0,0,.6);
+  position:relative;
+}
+.vcounter-card::before {
+  content:""; display:block; height:2px; margin-bottom:16px;
+  background:linear-gradient(90deg,#2244AA,#4488EE,#88BBFF,#4488EE,#2244AA);
+  background-size:200% 100%; animation:shimmer 3s linear infinite;
+}
+.vcounter-glow { position:absolute; inset:0; pointer-events:none; background:radial-gradient(ellipse at 50% 0%,rgba(60,100,220,.1),transparent 62%); }
+.vcounter-header { display:flex; align-items:center; justify-content:center; gap:10px; margin-bottom:16px; position:relative; z-index:1; }
+.vcounter-icon { font-size:26px; filter:drop-shadow(0 0 8px rgba(100,160,255,.5)); }
+.vcounter-title { font-family:var(--font-display); font-size:clamp(14px,4.3vw,18px); font-weight:700; color:#fff; }
+.flag-wrap { display:flex; justify-content:center; position:relative; z-index:1; margin-bottom:12px; }
+.flag-img { max-width:100%; border-radius:10px; border:1px solid rgba(80,120,220,.2); box-shadow:0 4px 20px rgba(0,0,0,.4); }
+.vcounter-note { font-size:clamp(11px,2.8vw,13px); color:rgba(160,190,255,.5); text-align:center; position:relative; z-index:1; }
+
+/* ═══════════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════════ */
+.footer {
+  text-align:center;
+  padding:clamp(22px,6vw,34px) 24px 16px;
+  color:var(--w50);
+  font-size:clamp(12px,3vw,14px);
+  line-height:2;
+}
+.fi { font-size:clamp(24px,7vw,32px); display:block; margin-bottom:8px; animation:floatMoon 5s ease-in-out infinite 1.5s; }
+
+/* ═══════════════════════════════════════════════
+   SPLASH SCREEN
+═══════════════════════════════════════════════ */
+#splash {
+  position:fixed; inset:0; z-index:9999;
+  background:var(--bg);
+  display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+  overflow-y:auto; overflow-x:hidden;
+  -webkit-overflow-scrolling:touch;
+  overscroll-behavior:contain;
+  padding:clamp(36px,10vw,56px) 16px clamp(36px,10vw,56px);
+  transition:opacity var(--t-slow) ease, transform var(--t-slow) ease;
+}
+#splash.fade-out { opacity:0; transform:scale(1.04); pointer-events:none; }
+.sp-moon-wrap { position:relative; margin-bottom:clamp(16px,5vw,28px); }
+.sp-moon { font-size:clamp(58px,15vw,84px); display:block; animation:floatMoon 4s ease-in-out infinite; filter:drop-shadow(0 0 30px rgba(212,168,67,.75)); }
+.sp-ring { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); border-radius:50%; border:1px solid rgba(212,168,67,.2); animation:spRing 4s ease-in-out infinite; pointer-events:none; }
+.sp-ring-1 { width:clamp(88px,22vw,128px); height:clamp(88px,22vw,128px); }
+.sp-ring-2 { width:clamp(108px,27vw,156px); height:clamp(108px,27vw,156px); animation-delay:.5s; border-color:rgba(212,168,67,.1); }
+@keyframes spRing { 0%,100%{opacity:.4;transform:translate(-50%,-50%) scale(1)} 50%{opacity:.9;transform:translate(-50%,-50%) scale(1.06)} }
+.sp-title { font-family:var(--font-display); font-size:clamp(24px,7vw,40px); font-weight:700; text-align:center; line-height:1.4; color:#fff; text-shadow:0 0 40px rgba(212,168,67,.5),0 2px 8px rgba(0,0,0,.6); margin-bottom:6px; }
+.sp-title em { color:var(--gold-l); font-style:normal; }
+.sp-date { font-family:var(--font-ar); font-size:clamp(10px,2.7vw,12px); color:var(--gold); letter-spacing:.12em; text-align:center; margin-bottom:clamp(18px,5vw,30px); opacity:.7; }
+.sp-divider { width:clamp(130px,40%,200px); height:1px; background:linear-gradient(90deg,transparent,var(--gold-a45),transparent); margin-bottom:clamp(18px,5vw,28px); }
+.sp-choose { font-family:var(--font-display); font-size:clamp(12px,3.2vw,15px); color:var(--w50); text-align:center; margin-bottom:clamp(18px,5vw,26px); letter-spacing:.05em; }
+.sp-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(clamp(128px,38vw,166px),1fr)); gap:clamp(10px,2.8vw,14px); width:100%; max-width:520px; }
+.sp-card {
+  position:relative;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:7px;
+  padding:clamp(16px,5vw,24px) 10px;
+  border-radius:20px;
+  border:1px solid rgba(255,255,255,.08);
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+  touch-action:manipulation;
+  overflow:hidden;
+  transition:transform var(--t-med) ease, box-shadow var(--t-med) ease, border-color var(--t-med) ease;
+  animation:spCardIn .5s ease both;
+}
+.sp-card:nth-child(1){animation-delay:.05s} .sp-card:nth-child(2){animation-delay:.10s}
+.sp-card:nth-child(3){animation-delay:.15s} .sp-card:nth-child(4){animation-delay:.20s}
+.sp-card:nth-child(5){animation-delay:.25s} .sp-card:nth-child(6){animation-delay:.30s}
+.sp-card:nth-child(7){animation-delay:.35s}
+@keyframes spCardIn { from{opacity:0;transform:translateY(22px) scale(.96)} to{opacity:1;transform:translateY(0) scale(1)} }
+.sp-card:active { transform:scale(.94) !important; }
+@media(hover:hover) { .sp-card:hover { transform:translateY(-4px) scale(1.03); border-color:rgba(255,255,255,.22); } }
+.sp-card::before { content:""; position:absolute; top:0; left:0; right:0; height:2px; background:var(--sp-line); animation:shimmer 3.5s linear infinite; background-size:200% 100%; }
+.sp-card::after { content:""; position:absolute; inset:0; background:var(--sp-glow); pointer-events:none; z-index:0; }
+.sp-ar{background:linear-gradient(150deg,#1C1405,#261C08);box-shadow:0 6px 28px rgba(0,0,0,.5);--sp-line:linear-gradient(90deg,var(--gold),var(--gold-l),var(--gold));--sp-glow:radial-gradient(ellipse at 50% 0%,rgba(212,168,67,.12),transparent 60%)}
+.sp-en{background:linear-gradient(150deg,#0D1535,#111D45);box-shadow:0 6px 28px rgba(0,0,0,.5);--sp-line:linear-gradient(90deg,#4466DD,#7090FF,#4466DD);--sp-glow:radial-gradient(ellipse at 50% 0%,rgba(70,100,220,.13),transparent 60%)}
+.sp-fr{background:linear-gradient(150deg,#061A1E,#0C2830);box-shadow:0 6px 28px rgba(0,0,0,.5);--sp-line:linear-gradient(90deg,#1A9AA8,#40C8D8,#1A9AA8);--sp-glow:radial-gradient(ellipse at 50% 0%,rgba(30,150,165,.12),transparent 60%)}
+.sp-ur{background:linear-gradient(150deg,#120A22,#1C1040);box-shadow:0 6px 28px rgba(0,0,0,.5);--sp-line:linear-gradient(90deg,#8844CC,#B070F0,#8844CC);--sp-glow:radial-gradient(ellipse at 50% 0%,rgba(120,60,200,.13),transparent 60%)}
+.sp-bn{background:linear-gradient(150deg,#061A10,#0C2C1A);box-shadow:0 6px 28px rgba(0,0,0,.5);--sp-line:linear-gradient(90deg,#1A9A55,#40D880,#1A9A55);--sp-glow:radial-gradient(ellipse at 50% 0%,rgba(25,150,80,.12),transparent 60%)}
+.sp-id{background:linear-gradient(150deg,#1A0608,#260A12);box-shadow:0 6px 28px rgba(0,0,0,.5);--sp-line:linear-gradient(90deg,#CC2244,#EE4466,#CC2244);--sp-glow:radial-gradient(ellipse at 50% 0%,rgba(190,35,60,.13),transparent 60%)}
+.sp-pa{background:linear-gradient(150deg,#080E1C,#0E1A30);box-shadow:0 6px 28px rgba(0,0,0,.5);--sp-line:linear-gradient(90deg,#3A6EB0,#5A90D8,#3A6EB0);--sp-glow:radial-gradient(ellipse at 50% 0%,rgba(50,100,170,.12),transparent 60%)}
+.sp-flag { font-size:clamp(30px,9vw,42px); display:block; position:relative; z-index:1; filter:drop-shadow(0 2px 8px rgba(0,0,0,.5)); line-height:1.2; }
+.sp-lang-native { font-size:clamp(14px,4.5vw,19px); font-weight:700; color:#fff; text-align:center; position:relative; z-index:1; line-height:1.3; text-shadow:0 2px 8px rgba(0,0,0,.5); }
+.sp-lang-sub { font-size:clamp(9px,2.4vw,11px); color:var(--w50); text-align:center; position:relative; z-index:1; font-family:var(--font-latin); letter-spacing:.04em; }
+.sp-arrow { position:relative; z-index:1; font-size:16px; color:var(--w30); margin-top:2px; transition:transform var(--t-fast),color var(--t-fast); }
+.sp-card:hover .sp-arrow,.sp-card:active .sp-arrow { color:var(--w90); transform:scale(1.4); }
+.sp-footer { margin-top:clamp(22px,6vw,32px); text-align:center; color:rgba(255,255,255,.22); font-size:clamp(10px,2.5vw,12px); line-height:2.2; }
+.sp-footer span { color:var(--gold); opacity:.6; }
+
+/* ═══════════════════════════════════════════════
+   ACCESSIBILITY & REDUCED MOTION
+═══════════════════════════════════════════════ */
+@media (prefers-reduced-motion:reduce) {
+  *, *::before, *::after { animation-duration:.01ms !important; transition-duration:.01ms !important; }
+}
+:focus-visible { outline:2px solid var(--gold); outline-offset:3px; border-radius:4px; }
+
+/* ═══════════════════════════════════════════════
+   PRINT
+═══════════════════════════════════════════════ */
+@media print {
+  .stars,.cosmos,.progress-bar,.sound-btn,.back-btn,.bismillah-fab,.lang-bar { display:none !important; }
+  .card,.hcard,.tlcard,.tkcard,.clcard { break-inside:avoid; opacity:1 !important; transform:none !important; }
+  body { background:#fff !important; color:#000 !important; }
+  .dt { color:#000 !important; }
+}
+
+/* ═══════════════════════════════════════════════
+   TINY SCREEN SAFETY
+═══════════════════════════════════════════════ */
+@media (max-width:340px) {
+  .hero-title { font-size:19px; }
+  .bismillah-fab { font-size:9px; padding:7px 10px; }
+  .lang-btn { padding:5px 8px; font-size:9px; }
+}
+
+/* ╔══════════════════════════════════════════════════════╗
+   ║           SHARE SECTION — PROFESSIONAL               ║
+   ╚══════════════════════════════════════════════════════╝ */
+
+.share-section {
+  margin: 8px clamp(12px,3.5vw,18px) 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .6s cubic-bezier(.4,0,.2,1), transform .6s cubic-bezier(.4,0,.2,1);
+}
+.share-section.visible { opacity: 1; transform: translateY(0); }
+
+/* ── Card wrapper ── */
+.share-card {
+  position: relative;
+  background: linear-gradient(150deg, #0D1018, #131820 55%, #0A0D14);
+  border: 1px solid rgba(212,168,67,.22);
+  border-radius: 24px;
+  overflow: hidden;
+  padding: clamp(20px,5.5vw,28px) clamp(16px,4.5vw,22px) clamp(18px,5vw,24px);
+  box-shadow: 0 8px 40px rgba(0,0,0,.6), 0 1px 0 rgba(255,255,255,.04) inset;
+}
+
+/* Top shimmer */
+.share-card::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold-d), var(--gold), var(--gold-l), #AA66FF, var(--gold), var(--gold-d));
+  background-size: 300% 100%;
+  animation: shimmer 4s linear infinite;
+  margin-bottom: 20px;
+}
+
+/* Glow blob */
+.share-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(212,168,67,.09), transparent 60%);
+  z-index: 0;
+}
+
+.share-inner { position: relative; z-index: 1; }
+
+/* ── Header ── */
+.share-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+.share-icon-wrap {
+  width: 42px; height: 42px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(212,168,67,.18), rgba(212,168,67,.08));
+  border: 1px solid rgba(212,168,67,.22);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,.3);
+}
+.share-header-text {}
+.share-title {
+  font-family: var(--font-display);
+  font-size: clamp(17px,5vw,21px);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3;
+}
+.share-subtitle {
+  font-size: clamp(11px,2.8vw,13px);
+  color: rgba(255,255,255,.45);
+  margin-top: 3px;
+  line-height: 1.4;
+}
+
+/* Divider */
+.share-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212,168,67,.2), transparent);
+  margin: 14px 0;
+}
+
+/* ── Platform Grid ── */
+.share-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(8px,2.5vw,12px);
+  margin-bottom: 14px;
+}
+
+/* ── Each platform button ── */
+.share-btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: clamp(12px,3.5vw,16px) 8px clamp(10px,3vw,14px);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.07);
+  background: rgba(255,255,255,.04);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition:
+    transform .18s cubic-bezier(.4,0,.2,1),
+    background .18s cubic-bezier(.4,0,.2,1),
+    border-color .18s cubic-bezier(.4,0,.2,1),
+    box-shadow .18s cubic-bezier(.4,0,.2,1);
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Platform color accent on top */
+.share-btn::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--btn-color, rgba(255,255,255,.2));
+  opacity: .6;
+  transition: opacity .18s;
+}
+.share-btn:hover::before, .share-btn:active::before { opacity: 1; }
+
+/* Hover / active */
+.share-btn:active {
+  transform: scale(.92) !important;
+  transition-duration: .08s !important;
+}
+@media (hover:hover) {
+  .share-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    border-color: rgba(255,255,255,.18);
+    background: rgba(255,255,255,.08);
+    box-shadow: 0 8px 24px rgba(0,0,0,.5);
+  }
+  .share-btn:hover .share-btn-icon { transform: scale(1.12); }
+}
+.share-btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+/* Icon circle */
+.share-btn-icon {
+  width: clamp(38px,10vw,46px);
+  height: clamp(38px,10vw,46px);
+  border-radius: 50%;
+  background: var(--btn-color, rgba(255,255,255,.15));
+  display: flex; align-items: center; justify-content: center;
+  transition: transform .18s cubic-bezier(.34,1.56,.64,1);
+  flex-shrink: 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,.35);
+}
+.share-btn-icon svg {
+  width: clamp(18px,5vw,22px);
+  height: clamp(18px,5vw,22px);
+  fill: #fff;
+  display: block;
+}
+
+/* Label */
+.share-btn-label {
+  font-size: clamp(10px,2.6vw,12px);
+  font-weight: 600;
+  color: rgba(255,255,255,.75);
+  text-align: center;
+  line-height: 1.2;
+  transition: color .18s;
+  font-family: var(--font-ar);
+}
+@media (hover:hover) { .share-btn:hover .share-btn-label { color: #fff; } }
+
+/* Latin font override for share labels */
+[data-lang="en"] .share-btn-label,
+[data-lang="fr"] .share-btn-label,
+[data-lang="id"] .share-btn-label { font-family: var(--font-latin); }
+[data-lang="bn"] .share-btn-label { font-family: "Noto Sans Bengali", sans-serif; }
+[data-lang="pa"] .share-btn-label { font-family: "Noto Sans Gurmukhi", sans-serif; }
+[data-lang="ur"] .share-btn-label { font-family: "Noto Nastaliq Urdu", serif; font-size: clamp(9px,2.3vw,11px); line-height: 1.8; }
+
+/* ── Copy success animation ── */
+.share-btn.copy-success .share-btn-icon {
+  background: #22C55E !important;
+  animation: copyPop .4s cubic-bezier(.34,1.56,.64,1);
+}
+@keyframes copyPop {
+  0% { transform: scale(.8); }
+  60% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+.share-btn.copy-success .share-btn-label { color: #86EFAC; }
+
+/* ── Native share row (only when Web Share API supported) ── */
+.share-native-row {
+  display: none;
+  width: 100%;
+}
+.share-native-row.visible { display: flex; }
+.share-native-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: clamp(12px,3.5vw,15px) 20px;
+  border-radius: 14px;
+  border: 1px solid rgba(212,168,67,.25);
+  background: linear-gradient(135deg, rgba(212,168,67,.1), rgba(212,168,67,.05));
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition: background .2s, transform .15s;
+  color: var(--gold-l);
+  font-size: clamp(13px,3.5vw,15px);
+  font-weight: 700;
+  font-family: var(--font-display);
+}
+.share-native-btn:active { transform: scale(.96); }
+@media (hover:hover) { .share-native-btn:hover { background: rgba(212,168,67,.15); } }
+.share-native-icon { font-size: 18px; }
+
+/* ── Hadith footer quote ── */
+.share-hadith-quote {
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: clamp(11px,2.8vw,13px);
+  color: rgba(255,255,255,.3);
+  line-height: 2;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,.06);
+  font-style: italic;
+}
+@media(max-width:360px){
+  .dt{font-size:15px!important;line-height:2!important}
+  .hero-title{font-size:20px!important}
+  .bismillah-fab{font-size:10px!important;padding:8px 14px!important}
+  .lang-btn{padding:4px 8px!important;font-size:10px!important}
+  .share-btn-icon{width:34px!important;height:34px!important}
+  .share-btn-label{font-size:9px!important}
+}
+</style>
 <body>
 
-<!-- Stars -->
-<div class="stars" id="stars"></div>
+<!-- ░░ BACKGROUNDS ░░ -->
+<div class="cosmos" aria-hidden="true">
+  <div class="aurora a1"></div><div class="aurora a2"></div><div class="aurora a3"></div>
+</div>
+<div class="stars" id="stars" aria-hidden="true"></div>
+<div class="progress-bar" id="progressBar" role="progressbar" aria-hidden="true"></div>
 
-<!-- Progress bar -->
-<div class="progress-bar" id="progressBar"></div>
-
-<div class="container">
-
-  <!-- Hero -->
-  <header class="hero">
-    <span class="hero-moon">🌙</span>
-    <h1 class="hero-title">أدعية يوم عرفة</h1>
-    <p class="hero-sub">يوم المغفرة والعتق من النار</p>
-    <div class="divider-hero"></div>
-  </header>
-
-  <!-- Hadith opener -->
-  <div class="hadith-card">
-    <span class="hadith-icon">✦</span>
-    <p class="hadith-text">
-      روى أن النبي ﷺ قال: خير الدعاء دعاء يوم عرفة، وخير ما قلت أنا والنبيون من قبلي:
-    </p>
+<!-- ░░ SPLASH LANGUAGE SELECTOR ░░ -->
+<div id="splash" role="dialog" aria-label="Language selection" aria-modal="true">
+  <div class="sp-moon-wrap">
+    <span class="sp-moon" aria-hidden="true">🌙</span>
+    <div class="sp-ring sp-ring-1" aria-hidden="true"></div>
+    <div class="sp-ring sp-ring-2" aria-hidden="true"></div>
   </div>
+  <h1 class="sp-title">أدعية <em>يوم عرفة</em></h1>
+  <p class="sp-date">٩ ذو الحجة &nbsp;·&nbsp; Day of Arafat &nbsp;·&nbsp; यौम-ए-अरफ़ात</p>
+  <div class="sp-divider" aria-hidden="true"></div>
+  <p class="sp-choose" id="spChoose">اختر لغتك — Choose your language</p>
+  <div class="sp-grid" role="list">
 
-  <!-- Tahlil -->
-  <div class="tahlil-card">
-    <p class="tahlil-text">
-      <span class="tahlil-icon">❁</span>
-      لا إله إلا اللهُ وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير
-    </p>
-  </div>
-
-  <div class="section-label">
-    <span></span>
-    <p class="section-label-text">الأدعية المأثورة</p>
-    <span></span>
-  </div>
-
-  <!-- Dua 1 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">١</div>
-      <p class="dua-text">
-        اللهم لك الحمد حتى ترضى، ولك الحمد إذا رضيت، ولك الحمد بعد الرضا، ولك الحمد على كل حال، وفي كل حين، اللهم لك الحمد حمدًا كثيرًا طيبًا مباركًا فيه
-      </p>
+    <div class="sp-card sp-ar" onclick="enterLang('ar')" role="listitem button" tabindex="0" aria-label="العربية — Arabic">
+      <span class="sp-flag" aria-hidden="true">🕌</span>
+      <span class="sp-lang-native" style="font-family:'Amiri',serif;font-size:clamp(16px,5vw,21px)">دعاء يوم عرفة</span>
+      <span class="sp-lang-sub">العربية</span>
+      <span class="sp-arrow" aria-hidden="true">›</span>
     </div>
-  </div>
 
-  <!-- Dua 2 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٢</div>
-      <p class="dua-text">
-        اللهم لك الحمد كما ينبغي لجلال وجهك وعظيم سلطانك
-      </p>
+    <div class="sp-card sp-en" onclick="enterLang('en')" role="listitem button" tabindex="0" aria-label="English">
+      <span class="sp-flag" aria-hidden="true">🌿</span>
+      <span class="sp-lang-native" style="font-family:'Crimson Pro',serif">Day of Arafat Duas</span>
+      <span class="sp-lang-sub">English</span>
+      <span class="sp-arrow" aria-hidden="true">›</span>
     </div>
-  </div>
 
-  <!-- Dua 3 - Salah -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٣</div>
-      <p class="dua-text">
-        اللهم صلِّ على محمد وعلى آل محمد كما صليتَ على إبراهيم وعلى آل إبراهيم إنك حميد مجيد، اللهم بارك على محمد وعلى آل محمد كما باركتَ على إبراهيم وعلى آل إبراهيم إنك حميد مجيد
-      </p>
+    <div class="sp-card sp-fr" onclick="enterLang('fr')" role="listitem button" tabindex="0" aria-label="Français">
+      <span class="sp-flag" aria-hidden="true">☽</span>
+      <span class="sp-lang-native" style="font-family:'Crimson Pro',serif">Invocations d'Arafat</span>
+      <span class="sp-lang-sub">Français</span>
+      <span class="sp-arrow" aria-hidden="true">›</span>
     </div>
-  </div>
 
-  <div class="ornament">❋ ❋ ❋</div>
-
-  <!-- Dua 4 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٤</div>
-      <p class="dua-text">
-        اللهم آتِنا في الدنيا حسنةً وفي الآخرة حسنةً، وقِنا عذاب النار
-      </p>
+    <div class="sp-card sp-ur" onclick="enterLang('ur')" role="listitem button" tabindex="0" aria-label="اردو — Urdu">
+      <span class="sp-flag" aria-hidden="true">✨</span>
+      <span class="sp-lang-native" style="font-family:'Noto Nastaliq Urdu',serif;font-size:clamp(14px,4vw,18px);line-height:1.8">عرفہ کے دن کی دعائیں</span>
+      <span class="sp-lang-sub">اردو — Urdu</span>
+      <span class="sp-arrow" aria-hidden="true">›</span>
     </div>
-  </div>
 
-  <!-- Dua 5 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٥</div>
-      <p class="dua-text">
-        ربنا لا تؤاخذنا إن نسينا أو أخطأنا، ربنا ولا تحمل علينا إصرًا كما حملته على الذين من قبلنا
-      </p>
+    <div class="sp-card sp-bn" onclick="enterLang('bn')" role="listitem button" tabindex="0" aria-label="বাংলা — Bengali">
+      <span class="sp-flag" aria-hidden="true">🌙</span>
+      <span class="sp-lang-native" style="font-family:'Noto Sans Bengali',sans-serif;font-size:clamp(12px,3.7vw,16px)">আরাফাতের দোয়া</span>
+      <span class="sp-lang-sub">বাংলা — Bengali</span>
+      <span class="sp-arrow" aria-hidden="true">›</span>
     </div>
-  </div>
 
-  <!-- Dua 6 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٦</div>
-      <p class="dua-text">
-        اللهم لا تدع لنا ذنبًا إلا غفرته، ولا عيبًا إلا سترته، ولا همًّا إلا فرَّجته، ولا دينًا إلا قضيته يا أرحم الراحمين
-      </p>
+    <div class="sp-card sp-id" onclick="enterLang('id')" role="listitem button" tabindex="0" aria-label="Bahasa Indonesia / Melayu">
+      <span class="sp-flag" aria-hidden="true">🌺</span>
+      <span class="sp-lang-native" style="font-family:'Crimson Pro',serif">Doa Hari Arafah</span>
+      <span class="sp-lang-sub">Bahasa Indonesia / Melayu</span>
+      <span class="sp-arrow" aria-hidden="true">›</span>
     </div>
-  </div>
 
-  <div class="tahlil-card">
-    <p class="tahlil-text">
-      <span class="tahlil-icon">❁</span>
-      لا إله إلا اللهُ وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير
-    </p>
-  </div>
-
-  <div class="section-label">
-    <span></span>
-    <p class="section-label-text">دعاء الاستغفار</p>
-    <span></span>
-  </div>
-
-  <!-- Dua 7 - Sayyidul Istighfar -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٧</div>
-      <p class="dua-text">
-        اللهم أنت ربي لا إله إلا أنت، خلقتني وأنا عبدك، وأنا على عهدك ووعدك ما استطعت، أعوذ بك من شر ما صنعت، أبوء لك بنعمتك علي، وأبوء بذنبي فاغفر لي، فإنه لا يغفر الذنوب إلا أنت
-      </p>
+    <div class="sp-card sp-pa" onclick="enterLang('pa')" role="listitem button" tabindex="0" aria-label="ਪੰਜਾਬੀ — Punjabi">
+      <span class="sp-flag" aria-hidden="true">🕊️</span>
+      <span class="sp-lang-native" style="font-family:'Noto Sans Gurmukhi',sans-serif;font-size:clamp(12px,3.7vw,16px)">ਅਰਫ਼ਾ ਦੀਆਂ ਦੁਆਵਾਂ</span>
+      <span class="sp-lang-sub">ਪੰਜਾਬੀ — Punjabi</span>
+      <span class="sp-arrow" aria-hidden="true">›</span>
     </div>
+
   </div>
-
-  <!-- Dua 8 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٨</div>
-      <p class="dua-text">
-        اللهم إنك عفوٌّ كريم تحب العفو فاعفُ عنا
-      </p>
-    </div>
-  </div>
-
-  <!-- Dua 9 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٩</div>
-      <p class="dua-text">
-        اللهم إني أسألك الجنة وما قرَّب إليها من قول أو عمل، وأعوذ بك من النار وما قرَّب إليها من قول أو عمل، وأسألك أن تجعل كل قضاء قضيته لي خيرًا
-      </p>
-    </div>
-  </div>
-
-  <!-- Dua 10 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">١٠</div>
-      <p class="dua-text">
-        ربنا لا تزغ قلوبنا بعد أن هديتنا وهب لنا من لدنك رحمةً إنك أنت الوهاب، ربنا ظلمنا أنفسنا وإن لم تغفر لنا وترحمنا لنكوننَّ من الخاسرين
-      </p>
-    </div>
-  </div>
-
-  <div class="ornament">❋ ❋ ❋</div>
-
-  <!-- Dua 11 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">١١</div>
-      <p class="dua-text">
-        اللهم باعِد بيني وبين خطاياي كما باعدتَ بين المشرق والمغرب، اللهم نقِّني من خطاياي كما يُنقَّى الثوب الأبيض من الدنَس، اللهم اغسلني من خطاياي بالثلج والماء والبَرَد
-      </p>
-    </div>
-  </div>
-
-  <!-- Dua 12 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">١٢</div>
-      <p class="dua-text">
-        اللهم إني أعوذ بك من عذاب القبر، ومن عذاب النار، ومن فتنة المحيا والممات، ومن فتنة المسيح الدجال
-      </p>
-    </div>
-  </div>
-
-  <!-- Dua 13 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">١٣</div>
-      <p class="dua-text">
-        اللهم إني أعوذ بك من زوال نعمتك وتحوُّل عافيتك وفجاءة نقمتك وجميع سخطك
-      </p>
-    </div>
-  </div>
-
-  <!-- Dua 14 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">١٤</div>
-      <p class="dua-text">
-        ربنا نسألك عفوًا لا يُبقي ذنبًا، ونسألك سترًا لا تخرقه الرياح ولا تمزِّقه الرماح، ونسألك رحمةً تحجبنا عن النار وتُدخلنا بها الجنة إنك سميع الدعاء
-      </p>
-    </div>
-  </div>
-
-  <div class="tahlil-card">
-    <p class="tahlil-text">
-      <span class="tahlil-icon">❁</span>
-      لا إله إلا اللهُ وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير
-    </p>
-  </div>
-
-  <div class="section-label">
-    <span></span>
-    <p class="section-label-text">دعاء الصلاح والهداية</p>
-    <span></span>
-  </div>
-
-  <!-- Dua 15 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">١٥</div>
-      <p class="dua-text">
-        اللهم أصلِح لي ديني الذي هو عصمة أمري، وأصلح لي دنياي التي فيها معاشي، وأصلح لي آخرتي التي فيها معادي، واجعل الحياة زيادةً لي في كل خير، واجعل الموت راحةً لي من كل شر
-      </p>
-    </div>
-  </div>
-
-  <!-- Dua 16 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">١٦</div>
-      <p class="dua-text">
-        رب اجعلني مقيم الصلاة ومن ذريتي، ربنا وتقبَّل دعاء، ربنا اغفر لي ولوالديَّ وللمؤمنين يوم يقوم الحساب
-      </p>
-    </div>
-  </div>
-
-  <!-- Dua 17 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">١٧</div>
-      <p class="dua-text">
-        أستغفر الله الذي لا إله إلا هو الحيُّ القيُّوم وأتوب إليه
-      </p>
-    </div>
-  </div>
-
-  <!-- Dua 18 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">١٨</div>
-      <p class="dua-text">
-        ربنا آتِنا من لدنك رحمةً وهيِّئ لنا من أمرنا رشَدًا، ربنا آمنَّا فاغفر لنا وارحمنا وأنت خير الراحمين
-      </p>
-    </div>
-  </div>
-
-  <!-- Dua 19 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">١٩</div>
-      <p class="dua-text">
-        رب أوزعني أن أشكر نعمتك التي أنعمتَ علي وعلى والديَّ وأن أعمل صالحًا ترضاه وأصلح لي في ذريتي إني تبتُ إليك وإني من المسلمين
-      </p>
-    </div>
-  </div>
-
-  <div class="tahlil-card">
-    <p class="tahlil-text">
-      <span class="tahlil-icon">❁</span>
-      لا إله إلا اللهُ وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير
-    </p>
-  </div>
-
-  <div class="section-label">
-    <span></span>
-    <p class="section-label-text">دعاء الآخرة والقبر</p>
-    <span></span>
-  </div>
-
-  <!-- Dua 20 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٢٠</div>
-      <p class="dua-text">
-        اللهم ثبِّتني عند سؤال الملكين، اللهم اجعل قبري روضةً من رياض الجنة ولا تجعله حفرةً من حفر النار، اللهم إني أعوذ بك من فتن الدنيا
-      </p>
-    </div>
-  </div>
-
-  <!-- Dua 21 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٢١</div>
-      <p class="dua-text">
-        اللهم أنت الملك لا إله إلا أنت، أنت ربي وأنا عبدك، ظلمتُ نفسي واعترفتُ بذنبي، فاغفر لي ذنوبي جميعًا إنه لا يغفر الذنوب إلا أنت، واهدني لأحسن الأخلاق لا يهدي لأحسنها إلا أنت، واصرف عني سيئها لا يصرف عني سيئها إلا أنت، لبيك وسعديك والخير كله في يديك أستغفرك ربي وأتوب إليك
-      </p>
-    </div>
-  </div>
-
-  <!-- Dua 22 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٢٢</div>
-      <p class="dua-text">
-        ربنا اغفر لي ولوالديَّ وللمؤمنين يوم يقوم الحساب
-      </p>
-    </div>
-  </div>
-
-  <!-- Dua 23 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٢٣</div>
-      <p class="dua-text">
-        اللهم اكفِني بحلالك عن حرامك، وأغنِني بفضلك عمَّن سواك
-      </p>
-    </div>
-  </div>
-
-  <div class="ornament">❋ ❋ ❋</div>
-
-  <!-- Dua 24 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٢٤</div>
-      <p class="dua-text">
-        اللهم آتِ نفسي تقواها وزكِّها يا خير من زكَّاها أنت وليُّها ومولاها يا رب العالمين، اللهم إني أسألك مسألة البائس الفقير وأدعوك دعاء المفتقر الذليل
-      </p>
-    </div>
-  </div>
-
-  <!-- Dua 25 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٢٥</div>
-      <p class="dua-text">
-        اللهم مصرِّف القلوب والأبصار، صرِّف قلوبنا على طاعتك. اللهم زِدنا ولا تنقصنا، وأعطِنا ولا تحرمنا، وآثِرنا ولا تؤثِر علينا. اللهم أحسِن عاقبتنا في الأمور كلها، وأجِرنا من خزي الدنيا وعذاب الآخرة
-      </p>
-    </div>
-  </div>
-
-  <div class="tahlil-card">
-    <p class="tahlil-text">
-      <span class="tahlil-icon">❁</span>
-      لا إله إلا اللهُ وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير
-    </p>
-  </div>
-
-  <div class="section-label">
-    <span></span>
-    <p class="section-label-text">الدعاء الختامي</p>
-    <span></span>
-  </div>
-
-  <!-- Dua 26 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٢٦</div>
-      <p class="dua-text">
-        اللهم أدخِلنا الجنة من غير حساب ولا سابقة عذاب
-      </p>
-    </div>
-  </div>
-
-  <!-- Takbeer -->
-  <div class="hadith-card" style="margin-top: 8px;">
-    <span class="hadith-icon">🕌</span>
-    <p class="hadith-text">
-      الله أكبر الله أكبر الله أكبر، لا إله إلا الله وحده لا شريك له، له الملك، وله الحمد، وهو على كل شيء قدير، لا إله إلا الله وحده لا شريك له
-    </p>
-  </div>
-
-  <!-- Dua 27 - Parents -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٢٧</div>
-      <p class="dua-text">
-        اللهم ارحم آباءنا وأمهاتنا واغفر لهم وتجاوز عن سيئاتهم وأدخِلهم فسيح جناتك، وألحِقنا بهم يا رب العالمين
-      </p>
-    </div>
-  </div>
-
-  <!-- Dua 28 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٢٨</div>
-      <p class="dua-text">
-        اللهم أعِنِّي على ذكرك وشكرك وحسن عبادتك
-      </p>
-    </div>
-  </div>
-
-  <!-- Dua 29 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٢٩</div>
-      <p class="dua-text">
-        اللهم إني أسألك الجنة وما قرَّب إليها من قول أو عمل وأسألك أن تجعل كل قضاء تقضيه لي خيرًا
-      </p>
-    </div>
-  </div>
-
-  <!-- Dua 30 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٣٠</div>
-      <p class="dua-text">
-        يا واسع العطاء ندعوك أن تطهِّرنا من جميع السيئات وأن ترفعنا عندك أعلى الدرجات وأن تُبلِّغنا أقصى الغايات من جميع الخيرات في الحياة وبعد الممات
-      </p>
-    </div>
-  </div>
-
-  <div class="tahlil-card">
-    <p class="tahlil-text">
-      <span class="tahlil-icon">❁</span>
-      لا إله إلا اللهُ وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير
-    </p>
-  </div>
-
-  <!-- Dua 31 - Long beautiful dua -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٣١</div>
-      <p class="dua-text">
-        اللهم إني عبدك، ابن عبدك، ابن أمتك، ناصيتي بيدك، ماضٍ في حكمك، عدلٌ في قضاؤك، أسألك بكل اسم هو لك سمَّيتَ به نفسك، أو أنزلتَه في كتابك، أو علَّمتَه أحدًا من خلقك، أو استأثرتَ به في علم الغيب عندك: أن تجعل القرآن العظيم ربيعَ قلبي، ونور صدري، وجلاء حزني، وذهاب همِّي وغمِّي
-      </p>
-    </div>
-  </div>
-
-  <!-- Dua 32 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٣٢</div>
-      <p class="dua-text">
-        اللهم إني أسألك الرضى بعد القضاء، وبرد العيش بعد الموت، ولذة النظر إلى وجهك الكريم، والشوق إلى لقائك، في غير ضراء مضرة، ولا فتنة مضلة. اللهم إني أعوذ بك أن أُرَدَّ إلى أرذل العمر
-      </p>
-    </div>
-  </div>
-
-  <!-- Dua 33 -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٣٣</div>
-      <p class="dua-text">
-        اللهم إني أعوذ بك من زوال نعمتك، وتحوُّل عافيتك، وفجاءة نقمتك، وجميع سخطك. اللهم إني أعوذ بك من الهدم والتردِّي ومن الغرق والحرق والهرَم، وأعوذ بك من أن يتخبَّطني الشيطان عند الموت، وأعوذ بك من أن أموت لديغًا، وأعوذ بك من طمع يهدي إلى طبَع
-      </p>
-    </div>
-  </div>
-
-  <!-- Final dua -->
-  <div class="dua-card">
-    <div class="dua-card-inner">
-      <div class="dua-number">٣٤</div>
-      <p class="dua-text">
-        اللهم اجعل خيرَ أعمالنا خواتمَها، وخير أعمارنا أواخرَها، وخير أيامنا يوم نلقاك، اللهم اغفر لنا ما مضى وأصلح لنا ما تبقَّى
-      </p>
-    </div>
-  </div>
-
-  <!-- Closing Takbeer -->
-  <div class="hadith-card" style="margin-top: 8px; margin-bottom: 8px;">
-    <span class="hadith-icon">🌟</span>
-    <p class="hadith-text">
-      الله أكبر الله أكبر الله أكبر، لا إله إلا الله وحده لا شريك له، له الملك، وله الحمد، وهو على كل شيء قدير، لا إله إلا الله وحده لا شريك له
-    </p>
-  </div>
-
-  <!-- Closing blessing -->
-  <div class="hadith-card" style="background: linear-gradient(135deg, rgba(42,92,138,0.2), rgba(26,51,82,0.3)); border-color: rgba(42,92,138,0.4);">
-    <span class="hadith-icon" style="color: #8BB8D8;">❦</span>
-    <p class="hadith-text" style="color: #B8D4F0;">
-      الحمد لله الذي أمرنا بالدعاء، ووعدنا بالإجابة، تقدَّستْ أسماؤه وصفاته، وصلَّى الله على خير من دعاه، رسولنا محمد ﷺ، وعلى آله وصحبه ومن والاه
-    </p>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <span class="footer-icon">🌙</span>
-    تقبَّل الله دعاءكم<br>وأعتق رقابكم من النار
-  </footer>
-
+  <p class="sp-footer">
+    <span>٣٤</span> دعاء مأثور &nbsp;·&nbsp; <span>34</span> Supplications &nbsp;·&nbsp; <span>34</span> Invocations<br>
+    <span>৩৪</span> দোয়া &nbsp;·&nbsp; <span>34</span> Doa &nbsp;·&nbsp; <span>੩੪</span> ਦੁਆਵਾਂ
+  </p>
 </div>
 
-<!-- Floating label -->
-<div class="bismillah-fab">بسم الله الرحمن الرحيم</div>
+<!-- ░░ FLOATING UI ░░ -->
+<nav class="lang-bar" aria-label="Language switcher">
+  <button class="lang-btn active" onclick="setLang('ar')" aria-label="العربية">عربي</button>
+  <button class="lang-btn" onclick="setLang('en')" aria-label="English">English</button>
+  <button class="lang-btn" onclick="setLang('fr')" aria-label="Français">Français</button>
+  <button class="lang-btn" onclick="setLang('ur')" aria-label="اردو">اردو</button>
+  <button class="lang-btn" onclick="setLang('bn')" aria-label="বাংলা">বাংলা</button>
+  <button class="lang-btn" onclick="setLang('id')" aria-label="Bahasa">Bahasa</button>
+  <button class="lang-btn" onclick="setLang('pa')" aria-label="ਪੰਜਾਬੀ">ਪੰਜਾਬੀ</button>
+</nav>
 
+<button class="ui-btn sound-btn" id="soundBtn" aria-label="Toggle ocean sound" aria-pressed="false">
+  <span class="sound-icon" id="soundIcon" aria-hidden="true">🔇</span>
+</button>
+<button class="ui-btn back-btn" id="backBtn" aria-label="Back to language selection">🌐</button>
+<div class="bismillah-fab" id="bismillahFab" aria-label="Bismillah" aria-hidden="true">بسم الله الرحمن الرحيم</div>
+
+<!-- ░░ MAIN PAGE ░░ -->
+<main class="container" id="mainContainer" role="main" aria-label="أدعية يوم عرفة">
+
+  <header class="hero">
+    <span class="hero-moon" aria-hidden="true">🌙</span>
+    <h2 class="hero-title" id="heroTitle">أدعية <em>يوم عرفة</em></h2>
+    <p class="hero-sub" id="heroSub">يوم المغفرة والعتق من النار</p>
+  </header>
+
+  <!-- Hadith intro -->
+  <div class="hcard" role="note"><div class="hg" aria-hidden="true"></div>
+    <span class="hi" aria-hidden="true">✦</span>
+    <p class="ht" id="hadithText"></p>
+  </div>
+
+  <!-- Adaab card -->
+  <div class="adaab-card" role="note"><div class="adaab-glow" aria-hidden="true"></div>
+    <div class="adaab-inner">
+      <span class="hi" aria-hidden="true">🤲</span>
+      <p class="ht" id="adaabTitle" style="margin-bottom:0"></p>
+      <ul class="adaab-list" id="adaabList" aria-label="Adaab list"></ul>
+    </div>
+  </div>
+
+  <!-- Tahlil 1 -->
+  <div class="tlcard" role="note"><div class="tlg" aria-hidden="true"></div>
+    <p class="tlt"><span class="tli" aria-hidden="true">❁</span><span class="tahlilText"></span></p>
+  </div>
+
+  <!-- Section 1 -->
+  <div class="sl" role="separator"><span class="ln ln-r" aria-hidden="true"></span><p class="sl-t" id="sec1">الأدعية المأثورة</p><span class="ln" aria-hidden="true"></span></div>
+  <article class="card ta"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 1">1</div><span class="src-badge src-hadith" data-src="0"></span><p class="dt dua" data-i="0" dir="rtl"></p></div></article>
+  <article class="card tb"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 2">2</div><span class="src-badge src-hadith" data-src="1"></span><p class="dt dua" data-i="1" dir="rtl"></p></div></article>
+  <article class="card tc"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 3">3</div><span class="src-badge src-hadith" data-src="2"></span><p class="dt dua" data-i="2" dir="rtl"></p></div></article>
+  <div class="ornament" aria-hidden="true">❋ ❋ ❋</div>
+  <article class="card td"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 4">4</div><span class="src-badge src-hadith" data-src="3"></span><p class="dt dua" data-i="3" dir="rtl"></p></div></article>
+  <article class="card tg" data-type="quran" data-qlabel=""><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 5">5</div><span class="quran-mark" aria-hidden="true">📖</span><span class="src-badge src-quran" data-src="4"></span><p class="dt dua" data-i="4" dir="rtl"></p></div></article>
+  <article class="card te"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 6">6</div><span class="src-badge src-hadith" data-src="5"></span><p class="dt dua" data-i="5" dir="rtl"></p></div></article>
+  <div class="tlcard" role="note"><div class="tlg" aria-hidden="true"></div><p class="tlt"><span class="tli" aria-hidden="true">❁</span><span class="tahlilText"></span></p></div>
+
+  <!-- Section 2 -->
+  <div class="sl" role="separator"><span class="ln ln-r" aria-hidden="true"></span><p class="sl-t" id="sec2">دعاء الاستغفار</p><span class="ln" aria-hidden="true"></span></div>
+  <article class="card tf"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 7">7</div><span class="src-badge src-hadith" data-src="6"></span><p class="dt dua" data-i="6" dir="rtl"></p></div></article>
+  <article class="card ta"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 8">8</div><span class="src-badge src-hadith" data-src="7"></span><p class="dt dua" data-i="7" dir="rtl"></p></div></article>
+  <article class="card tb"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 9">9</div><span class="src-badge src-hadith" data-src="8"></span><p class="dt dua" data-i="8" dir="rtl"></p></div></article>
+  <article class="card tc" data-type="quran" data-qlabel=""><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 10">10</div><span class="quran-mark" aria-hidden="true">📖</span><span class="src-badge src-quran" data-src="9"></span><p class="dt dua" data-i="9" dir="rtl"></p></div></article>
+  <div class="ornament" aria-hidden="true">❋ ❋ ❋</div>
+  <article class="card td"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 11">11</div><span class="src-badge src-hadith" data-src="10"></span><p class="dt dua" data-i="10" dir="rtl"></p></div></article>
+  <article class="card th"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 12">12</div><span class="src-badge src-hadith" data-src="11"></span><p class="dt dua" data-i="11" dir="rtl"></p></div></article>
+  <article class="card tg"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 13">13</div><span class="src-badge src-hadith" data-src="12"></span><p class="dt dua" data-i="12" dir="rtl"></p></div></article>
+  <article class="card te"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 14">14</div><span class="src-badge src-salaf" data-src="13"></span><p class="dt dua" data-i="13" dir="rtl"></p></div></article>
+  <div class="tlcard" role="note"><div class="tlg" aria-hidden="true"></div><p class="tlt"><span class="tli" aria-hidden="true">❁</span><span class="tahlilText"></span></p></div>
+
+  <!-- Section 3 -->
+  <div class="sl" role="separator"><span class="ln ln-r" aria-hidden="true"></span><p class="sl-t" id="sec3">دعاء الصلاح والهداية</p><span class="ln" aria-hidden="true"></span></div>
+  <article class="card ta"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 15">15</div><span class="src-badge src-hadith" data-src="14"></span><p class="dt dua" data-i="14" dir="rtl"></p></div></article>
+  <article class="card tf" data-type="quran" data-qlabel=""><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 16">16</div><span class="quran-mark" aria-hidden="true">📖</span><span class="src-badge src-quran" data-src="15"></span><p class="dt dua" data-i="15" dir="rtl"></p></div></article>
+  <article class="card tc"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 17">17</div><span class="src-badge src-hadith" data-src="16"></span><p class="dt dua" data-i="16" dir="rtl"></p></div></article>
+  <article class="card tb"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 18">18</div><span class="src-badge src-hadith" data-src="17"></span><p class="dt dua" data-i="17" dir="rtl"></p></div></article>
+  <article class="card th" data-type="quran" data-qlabel=""><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 19">19</div><span class="quran-mark" aria-hidden="true">📖</span><span class="src-badge src-quran" data-src="18"></span><p class="dt dua" data-i="18" dir="rtl"></p></div></article>
+  <div class="tlcard" role="note"><div class="tlg" aria-hidden="true"></div><p class="tlt"><span class="tli" aria-hidden="true">❁</span><span class="tahlilText"></span></p></div>
+
+  <!-- Section 4 -->
+  <div class="sl" role="separator"><span class="ln ln-r" aria-hidden="true"></span><p class="sl-t" id="sec4">دعاء الآخرة والقبر</p><span class="ln" aria-hidden="true"></span></div>
+  <article class="card td"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 20">20</div><span class="src-badge src-hadith" data-src="19"></span><p class="dt dua" data-i="19" dir="rtl"></p></div></article>
+  <article class="card tg"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 21">21</div><span class="src-badge src-hadith" data-src="20"></span><p class="dt dua" data-i="20" dir="rtl"></p></div></article>
+  <article class="card ta" data-type="quran" data-qlabel=""><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 22">22</div><span class="quran-mark" aria-hidden="true">📖</span><span class="src-badge src-quran" data-src="21"></span><p class="dt dua" data-i="21" dir="rtl"></p></div></article>
+  <article class="card te"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 23">23</div><span class="src-badge src-hadith" data-src="22"></span><p class="dt dua" data-i="22" dir="rtl"></p></div></article>
+  <div class="ornament" aria-hidden="true">❋ ❋ ❋</div>
+  <article class="card tf"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 24">24</div><span class="src-badge src-hadith" data-src="23"></span><p class="dt dua" data-i="23" dir="rtl"></p></div></article>
+  <article class="card tc"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 25">25</div><span class="src-badge src-hadith" data-src="24"></span><p class="dt dua" data-i="24" dir="rtl"></p></div></article>
+  <div class="tlcard" role="note"><div class="tlg" aria-hidden="true"></div><p class="tlt"><span class="tli" aria-hidden="true">❁</span><span class="tahlilText"></span></p></div>
+
+  <!-- Section 5 -->
+  <div class="sl" role="separator"><span class="ln ln-r" aria-hidden="true"></span><p class="sl-t" id="sec5">الدعاء الختامي</p><span class="ln" aria-hidden="true"></span></div>
+  <article class="card tb"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 26">26</div><span class="src-badge src-hadith" data-src="25"></span><p class="dt dua" data-i="25" dir="rtl"></p></div></article>
+  <div class="tkcard" role="note"><div class="tkg" aria-hidden="true"></div><span class="tki" aria-hidden="true">🕌</span><p class="tkt takbeerText"></p></div>
+  <article class="card td"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 27">27</div><span class="src-badge src-hadith" data-src="26"></span><p class="dt dua" data-i="26" dir="rtl"></p></div></article>
+  <article class="card th"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 28">28</div><span class="src-badge src-hadith" data-src="27"></span><p class="dt dua" data-i="27" dir="rtl"></p></div></article>
+  <article class="card ta"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 29">29</div><span class="src-badge src-hadith" data-src="28"></span><p class="dt dua" data-i="28" dir="rtl"></p></div></article>
+  <article class="card tg"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 30">30</div><span class="src-badge src-salaf" data-src="29"></span><p class="dt dua" data-i="29" dir="rtl"></p></div></article>
+  <div class="tlcard" role="note"><div class="tlg" aria-hidden="true"></div><p class="tlt"><span class="tli" aria-hidden="true">❁</span><span class="tahlilText"></span></p></div>
+  <article class="card tf"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 31">31</div><span class="src-badge src-hadith" data-src="30"></span><p class="dt dua" data-i="30" dir="rtl"></p></div></article>
+  <article class="card tc"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 32">32</div><span class="src-badge src-hadith" data-src="31"></span><p class="dt dua" data-i="31" dir="rtl"></p></div></article>
+  <article class="card tb"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 33">33</div><span class="src-badge src-hadith" data-src="32"></span><p class="dt dua" data-i="32" dir="rtl"></p></div></article>
+  <article class="card te"><div class="cg" aria-hidden="true"></div><div class="ci"><div class="dn" aria-label="Dua 34">34</div><span class="src-badge src-hadith" data-src="33"></span><p class="dt dua" data-i="33" dir="rtl"></p></div></article>
+  <div class="tkcard" role="note"><div class="tkg" aria-hidden="true"></div><span class="tki" aria-hidden="true">🌟</span><p class="tkt takbeerText"></p></div>
+  <div class="clcard" role="note"><div class="clg" aria-hidden="true"></div><span class="clci" aria-hidden="true">❦</span><p class="clct" id="closingText"></p></div>
+
+  <!-- Visitor counter -->
+  <div class="vcounter-wrap">
+    <div class="vcounter-card">
+      <div class="vcounter-glow" aria-hidden="true"></div>
+      <div class="vcounter-header">
+        <span class="vcounter-icon" aria-hidden="true">🌍</span>
+        <p class="vcounter-title" id="counterTitle">زوار الصفحة حول العالم</p>
+      </div>
+      <div class="flag-wrap">
+        <a href="https://flagcounter.com/more/duaa" target="_blank" rel="noopener noreferrer" aria-label="View visitor statistics">
+          <img src="https://s01.flagcounter.com/count2/duaa/bg_0A0F20/txt_FFFFFF/border_1A2A4A/columns_4/maxflags_20/viewers_Visitors/labels_1/pageviews_1/flags_32/percent_1/" alt="Visitor map" class="flag-img" loading="lazy" width="300" height="150">
+        </a>
+      </div>
+      <p class="vcounter-note" id="counterNote">يتم تسجيل كل زيارة تلقائياً عند فتح الصفحة</p>
+    </div>
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <span class="fi" aria-hidden="true">🌙</span>
+    <span id="footerText">تقبَّل الله دعاءكم وأعتق رقابكم من النار</span>
+  </footer>
+
+
+<!-- ══════════════════════════════════════════════
+     SHARE SECTION
+══════════════════════════════════════════════ -->
+<section class="share-section" id="shareSection" aria-label="مشاركة الصفحة">
+  <div class="share-card">
+    <div class="share-glow"></div>
+    <div class="share-inner">
+
+      <!-- Header -->
+      <div class="share-header">
+        <div class="share-icon-wrap" aria-hidden="true">🤝</div>
+        <div class="share-header-text">
+          <p class="share-title" id="shareTitle">شارك الأدعية</p>
+          <p class="share-subtitle" id="shareSubtitle">انشر الخير وشارك أدعية يوم عرفة</p>
+        </div>
+      </div>
+
+      <div class="share-divider" aria-hidden="true"></div>
+
+      <!-- Platform grid -->
+      <div class="share-grid" role="group" aria-label="منصات المشاركة">
+    <button class="share-btn" 
+            data-platform="whatsapp"
+            style="--btn-color:#25D366"
+            aria-label="whatsapp"
+            onclick="doShare('whatsapp')">
+      <span class="share-btn-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.995 0C5.373 0 0 5.373 0 11.995c0 2.117.554 4.102 1.521 5.827L0 24l6.335-1.499c1.667.91 3.563 1.434 5.66 1.434C18.617 23.935 24 18.562 24 11.94 24 5.318 18.617 0 11.995 0z" fill-rule="evenodd"/></path></svg>
+      </span>
+      <span class="share-btn-label" id="share-lbl-whatsapp">—</span>
+    </button>
+    <button class="share-btn" 
+            data-platform="telegram"
+            style="--btn-color:#229ED9"
+            aria-label="telegram"
+            onclick="doShare('telegram')">
+      <span class="share-btn-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></path></svg>
+      </span>
+      <span class="share-btn-label" id="share-lbl-telegram">—</span>
+    </button>
+    <button class="share-btn" 
+            data-platform="twitter"
+            style="--btn-color:#1DA1F2"
+            aria-label="twitter"
+            onclick="doShare('twitter')">
+      <span class="share-btn-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.259 5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></path></svg>
+      </span>
+      <span class="share-btn-label" id="share-lbl-twitter">—</span>
+    </button>
+    <button class="share-btn" 
+            data-platform="facebook"
+            style="--btn-color:#1877F2"
+            aria-label="facebook"
+            onclick="doShare('facebook')">
+      <span class="share-btn-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></path></svg>
+      </span>
+      <span class="share-btn-label" id="share-lbl-facebook">—</span>
+    </button>
+    <button class="share-btn" 
+            data-platform="email"
+            style="--btn-color:#EA4335"
+            aria-label="email"
+            onclick="doShare('email')">
+      <span class="share-btn-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></path></svg>
+      </span>
+      <span class="share-btn-label" id="share-lbl-email">—</span>
+    </button>
+    <button class="share-btn" 
+            data-platform="copy"
+            style="--btn-color:#64748B"
+            aria-label="copy"
+            onclick="doShare('copy')">
+      <span class="share-btn-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></path></svg>
+      </span>
+      <span class="share-btn-label" id="share-lbl-copy">—</span>
+    </button>
+
+      </div>
+
+      <!-- Native share (shown only if Web Share API available) -->
+      <div class="share-native-row" id="shareNativeRow">
+        <button class="share-native-btn" onclick="doNativeShare()" id="shareNativeBtn">
+          <span class="share-native-icon" aria-hidden="true">⬆️</span>
+          <span id="shareNativeLabel">مشاركة...</span>
+        </button>
+      </div>
+
+      <!-- Hadith quote -->
+      <p class="share-hadith-quote" id="shareHadithQuote">
+        «مَنْ دَلَّ عَلَى خَيْرٍ فَلَهُ مِثْلُ أَجْرِ فَاعِلِهِ»
+      </p>
+
+    </div>
+  </div>
+</section>
+
+</main>
 <script>
-  // Generate stars
-  const starsContainer = document.getElementById('stars');
-  for (let i = 0; i < 80; i++) {
-    const star = document.createElement('span');
-    star.style.cssText = `
-      top: ${Math.random() * 100}%;
-      left: ${Math.random() * 100}%;
-      --d: ${2 + Math.random() * 4}s;
-      --delay: ${Math.random() * 5}s;
-      width: ${Math.random() < 0.2 ? 3 : 2}px;
-      height: ${Math.random() < 0.2 ? 3 : 2}px;
-      opacity: ${0.3 + Math.random() * 0.7};
-    `;
-    starsContainer.appendChild(star);
-  }
+/* ╔══════════════════════════════════════════════════════════════╗
+   ║  DEPLOYMENT CONFIGURATION — قبل الرفع غيّر هذا الرابط       ║
+   ╠══════════════════════════════════════════════════════════════╣
+   ║                                                              ║
+   ║  SITE_URL = 'https://YOUR-DOMAIN.com/path-to-page'          ║
+   ║                                                              ║
+   ║  مثال Netlify  : 'https://duaa-arafat.netlify.app'          ║
+   ║  مثال GitHub   : 'https://user.github.io/repo/page.html'    ║
+   ║  مثال موقع خاص : 'https://yoursite.com/quran/arafat'        ║
+   ║                                                              ║
+   ╚══════════════════════════════════════════════════════════════╝ */
 
-  // Scroll progress
-  const progressBar = document.getElementById('progressBar');
-  window.addEventListener('scroll', () => {
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-    progressBar.style.height = pct + '%';
+/* ═══════════════════════════════════════════════
+   TRANSLATIONS DATA
+═══════════════════════════════════════════════ */
+const T={"ar":{"dir":"rtl","lang":"ar","bismillah":"بسم الله الرحمن الرحيم","heroTitle":"أدعية <em>يوم عرفة</em>","heroSub":"يوم المغفرة والعتق من النار","hadith":"روى أن النبي ﷺ قال: خير الدعاء دعاء يوم عرفة، وخير ما قلت أنا والنبيون من قبلي:","tahlil":"لا إله إلا اللهُ وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير","sec1":"الأدعية المأثورة","sec2":"دعاء الاستغفار","sec3":"دعاء الصلاح والهداية","sec4":"دعاء الآخرة والقبر","sec5":"الدعاء الختامي","takbeer":"الله أكبر الله أكبر الله أكبر، لا إله إلا الله وحده لا شريك له، له الملك، وله الحمد، وهو على كل شيء قدير، لا إله إلا الله وحده لا شريك له","closing":"الحمد لله الذي أمرنا بالدعاء، ووعدنا بالإجابة، تقدَّستْ أسماؤه وصفاته، وصلَّى الله على خير من دعاه، رسولنا محمد ﷺ، وعلى آله وصحبه ومن والاه","counterTitle":"زوار الصفحة حول العالم","counterNote":"يتم تسجيل كل زيارة تلقائياً عند فتح الصفحة","footer":"تقبَّل الله دعاءكم وأعتق رقابكم من النار","duas":["اللهم لك الحمد حتى ترضى، ولك الحمد إذا رضيت، ولك الحمد بعد الرضا، ولك الحمد على كل حال وفي كل حين، اللهم لك الحمد حمدًا كثيرًا طيبًا مباركًا فيه","اللهم لك الحمد كما ينبغي لجلال وجهك وعظيم سلطانك","اللهم صلِّ على محمد وعلى آل محمد كما صليتَ على إبراهيم وعلى آل إبراهيم إنك حميد مجيد، اللهم بارك على محمد وعلى آل محمد كما باركتَ على إبراهيم وعلى آل إبراهيم إنك حميد مجيد","اللهم آتِنا في الدنيا حسنةً وفي الآخرة حسنةً، وقِنا عذاب النار","ربنا لا تؤاخذنا إن نسينا أو أخطأنا، ربنا ولا تحمل علينا إصرًا كما حملته على الذين من قبلنا","اللهم لا تدع لنا ذنبًا إلا غفرته، ولا عيبًا إلا سترته، ولا همًّا إلا فرَّجته، ولا دينًا إلا قضيته يا أرحم الراحمين","اللهم أنت ربي لا إله إلا أنت، خلقتني وأنا عبدك، وأنا على عهدك ووعدك ما استطعت، أعوذ بك من شر ما صنعت، أبوء لك بنعمتك علي، وأبوء بذنبي فاغفر لي، فإنه لا يغفر الذنوب إلا أنت","اللهم إنك عفوٌّ كريم تحب العفو فاعفُ عنا","اللهم إني أسألك الجنة وما قرَّب إليها من قول أو عمل، وأعوذ بك من النار وما قرَّب إليها من قول أو عمل، وأسألك أن تجعل كل قضاء قضيته لي خيرًا","ربنا لا تزغ قلوبنا بعد أن هديتنا وهب لنا من لدنك رحمةً إنك أنت الوهاب، ربنا ظلمنا أنفسنا وإن لم تغفر لنا وترحمنا لنكوننَّ من الخاسرين","اللهم باعِد بيني وبين خطاياي كما باعدتَ بين المشرق والمغرب، اللهم نقِّني من خطاياي كما يُنقَّى الثوب الأبيض من الدنَس، اللهم اغسلني من خطاياي بالثلج والماء والبَرَد","اللهم إني أعوذ بك من عذاب القبر، ومن عذاب النار، ومن فتنة المحيا والممات، ومن فتنة المسيح الدجال","اللهم إني أعوذ بك من زوال نعمتك وتحوُّل عافيتك وفجاءة نقمتك وجميع سخطك","ربنا نسألك عفوًا لا يُبقي ذنبًا، ونسألك سترًا لا تخرقه الرياح ولا تمزِّقه الرماح، ونسألك رحمةً تحجبنا عن النار وتُدخلنا بها الجنة إنك سميع الدعاء","اللهم أصلِح لي ديني الذي هو عصمة أمري، وأصلح لي دنياي التي فيها معاشي، وأصلح لي آخرتي التي فيها معادي، واجعل الحياة زيادةً لي في كل خير، واجعل الموت راحةً لي من كل شر","رب اجعلني مقيم الصلاة ومن ذريتي، ربنا وتقبَّل دعاء، ربنا اغفر لي ولوالديَّ وللمؤمنين يوم يقوم الحساب","أستغفر الله الذي لا إله إلا هو الحيُّ القيُّوم وأتوب إليه","ربنا آتِنا من لدنك رحمةً وهيِّئ لنا من أمرنا رشَدًا، ربنا آمنَّا فاغفر لنا وارحمنا وأنت خير الراحمين","رب أوزعني أن أشكر نعمتك التي أنعمتَ علي وعلى والديَّ وأن أعمل صالحًا ترضاه وأصلح لي في ذريتي إني تبتُ إليك وإني من المسلمين","اللهم ثبِّتني عند سؤال الملكين، اللهم اجعل قبري روضةً من رياض الجنة ولا تجعله حفرةً من حفر النار، اللهم إني أعوذ بك من فتن الدنيا","اللهم أنت الملك لا إله إلا أنت، أنت ربي وأنا عبدك، ظلمتُ نفسي واعترفتُ بذنبي، فاغفر لي ذنوبي جميعًا إنه لا يغفر الذنوب إلا أنت، واهدني لأحسن الأخلاق لا يهدي لأحسنها إلا أنت، واصرف عني سيئها لا يصرف عني سيئها إلا أنت، لبيك وسعديك والخير كله في يديك أستغفرك ربي وأتوب إليك","ربنا اغفر لي ولوالديَّ وللمؤمنين يوم يقوم الحساب","اللهم اكفِني بحلالك عن حرامك، وأغنِني بفضلك عمَّن سواك","اللهم آتِ نفسي تقواها وزكِّها يا خير من زكَّاها أنت وليُّها ومولاها يا رب العالمين، اللهم إني أسألك مسألة البائس الفقير وأدعوك دعاء المفتقر الذليل","اللهم مصرِّف القلوب والأبصار، صرِّف قلوبنا على طاعتك. اللهم زِدنا ولا تنقصنا، وأعطِنا ولا تحرمنا، وآثِرنا ولا تؤثِر علينا. اللهم أحسِن عاقبتنا في الأمور كلها، وأجِرنا من خزي الدنيا وعذاب الآخرة","اللهم أدخِلنا الجنة من غير حساب ولا سابقة عذاب","اللهم ارحم آباءنا وأمهاتنا واغفر لهم وتجاوز عن سيئاتهم وأدخِلهم فسيح جناتك، وألحِقنا بهم يا رب العالمين","اللهم أعِنِّي على ذكرك وشكرك وحسن عبادتك","اللهم إني أسألك الجنة وما قرَّب إليها من قول أو عمل وأسألك أن تجعل كل قضاء تقضيه لي خيرًا","اللهم يا واسع المغفرة، ادعوك أن تطهِّرنا من جميع السيئات، وأن ترفعنا عندك أعلى الدرجات، وأن تُبلِّغنا أقصى الغايات من جميع الخيرات في الحياة وبعد الممات","اللهم إني عبدك، ابن عبدك، ابن أمتك، ناصيتي بيدك، ماضٍ في حكمك، عدلٌ في قضاؤك، أسألك بكل اسم هو لك سمَّيتَ به نفسك، أو أنزلتَه في كتابك، أو علَّمتَه أحدًا من خلقك، أو استأثرتَ به في علم الغيب عندك: أن تجعل القرآن العظيم ربيعَ قلبي، ونور صدري، وجلاء حزني، وذهاب همِّي وغمِّي","اللهم إني أسألك الرضى بعد القضاء، وبرد العيش بعد الموت، ولذة النظر إلى وجهك الكريم، والشوق إلى لقائك، في غير ضراء مضرة، ولا فتنة مضلة. اللهم إني أعوذ بك أن أُرَدَّ إلى أرذل العمر","اللهم إني أعوذ بك من زوال نعمتك، وتحوُّل عافيتك، وفجاءة نقمتك، وجميع سخطك. اللهم إني أعوذ بك من الهدم والتردِّي ومن الغرق والحرق والهرَم، وأعوذ بك من أن يتخبَّطني الشيطان عند الموت، وأعوذ بك من أن أموت لديغًا، وأعوذ بك من طمع يهدي إلى طبَع","اللهم اجعل خيرَ أعمالنا خواتمَها، وخير أعمارنا أواخرَها، وخير أيامنا يوم نلقاك، اللهم اغفر لنا ما مضى وأصلح لنا ما تبقَّى"],"sources":[{"type":"hadith","ref":"رواه الطبراني وحسّنه الألباني"},{"type":"hadith","ref":"رواه ابن ماجه"},{"type":"hadith","ref":"متفق عليه — البخاري ومسلم"},{"type":"hadith","ref":"متفق عليه — البخاري ومسلم"},{"type":"quran","ref":"سورة البقرة، آية ٢٨٦"},{"type":"hadith","ref":"رواه الترمذي وصحّحه"},{"type":"hadith","ref":"صحيح البخاري — سيّد الاستغفار"},{"type":"hadith","ref":"رواه الترمذي وابن ماجه — صحيح"},{"type":"hadith","ref":"رواه أبو داود والترمذي — صحيح"},{"type":"quran","ref":"سورة آل عمران، آيتان ٨-٩"},{"type":"hadith","ref":"متفق عليه — البخاري ومسلم"},{"type":"hadith","ref":"متفق عليه — البخاري ومسلم"},{"type":"hadith","ref":"رواه مسلم"},{"type":"salaf","ref":"من أدعية السلف الصالح"},{"type":"hadith","ref":"رواه مسلم"},{"type":"quran","ref":"سورة إبراهيم، آيتان ٤٠-٤١"},{"type":"hadith","ref":"رواه أبو داود وصحّحه الألباني"},{"type":"hadith","ref":"رواه مسلم"},{"type":"quran","ref":"سورة الأحقاف، آية ١٥"},{"type":"hadith","ref":"رواه الترمذي وابن ماجه — صحيح"},{"type":"hadith","ref":"رواه مسلم — دعاء الاستفتاح"},{"type":"quran","ref":"سورة إبراهيم، آية ٤١"},{"type":"hadith","ref":"رواه الترمذي وصحّحه"},{"type":"hadith","ref":"رواه الترمذي — صحيح"},{"type":"hadith","ref":"رواه الترمذي والحاكم — صحيح"},{"type":"hadith","ref":"رواه مسلم"},{"type":"hadith","ref":"رواه أحمد والترمذي — صحيح"},{"type":"hadith","ref":"رواه أبو داود والنسائي — صحيح"},{"type":"hadith","ref":"رواه أبو داود والترمذي — صحيح"},{"type":"salaf","ref":"من أدعية السلف الصالح"},{"type":"hadith","ref":"رواه أحمد وصحّحه الألباني"},{"type":"hadith","ref":"رواه الترمذي — صحيح"},{"type":"hadith","ref":"رواه مسلم وأبو داود"},{"type":"hadith","ref":"رواه الطبراني وصحّحه الألباني"}],"quranLabel":"دعاء قرآني كريم","salafLabel":"من أدعية السلف الصالح","adaabTitle":"آداب الدعاء يوم عرفة","adaabItems":["استقبال القبلة ورفع اليدين","الطهارة وتطييب المجلس","البدء بحمد الله والصلاة على النبي ﷺ","الإلحاح والتكرار والخشوع","ختم الدعاء بالآمين وحمد الله"],"shareTitle":"شارك الأدعية","shareSubtitle":"انشر الخير وشارك أدعية يوم عرفة","shareText":"أدعية يوم عرفة — ٣٤ دعاءً مأثوراً للفوز بالمغفرة والعتق من النار 🌙","copyLabel":"نسخ الرابط","copiedLabel":"تم النسخ ✓","platforms":[{"id":"whatsapp","label":"واتساب","color":"#25D366","icon":"whatsapp"},{"id":"telegram","label":"تيليغرام","color":"#229ED9","icon":"telegram"},{"id":"twitter","label":"تويتر / X","color":"#1DA1F2","icon":"twitter"},{"id":"facebook","label":"فيسبوك","color":"#1877F2","icon":"facebook"},{"id":"email","label":"البريد","color":"#EA4335","icon":"email"},{"id":"copy","label":"نسخ الرابط","color":"#6C757D","icon":"copy"}]},"en":{"dir":"ltr","lang":"en","bismillah":"In the Name of Allah, the Most Gracious, the Most Merciful","heroTitle":"Supplications of <em>the Day of Arafat</em>","heroSub":"The Day of Forgiveness and Freedom from Hellfire","hadith":"The Prophet ﷺ said: \"The best supplication is that of the Day of Arafat, and the best that I and the Prophets before me have said is:\"","tahlil":"There is no god but Allah alone, with no partner. To Him belongs all sovereignty and all praise, and He has power over all things.","sec1":"Transmitted Supplications","sec2":"Supplications for Forgiveness","sec3":"Supplications for Righteousness & Guidance","sec4":"Supplications for the Hereafter","sec5":"Closing Supplications","takbeer":"Allah is the Greatest, Allah is the Greatest, Allah is the Greatest. There is no god but Allah alone, with no partner. To Him belongs all sovereignty and all praise, and He has power over all things. There is no god but Allah alone, with no partner.","closing":"All praise is for Allah who commanded us to supplicate and promised to answer. Glorified are His names and attributes. May Allah send His blessings upon the best of those who called upon Him — our Prophet Muhammad ﷺ — and upon his family, companions, and all who follow him.","counterTitle":"Page Visitors from Around the World","counterNote":"Every visit is recorded automatically when the page is opened.","footer":"May Allah accept your supplications and free you from Hellfire.","duas":["O Allah, all praise is Yours until You are pleased, all praise is Yours when You are pleased, all praise is Yours after Your pleasure, all praise is Yours in every state and at every moment. O Allah, all praise is Yours — abundant, pure and blessed.","O Allah, all praise is Yours as befits the majesty of Your countenance and the greatness of Your authority.","O Allah, send Your blessings upon Muhammad and the family of Muhammad, as You sent blessings upon Ibrahim and the family of Ibrahim. You are indeed Worthy of praise, Full of glory. O Allah, bestow Your grace upon Muhammad and the family of Muhammad, as You bestowed grace upon Ibrahim and the family of Ibrahim. You are indeed Worthy of praise, Full of glory.","O Allah, grant us good in this world and good in the Hereafter, and save us from the punishment of the Fire.","Our Lord, do not take us to task if we forget or make a mistake. Our Lord, do not place upon us a burden like the one You placed upon those before us.","O Allah, leave us no sin without forgiving it, no flaw without concealing it, no sorrow without relieving it, and no debt without settling it, O Most Merciful of those who show mercy.","O Allah, You are my Lord; there is no god but You. You created me and I am Your servant. I hold to Your covenant and Your promise as best I can. I seek refuge in You from the evil I have done. I acknowledge Your blessing upon me and I confess my sin, so forgive me — for none forgives sins but You.","O Allah, You are the Pardoning One, Generous, You love to pardon, so pardon us.","O Allah, I ask You for Paradise and whatever draws one closer to it in word or deed. I seek refuge in You from the Fire and whatever draws one closer to it in word or deed. I ask You to make every decree You have ordained for me a good one.","Our Lord, do not let our hearts deviate after You have guided us. Grant us mercy from Yourself; You are the Bestower. Our Lord, we have wronged ourselves; if You do not forgive us and have mercy on us, we will surely be among the losers.","O Allah, put distance between me and my sins as You have put distance between East and West. O Allah, cleanse me of my sins as a white garment is cleansed of filth. O Allah, wash away my sins with water, snow and ice.","O Allah, I seek refuge in You from the torment of the grave, the torment of the Fire, the trials of life and death, and the trial of the False Messiah (Al-Masih Al-Dajjal).","O Allah, I seek refuge in You from the removal of Your blessing, the change of Your protection, the sudden onset of Your punishment, and all forms of Your wrath.","Our Lord, we ask You for pardon that leaves no sin remaining, for protection that no wind can tear and no spear can pierce, and for mercy that shields us from the Fire and admits us into Paradise. You are the Hearer of supplication.","O Allah, set right my religion which is the safeguard of all my affairs; set right my worldly life in which is my livelihood; set right my Hereafter to which is my return. Make life an increase for me in every good, and make death a rest from every evil.","My Lord, make me and my descendants steadfast in prayer. Our Lord, accept my supplication. Our Lord, forgive me, my parents and the believers on the Day of Reckoning.","I seek forgiveness from Allah — there is no god but He, the Ever-Living, the All-Sustaining — and I repent to Him.","Our Lord, grant us mercy from Yourself and prepare right guidance for us in our affair. Our Lord, we have believed, so forgive us and have mercy on us; You are the Best of those who show mercy.","My Lord, inspire me to be grateful for Your blessing upon me and upon my parents, and to do righteous deeds that please You. And set right my offspring for me. I have repented to You and I am among the Muslims.","O Allah, make me steadfast when the two angels question me. O Allah, make my grave a garden from the gardens of Paradise, and do not make it a pit from the pits of the Fire. O Allah, I seek refuge in You from the trials of this worldly life.","O Allah, You are the King; there is no god but You. You are my Lord and I am Your servant. I have wronged myself and I confess my sin. Forgive all my sins, for none forgives sins but You. Guide me to the finest character, for none guides to its finest but You. Turn away from me its worst, for none turns it away but You. Labbayk wa sa'dayk — all good is in Your hands. I seek Your forgiveness, my Lord, and I repent to You.","Our Lord, forgive me, my parents and the believers on the Day when the reckoning shall be established.","O Allah, suffice me with Your lawful against Your forbidden, and enrich me by Your bounty above all else.","O Allah, grant my soul its piety and purify it; You are the best of those who purify it. You are its Guardian and Master, O Lord of all worlds. O Allah, I ask You with the plea of the wretched and the needy.","O Allah, Turner of hearts and eyes, turn our hearts toward Your obedience. O Allah, increase us and do not diminish us; give to us and do not deprive us; prefer us and do not prefer others over us. O Allah, make the outcome of all our affairs good, and protect us from the disgrace of this world and the punishment of the Hereafter.","O Allah, admit us into Paradise without reckoning and without prior punishment.","O Allah, have mercy on our fathers and mothers; forgive them, overlook their faults, and enter them into the vastness of Your gardens. And reunite us with them, O Lord of all worlds.","O Allah, help me to remember You, to be grateful to You, and to worship You in the finest manner.","O Allah, I ask You for Paradise and whatever draws one closer to it in word or deed, and I ask You to make every decree You ordain for me a good one.","O Allah, O You Vast in Forgiveness, we beseech You to purify us from all sins, to raise us to the highest ranks with You, and to grant us the utmost goals of every good — in this life and after death.","O Allah, I am Your servant, son of Your servant, son of Your handmaid. My forelock is in Your hand; Your decree upon me is certain; Your judgment over me is just. I ask You by every name that is Yours — by which You have named Yourself, or revealed in Your Book, or taught to any of Your creation, or kept in the knowledge of the Unseen with You — to make the Glorious Quran the spring of my heart, the light of my chest, the departure of my sorrow, and the removal of my distress and grief.","O Allah, I ask You for contentment after Your decree, a pleasant life after death, the delight of gazing upon Your noble Face, and the longing to meet You — without harmful adversity or misleading trial. O Allah, I seek refuge in You from being returned to the most decrepit age.","O Allah, I seek refuge in You from the removal of Your blessing, the change of Your protection, the sudden onset of Your punishment, and all forms of Your displeasure. I seek refuge in You from being buried alive, falling, drowning, burning, and extreme old age; from the temptation of Satan at the moment of death; from dying of a venomous sting; and from greed that leads to ruin.","O Allah, make the best of our deeds their conclusion, the best of our lives their end, and the best of our days the day we meet You. O Allah, forgive us for what has passed and set right for us what remains."],"sources":[{"type":"hadith","ref":"Al-Tabarânî — Hasan (Al-Albânî)"},{"type":"hadith","ref":"Ibn Mâjah"},{"type":"hadith","ref":"Al-Bukhârî & Muslim"},{"type":"hadith","ref":"Al-Bukhârî & Muslim"},{"type":"quran","ref":"Surah Al-Baqarah, 2:286"},{"type":"hadith","ref":"Al-Tirmidhî — Sahîh"},{"type":"hadith","ref":"Sahîh Al-Bukhârî — Sayyid Al-Istighfâr"},{"type":"hadith","ref":"Al-Tirmidhî & Ibn Mâjah — Sahîh"},{"type":"hadith","ref":"Abû Dâwud & Al-Tirmidhî — Sahîh"},{"type":"quran","ref":"Surah Âl-'Imrân, 3:8-9"},{"type":"hadith","ref":"Al-Bukhârî & Muslim"},{"type":"hadith","ref":"Al-Bukhârî & Muslim"},{"type":"hadith","ref":"Sahîh Muslim"},{"type":"salaf","ref":"From the Salaf's Supplications"},{"type":"hadith","ref":"Sahîh Muslim"},{"type":"quran","ref":"Surah Ibrâhîm, 14:40-41"},{"type":"hadith","ref":"Abû Dâwud — Sahîh (Al-Albânî)"},{"type":"hadith","ref":"Sahîh Muslim"},{"type":"quran","ref":"Surah Al-Ahqâf, 46:15"},{"type":"hadith","ref":"Al-Tirmidhî & Ibn Mâjah — Sahîh"},{"type":"hadith","ref":"Sahîh Muslim — Du'â Al-Iftitâh"},{"type":"quran","ref":"Surah Ibrâhîm, 14:41"},{"type":"hadith","ref":"Al-Tirmidhî — Sahîh"},{"type":"hadith","ref":"Al-Tirmidhî — Sahîh"},{"type":"hadith","ref":"Al-Tirmidhî & Al-Hâkim — Sahîh"},{"type":"hadith","ref":"Sahîh Muslim"},{"type":"hadith","ref":"Ahmad & Al-Tirmidhî — Sahîh"},{"type":"hadith","ref":"Abû Dâwud & Al-Nasâ'î — Sahîh"},{"type":"hadith","ref":"Abû Dâwud & Al-Tirmidhî — Sahîh"},{"type":"salaf","ref":"From the Salaf's Supplications"},{"type":"hadith","ref":"Ahmad — Sahîh (Al-Albânî)"},{"type":"hadith","ref":"Al-Tirmidhî — Sahîh"},{"type":"hadith","ref":"Muslim & Abû Dâwud"},{"type":"hadith","ref":"Al-Tabarânî — Sahîh (Al-Albânî)"}],"quranLabel":"Quranic Supplication","salafLabel":"From Salaf's Supplications","adaabTitle":"Etiquettes of Supplication on Arafat Day","adaabItems":["Face the Qiblah and raise your hands","Be in a state of ritual purity","Begin with praise of Allah and salawat upon the Prophet ﷺ","Persist with humility and repetition","Conclude with Ameen and praise of Allah"],"shareTitle":"Share the Duas","shareSubtitle":"Spread goodness — share Arafat Day supplications","shareText":"Arafat Day Supplications — 34 authentic duas for forgiveness and freedom from Hellfire 🌙","copyLabel":"Copy Link","copiedLabel":"Copied ✓","platforms":[{"id":"whatsapp","label":"WhatsApp","color":"#25D366","icon":"whatsapp"},{"id":"telegram","label":"Telegram","color":"#229ED9","icon":"telegram"},{"id":"twitter","label":"Twitter / X","color":"#1DA1F2","icon":"twitter"},{"id":"facebook","label":"Facebook","color":"#1877F2","icon":"facebook"},{"id":"email","label":"Email","color":"#EA4335","icon":"email"},{"id":"copy","label":"Copy Link","color":"#6C757D","icon":"copy"}]},"fr":{"dir":"ltr","lang":"fr","bismillah":"Au nom d'Allah, le Tout Miséricordieux, le Très Miséricordieux","heroTitle":"Invocations du <em>Jour d'Arafat</em>","heroSub":"Le Jour du Pardon et de la Délivrance du Feu","hadith":"Le Prophète ﷺ a dit : « La meilleure invocation est celle du jour d'Arafat, et la meilleure parole que j'ai dite, moi et les prophètes avant moi, est : »","tahlil":"Il n'y a de dieu qu'Allah, Seul, sans associé. À Lui appartient la royauté et toute louange, et Il est Puissant sur toute chose.","sec1":"Invocations Transmises","sec2":"Invocations pour le Pardon","sec3":"Invocations pour la Droiture et la Guidance","sec4":"Invocations pour l'Au-delà","sec5":"Invocations de Clôture","takbeer":"Allah est le Plus Grand, Allah est le Plus Grand, Allah est le Plus Grand. Il n'y a de dieu qu'Allah, Seul, sans associé. À Lui appartient la royauté et toute louange, et Il est Puissant sur toute chose. Il n'y a de dieu qu'Allah, Seul, sans associé.","closing":"Louange à Allah qui nous a commandé de L'invoquer et nous a promis une réponse. Glorifiés soient Ses noms et Ses attributs. Qu'Allah bénisse le meilleur de ceux qui L'ont invoqué — notre Prophète Muhammad ﷺ — ainsi que sa famille, ses compagnons et tous ceux qui lui ont obéi.","counterTitle":"Visiteurs de la Page à Travers le Monde","counterNote":"Chaque visite est enregistrée automatiquement à l'ouverture de la page.","footer":"Qu'Allah exauce vos invocations et vous libère du Feu.","duas":["Ô Allah, toute louange T'appartient jusqu'à ce que Tu sois satisfait, toute louange T'appartient quand Tu l'es, toute louange T'appartient après Ta satisfaction, toute louange T'appartient en toute circonstance et à tout moment. Ô Allah, à Toi la louange — abondante, pure et bénie.","Ô Allah, toute louange T'appartient comme il convient à la majesté de Ton visage et à la grandeur de Ton autorité.","Ô Allah, bénis Muhammad et la famille de Muhammad comme Tu as béni Ibrahim et la famille d'Ibrahim. Tu es en vérité Digne de louange, Plein de gloire. Ô Allah, accorde Tes grâces à Muhammad et à la famille de Muhammad comme Tu en as accordé à Ibrahim et à la famille d'Ibrahim. Tu es en vérité Digne de louange, Plein de gloire.","Ô Allah, accorde-nous ce qui est bien dans ce monde et ce qui est bien dans l'Au-delà, et préserve-nous du châtiment du Feu.","Seigneur, ne nous châtie pas si nous oublions ou commettons une erreur. Seigneur, ne mets pas sur nous un fardeau comme Tu en as mis sur ceux qui nous ont précédés.","Ô Allah, ne laisse aucun de nos péchés sans le pardonner, aucun défaut sans le dissimuler, aucune détresse sans la soulager, et aucune dette sans la régler. Ô Toi, le Plus Miséricordieux des miséricordieux.","Ô Allah, Tu es mon Seigneur, il n'y a de dieu que Toi. Tu m'as créé et je suis Ton serviteur. Je tiens à Ton alliance et à Ta promesse autant que je le peux. Je cherche refuge auprès de Toi contre le mal que j'ai commis. Je reconnais Tes bienfaits sur moi et j'avoue mon péché. Pardonne-moi, car nul ne pardonne les péchés si ce n'est Toi.","Ô Allah, Tu es le Pardonneur, le Généreux, Tu aimes le pardon — pardonne-nous donc.","Ô Allah, je Te demande le Paradis et tout ce qui s'en rapproche en parole ou en acte. Je cherche refuge auprès de Toi contre le Feu et tout ce qui s'en rapproche. Je Te demande de faire de chaque décret que Tu as arrêté pour moi un bien.","Seigneur, ne laisse pas nos cœurs dévier après que Tu nous as guidés. Accorde-nous une miséricorde de Ta part ; Tu es le Grand Dispensateur. Seigneur, nous nous sommes lésés nous-mêmes ; si Tu ne nous pardonnes pas et ne nous fais pas miséricorde, nous serons assurément parmi les perdants.","Ô Allah, mets entre moi et mes péchés une distance comme celle entre l'Orient et l'Occident. Ô Allah, purifie-moi de mes péchés comme on nettoie un vêtement blanc de sa souillure. Ô Allah, lave mes péchés avec de l'eau, de la neige et de la grêle.","Ô Allah, je cherche refuge auprès de Toi contre le châtiment de la tombe, le châtiment du Feu, les épreuves de la vie et de la mort, et l'épreuve du faux Messie (Al-Masih Al-Dajjal).","Ô Allah, je cherche refuge auprès de Toi contre la disparition de Tes bienfaits, le changement de Ta protection, la venue soudaine de Ton châtiment et toutes les formes de Ton courroux.","Seigneur, nous Te demandons un pardon qui n'épargne aucun péché, une protection que ni le vent ne déchire ni la lance ne perce, et une miséricorde qui nous garde du Feu et nous fasse entrer au Paradis. Tu es l'Auditeur des invocations.","Ô Allah, redresse ma religion qui est la sauvegarde de toutes mes affaires ; redresse ma vie mondaine qui est ma subsistance ; redresse mon Au-delà qui est ma destination finale. Fais de la vie un accroissement en tout bien pour moi, et de la mort un repos de tout mal.","Seigneur, fais de moi et de ma descendance ceux qui établissent la prière. Seigneur, exauce ma supplication. Seigneur, pardonne-moi, à mes parents et aux croyants le Jour où le Compte sera établi.","Je demande le pardon d'Allah — il n'y a de dieu que Lui, le Vivant, le Subsistant — et je me repens à Lui.","Seigneur, accorde-nous une miséricorde de Ta part et assure-nous une bonne conduite dans notre affaire. Seigneur, nous avons cru, pardonne-nous donc et fais-nous miséricorde ; Tu es le Meilleur des miséricordieux.","Seigneur, inspire-moi à être reconnaissant de Tes bienfaits envers moi et mes parents, à accomplir les bonnes œuvres qui T'agréent, et accorde-moi de la bonté dans ma descendance. Je me suis repenti à Toi et je suis parmi les Musulmans.","Ô Allah, affermis-moi lors des questions des deux anges. Fais de ma tombe un jardin parmi les jardins du Paradis et non une fosse parmi celles du Feu. Ô Allah, je cherche refuge auprès de Toi contre les épreuves de cette vie.","Ô Allah, Tu es le Roi ; il n'y a de dieu que Toi. Tu es mon Seigneur et je suis Ton serviteur. Je me suis lésé moi-même et je confesse mon péché. Pardonne-moi tous mes péchés — nul ne les pardonne si ce n'est Toi. Guide-moi vers les meilleures dispositions morales — nul n'y guide si ce n'est Toi. Éloigne de moi leurs pires — nul ne les éloigne si ce n'est Toi. Labbayk wa sa'dayk, tout bien est entre Tes mains. Je Te demande pardon, mon Seigneur, et je me repens à Toi.","Seigneur, pardonne-moi, à mes parents et aux croyants le Jour où le Compte sera établi.","Ô Allah, suffit-moi avec ce qui est licite contre ce qui est illicite, et enrichis-moi par Ta grâce au-dessus de tout autre.","Ô Allah, accorde à mon âme sa piété et purifie-la ; Tu es le Meilleur de ceux qui la purifient. Tu es son Gardien et son Maître, ô Seigneur des mondes. Ô Allah, je Te supplique avec l'imploration de l'indigent misérable.","Ô Allah, Celui qui retourne les cœurs et les regards, tourne nos cœurs vers Ton obéissance. Accroîs-nous sans nous diminuer ; donne-nous sans nous priver ; préfère-nous sans préférer d'autres sur nous. Ô Allah, fais que l'issue de toutes nos affaires soit bonne, et protège-nous de la honte de ce monde et du châtiment de l'Au-delà.","Ô Allah, fais-nous entrer au Paradis sans reddition de comptes et sans châtiment préalable.","Ô Allah, fais miséricorde à nos pères et mères ; pardonne-leur, passe sur leurs fautes, et accueille-les dans l'immensité de Tes jardins. Réunis-nous à eux, ô Seigneur des mondes.","Ô Allah, aide-moi à Te mentionner, à T'être reconnaissant et à T'adorer dans l'excellence.","Ô Allah, je Te demande le Paradis et tout ce qui s'en rapproche en parole ou en acte, et je Te demande de faire de chaque décret que Tu arrêtes pour moi un bien.","Ô Allah, Ô Toi Vaste dans le Pardon, nous T'implorons de nous purifier de tous les péchés, de nous élever aux plus hauts rangs auprès de Toi, et de nous faire atteindre les fins les plus nobles de tout bien — dans cette vie et après la mort.","Ô Allah, je suis Ton serviteur, fils de Ton serviteur, fils de Ta servante. Mon destin est entre Tes mains ; Ton décret sur moi est certain ; Ton jugement à mon égard est juste. Je Te demande par chaque nom qui T'appartient — par lequel Tu T'es nommé Toi-même, ou révélé dans Ton Livre, ou enseigné à l'une de Tes créatures, ou gardé dans le savoir de l'Invisible — de faire du Coran Glorieux le printemps de mon cœur, la lumière de ma poitrine, le départ de ma tristesse, et la dissipation de mon angoisse.","Ô Allah, je Te demande la satisfaction après Ton décret, une existence agréable après la mort, la douceur de contempler Ton noble visage, et l'ardeur de Te rencontrer — sans adversité nuisible ni épreuve égarante. Ô Allah, je cherche refuge auprès de Toi contre le retour à l'âge le plus décrépit.","Ô Allah, je cherche refuge auprès de Toi contre la disparition de Tes bienfaits, le changement de Ta protection, la venue soudaine de Ton courroux et toutes Ses formes. Je cherche refuge contre l'éboulement, la chute, la noyade, l'incendie et la décrépitude ; contre la tentation de Satan à la mort ; contre une mort par venin ; et contre la cupidité qui mène à la perdition.","Ô Allah, fais de la meilleure de nos actions leur conclusion, de la meilleure de nos vies leur terme, et du meilleur de nos jours le jour où nous Te rencontrons. Ô Allah, pardonne-nous ce qui est passé et rectifie pour nous ce qui reste."],"sources":[{"type":"hadith","ref":"Al-Tabarânî — Hasan (Al-Albânî)"},{"type":"hadith","ref":"Ibn Mâjah"},{"type":"hadith","ref":"Al-Bukhârî & Muslim"},{"type":"hadith","ref":"Al-Bukhârî & Muslim"},{"type":"quran","ref":"Sourate Al-Baqara, 2:286"},{"type":"hadith","ref":"Al-Tirmidhî — Sahîh"},{"type":"hadith","ref":"Sahîh Al-Bukhârî — Sayyid Al-Istighfâr"},{"type":"hadith","ref":"Al-Tirmidhî & Ibn Mâjah — Sahîh"},{"type":"hadith","ref":"Abû Dâwud & Al-Tirmidhî — Sahîh"},{"type":"quran","ref":"Sourate Âl-'Imrân, 3:8-9"},{"type":"hadith","ref":"Al-Bukhârî & Muslim"},{"type":"hadith","ref":"Al-Bukhârî & Muslim"},{"type":"hadith","ref":"Sahîh Muslim"},{"type":"salaf","ref":"Des Pieux Prédécesseurs"},{"type":"hadith","ref":"Sahîh Muslim"},{"type":"quran","ref":"Sourate Ibrâhîm, 14:40-41"},{"type":"hadith","ref":"Abû Dâwud — Sahîh (Al-Albânî)"},{"type":"hadith","ref":"Sahîh Muslim"},{"type":"quran","ref":"Sourate Al-Ahqâf, 46:15"},{"type":"hadith","ref":"Al-Tirmidhî & Ibn Mâjah — Sahîh"},{"type":"hadith","ref":"Sahîh Muslim — Du'â Al-Iftitâh"},{"type":"quran","ref":"Sourate Ibrâhîm, 14:41"},{"type":"hadith","ref":"Al-Tirmidhî — Sahîh"},{"type":"hadith","ref":"Al-Tirmidhî — Sahîh"},{"type":"hadith","ref":"Al-Tirmidhî & Al-Hâkim — Sahîh"},{"type":"hadith","ref":"Sahîh Muslim"},{"type":"hadith","ref":"Ahmad & Al-Tirmidhî — Sahîh"},{"type":"hadith","ref":"Abû Dâwud & Al-Nasâ'î — Sahîh"},{"type":"hadith","ref":"Abû Dâwud & Al-Tirmidhî — Sahîh"},{"type":"salaf","ref":"Des Pieux Prédécesseurs"},{"type":"hadith","ref":"Ahmad — Sahîh (Al-Albânî)"},{"type":"hadith","ref":"Al-Tirmidhî — Sahîh"},{"type":"hadith","ref":"Muslim & Abû Dâwud"},{"type":"hadith","ref":"Al-Tabarânî — Sahîh (Al-Albânî)"}],"quranLabel":"Invocation Coranique","salafLabel":"Des Pieux Prédécesseurs","adaabTitle":"Étiquettes de la Supplication le Jour d'Arafat","adaabItems":["Se tourner vers la Qibla et lever les mains","Être en état de pureté rituelle","Commencer par louer Allah et prier sur le Prophète ﷺ","Persister avec humilité et répétition","Conclure par Amine et la louange d'Allah"],"shareTitle":"Partager les Invocations","shareSubtitle":"Répandez la bonté — partagez les invocations d'Arafat","shareText":"Invocations du Jour d'Arafat — 34 invocations authentiques pour le pardon et la délivrance du Feu 🌙","copyLabel":"Copier le lien","copiedLabel":"Copié ✓","platforms":[{"id":"whatsapp","label":"WhatsApp","color":"#25D366","icon":"whatsapp"},{"id":"telegram","label":"Telegram","color":"#229ED9","icon":"telegram"},{"id":"twitter","label":"Twitter / X","color":"#1DA1F2","icon":"twitter"},{"id":"facebook","label":"Facebook","color":"#1877F2","icon":"facebook"},{"id":"email","label":"E-mail","color":"#EA4335","icon":"email"},{"id":"copy","label":"Copier le lien","color":"#6C757D","icon":"copy"}]},"ur":{"dir":"rtl","lang":"ur","bismillah":"بِسمِ اللهِ الرَّحمٰنِ الرَّحِيم","heroTitle":"عرفہ کے دن کی <em>دعائیں</em>","heroSub":"مغفرت اور جہنم سے آزادی کا دن","hadith":"نبی کریم ﷺ نے فرمایا: \"بہترین دعا عرفہ کے دن کی دعا ہے، اور بہترین کلمہ جو میں نے اور مجھ سے پہلے انبیاء نے کہا وہ یہ ہے:\"","tahlil":"لا اِلٰہَ اِلَّا اللهُ وَحدَہُ لَا شَرِيكَ لَہُ، لَہُ الـمُلكُ وَلَہُ الـحَمدُ وَہُوَ عَلٰى كُلِّ شَيءٍ قَدِير","sec1":"ماثور دعائیں","sec2":"استغفار کی دعائیں","sec3":"صلاح و ہدایت کی دعائیں","sec4":"آخرت اور قبر کی دعائیں","sec5":"اختتامی دعائیں","takbeer":"اللهُ اَکبَر اللهُ اَکبَر اللهُ اَکبَر، لَا اِلٰہَ اِلَّا اللهُ وَحدَہُ لَا شَرِيكَ لَہُ، لَہُ الـمُلكُ وَلَہُ الـحَمدُ وَہُوَ عَلٰى كُلِّ شَيءٍ قَدِير، لَا اِلٰہَ اِلَّا اللهُ وَحدَہُ لَا شَرِيكَ لَہُ","closing":"تمام تعریفیں اللہ کے لیے ہیں جس نے ہمیں دعا کا حکم دیا اور قبولیت کا وعدہ فرمایا۔ اُس کے نام اور صفات پاک ہیں۔ اللہ کی رحمتیں ہوں ہمارے نبی محمد ﷺ پر اور اُن کی آل، صحابہ اور تمام پیروکاروں پر۔","counterTitle":"دنیا بھر سے صفحے کے زائرین","counterNote":"صفحہ کھلتے ہی ہر وزٹ خود بخود ریکارڈ ہو جاتی ہے۔","footer":"اللہ آپ کی دعائیں قبول فرمائے اور آپ کو آگ سے آزاد کرے۔","duas":["اے اللہ! تمام تعریفیں تیری ہیں یہاں تک کہ تو راضی ہو جائے، تیری ہیں جب تو راضی ہو، تیری ہیں رضا کے بعد بھی، اور تیری ہیں ہر حال میں ہر وقت۔ اے اللہ! تیری بے شمار، پاک اور بابرکت تعریفیں ہیں۔","اے اللہ! تمام تعریفیں تیری ہیں جیسا تیرے چہرے کی شان اور تیری عظیم سلطنت کے لائق ہے۔","اے اللہ! محمد ﷺ اور آلِ محمد پر رحمتیں نازل فرما جیسا کہ تو نے ابراہیم ؑ اور آلِ ابراہیم پر فرمائیں۔ بے شک تو قابلِ تعریف اور بزرگی والا ہے۔ اے اللہ! محمد ﷺ اور آلِ محمد پر برکتیں نازل فرما جیسا کہ تو نے ابراہیم ؑ اور آلِ ابراہیم پر فرمائیں۔ بے شک تو قابلِ تعریف اور بزرگی والا ہے۔","اے اللہ! ہمیں دنیا میں بھلائی اور آخرت میں بھی بھلائی عطا فرما، اور ہمیں آگ کے عذاب سے بچا۔","اے ہمارے رب! اگر ہم بھول جائیں یا خطا کریں تو ہمارا مواخذہ نہ فرما۔ اے ہمارے رب! ہم پر ایسا بوجھ نہ ڈال جیسا تو نے ہم سے پہلوں پر ڈالا۔","اے اللہ! ہمارا کوئی گناہ نہ چھوڑ مگر اسے معاف فرما دے، کوئی عیب نہ چھوڑ مگر اسے چھپا دے، کوئی غم نہ چھوڑ مگر اسے دور فرما دے، اور کوئی قرض نہ چھوڑ مگر اسے ادا فرما دے، اے سب سے بڑھ کر رحم کرنے والے۔","اے اللہ! تو میرا رب ہے، تیرے سوا کوئی معبود نہیں۔ تو نے مجھے پیدا کیا اور میں تیرا بندہ ہوں۔ میں اپنی استطاعت کے مطابق تیرے عہد و پیمان پر قائم ہوں۔ میں تیری پناہ مانگتا ہوں اپنے کیے کی برائی سے۔ میں تیری نعمتوں کا اقرار کرتا ہوں اور اپنے گناہ کا بھی۔ پس مجھے معاف فرما دے کیونکہ تیرے سوا کوئی گناہ معاف نہیں کر سکتا۔","اے اللہ! بے شک تو درگزر کرنے والا، کریم ہے، درگزر کو پسند فرماتا ہے — پس ہمیں معاف فرما دے۔","اے اللہ! میں تجھ سے جنت مانگتا ہوں اور اُس ہر بات اور عمل کا جو اس کے قریب کرے۔ اور تیری پناہ مانگتا ہوں جہنم سے اور اُس ہر بات اور عمل سے جو اس کے قریب کرے۔ اور تجھ سے مانگتا ہوں کہ میرے لیے جو بھی فیصلہ کرے اسے بہتر بنا دے۔","اے ہمارے رب! ہمیں ہدایت دینے کے بعد ہمارے دلوں کو ٹیڑھا نہ کر اور اپنے پاس سے ہمیں رحمت عطا فرما — بے شک تو بہت بخشنے والا ہے۔ اے ہمارے رب! ہم نے اپنے آپ پر ظلم کیا، اگر تو نے ہمیں معاف نہ کیا اور رحم نہ کیا تو ہم ضرور نقصان اٹھانے والوں میں ہوں گے۔","اے اللہ! میرے اور میرے گناہوں کے درمیان اتنا فاصلہ کر دے جتنا تو نے مشرق و مغرب کے درمیان کیا۔ اے اللہ! مجھے میرے گناہوں سے ایسے پاک کر دے جیسے سفید کپڑا میل سے صاف کیا جاتا ہے۔ اے اللہ! مجھے میرے گناہوں سے پانی، برف اور اولوں سے دھو دے۔","اے اللہ! میں قبر کے عذاب سے، جہنم کے عذاب سے، زندگی اور موت کے فتنوں سے اور مسیح دجال کے فتنے سے تیری پناہ مانگتا ہوں۔","اے اللہ! میں تیری نعمتوں کے زوال سے، تیری عافیت کے بدل جانے سے، تیرے عذاب کے اچانک آنے سے اور تیری ہر ناراضگی سے تیری پناہ مانگتا ہوں۔","اے ہمارے رب! ہم تجھ سے ایسی معافی مانگتے ہیں جو کوئی گناہ نہ چھوڑے، ایسا پردہ مانگتے ہیں جسے نہ ہوا چاک کرے نہ نیزہ پھاڑے، اور ایسی رحمت مانگتے ہیں جو ہمیں آگ سے بچا کر جنت میں داخل کرے۔ بے شک تو دعاؤں کا سننے والا ہے۔","اے اللہ! میرے دین کی اصلاح فرما جو میرے تمام معاملات کی بنیاد ہے، میری دنیا کی اصلاح فرما جس میں میری روزی ہے، میری آخرت کی اصلاح فرما جو میرا ٹھکانہ ہے۔ زندگی کو میرے لیے ہر بھلائی میں اضافے کا ذریعہ بنا اور موت کو میرے لیے ہر برائی سے راحت کا ذریعہ بنا۔","اے میرے رب! مجھے اور میری اولاد کو نماز قائم کرنے والا بنا۔ اے ہمارے رب! میری دعا قبول فرما۔ اے ہمارے رب! مجھے، میرے والدین اور تمام مومنوں کو اُس دن معاف فرما جب حساب برپا ہوگا۔","میں اللہ سے مغفرت مانگتا ہوں جس کے سوا کوئی معبود نہیں، جو ہمیشہ زندہ اور قائم ہے، اور میں اس کی طرف توبہ کرتا ہوں۔","اے ہمارے رب! ہمیں اپنے پاس سے رحمت عطا فرما اور ہمارے معاملے میں ہمارے لیے راہنمائی مہیا فرما۔ اے ہمارے رب! ہم ایمان لائے پس ہمیں معاف فرما اور ہم پر رحم فرما — تو سب سے بڑھ کر رحم کرنے والا ہے۔","اے میرے رب! مجھے توفیق دے کہ میں تیری اُن نعمتوں کا شکر ادا کروں جو تو نے مجھ پر اور میرے والدین پر فرمائی ہیں، اور ایسا نیک عمل کروں جو تجھے پسند ہو، اور میری اولاد کی اصلاح فرما۔ بے شک میں تیری طرف توبہ کرتا ہوں اور مسلمانوں میں سے ہوں۔","اے اللہ! مجھے دونوں فرشتوں کے سوالات کے وقت ثابت قدم رکھ۔ اے اللہ! میری قبر کو جنت کے باغوں میں سے ایک باغ بنا اور جہنم کے گڑھوں میں سے کوئی گڑھا نہ بنا۔ اے اللہ! میں دنیا کے فتنوں سے تیری پناہ مانگتا ہوں۔","اے اللہ! تو بادشاہ ہے، تیرے سوا کوئی معبود نہیں۔ تو میرا رب ہے اور میں تیرا بندہ ہوں۔ میں نے اپنے آپ پر ظلم کیا اور اپنے گناہ کا اعتراف کرتا ہوں۔ پس میرے تمام گناہ معاف فرما دے کیونکہ تیرے سوا کوئی معاف نہیں کر سکتا۔ مجھے بہترین اخلاق کی طرف راہنمائی فرما کیونکہ تیرے سوا کوئی نہیں کر سکتا۔ اور بُرے اخلاق مجھ سے دور فرما کیونکہ تیرے سوا کوئی نہیں کر سکتا۔ لبيك وسعديك والخير كله في يديك — میں تجھ سے مغفرت مانگتا ہوں اور تیری طرف توبہ کرتا ہوں۔","اے ہمارے رب! مجھے، میرے والدین اور تمام مومنوں کو اُس دن معاف فرما جب حساب قائم ہوگا۔","اے اللہ! مجھے اپنے حلال سے اپنے حرام سے بے نیاز فرما اور اپنے فضل سے مجھے اپنے سوا سب سے بے نیاز فرما۔","اے اللہ! میری روح کو پرہیزگاری عطا فرما اور اسے پاک کر — تو اسے پاک کرنے والوں میں سب سے بہتر ہے، تو ہی اس کا نگہبان اور مالک ہے اے پروردگارِ عالم۔ اے اللہ! میں تجھ سے اُس غریب مسکین کی طرح سوال کرتا ہوں اور اُس بے کس محتاج کی طرح دعا کرتا ہوں۔","اے اللہ! دلوں اور آنکھوں کو پھیرنے والے! ہمارے دلوں کو اپنی اطاعت کی طرف پھیر دے۔ اے اللہ! ہمیں زیادہ عطا فرما اور کم نہ کر، دے اور محروم نہ کر، ہمیں ترجیح دے اور ہم پر دوسروں کو ترجیح نہ دے۔ اے اللہ! ہمارے تمام معاملات کا انجام بہتر بنا اور ہمیں دنیا کی رسوائی اور آخرت کے عذاب سے بچا۔","اے اللہ! ہمیں بغیر حساب اور بغیر کسی سابقہ عذاب کے جنت میں داخل فرما۔","اے اللہ! ہمارے آباء و اجداد اور ہماری ماؤں پر رحم فرما، انہیں معاف فرما، ان کی برائیوں سے درگزر فرما، انہیں اپنی وسیع جنتوں میں داخل فرما، اور ہمیں ان کے ساتھ ملا دے اے پروردگارِ عالم۔","اے اللہ! اپنے ذکر، اپنی شکرگزاری اور بہترین عبادت پر میری مدد فرما۔","اے اللہ! میں تجھ سے جنت مانگتا ہوں اور ہر وہ بات اور عمل جو اس کے قریب کرے، اور تجھ سے مانگتا ہوں کہ جو بھی فیصلہ میرے لیے کرے اسے بہتر بنا دے۔","اے اللہ! اے وسیع مغفرت والے، ہم تجھ سے دعا کرتے ہیں کہ ہمیں تمام گناہوں سے پاک فرما، اپنے ہاں بلند درجات عطا فرما، اور زندگی میں اور موت کے بعد بھی ہر بھلائی کے اعلیٰ مقاصد تک ہمیں پہنچا۔","اے اللہ! بے شک میں تیرا بندہ ہوں، تیرے بندے کا بیٹا، تیری بندی کا بیٹا، میری پیشانی تیرے ہاتھ میں ہے، تیرا حکم مجھ پر نافذ ہے، تیرا فیصلہ مجھ پر عادلانہ ہے۔ میں تجھ سے تیرے ہر اُس نام کے وسیلے سے سوال کرتا ہوں جس سے تو نے خود کو نام رکھا، یا اپنی کتاب میں نازل فرمایا، یا اپنی کسی مخلوق کو سکھایا، یا اپنے پاس علمِ غیب میں چھپا رکھا: کہ قرآنِ عظیم کو میرے دل کی بہار، میرے سینے کی روشنی، میرے غم کا علاج اور میری پریشانی کا ازالہ بنا دے۔","اے اللہ! میں تجھ سے فیصلے کے بعد رضا مانگتا ہوں، موت کے بعد خوشگوار زندگی مانگتا ہوں، تیرے کریم چہرے کے دیدار کی لذت مانگتا ہوں اور تیری ملاقات کا شوق مانگتا ہوں — بغیر کسی نقصاندہ مصیبت اور گمراہ کرنے والے فتنے کے۔ اے اللہ! میں تیری پناہ مانگتا ہوں کہ مجھے ارذل العمر تک نہ پہنچایا جائے۔","اے اللہ! میں تیری نعمتوں کے زوال سے، تیری عافیت کے بدل جانے سے، تیرے عذاب کے اچانک آنے سے اور تیری ہر ناراضگی سے تیری پناہ مانگتا ہوں۔ اے اللہ! میں منہدم ہونے، گرنے، ڈوبنے، جلنے اور بڑھاپے سے تیری پناہ مانگتا ہوں، اور پناہ مانگتا ہوں کہ موت کے وقت شیطان مجھے گمراہ کرے، زہریلے جانور کے کاٹنے سے مروں اور ایسی حرص سے جو تباہی کی طرف لے جائے۔","اے اللہ! ہمارے اعمال کا بہترین حصہ ان کا آخری حصہ بنا، ہماری زندگیوں کا بہترین حصہ ان کا اختتام بنا، اور ہمارے دنوں کا بہترین دن وہ دن بنا جب ہم تجھ سے ملیں۔ اے اللہ! جو گزر گیا اسے معاف فرما اور جو باقی ہے اسے سنوار دے۔"],"sources":[{"type":"hadith","ref":"طبرانی — حسن (البانی)"},{"type":"hadith","ref":"ابن ماجہ"},{"type":"hadith","ref":"بخاری و مسلم"},{"type":"hadith","ref":"بخاری و مسلم"},{"type":"quran","ref":"سورۃ البقرہ، آیت ۲۸۶"},{"type":"hadith","ref":"ترمذی — صحیح"},{"type":"hadith","ref":"صحیح بخاری — سید الاستغفار"},{"type":"hadith","ref":"ترمذی و ابن ماجہ — صحیح"},{"type":"hadith","ref":"ابو داؤد و ترمذی — صحیح"},{"type":"quran","ref":"سورۃ آل عمران، آیات ۸-۹"},{"type":"hadith","ref":"بخاری و مسلم"},{"type":"hadith","ref":"بخاری و مسلم"},{"type":"hadith","ref":"صحیح مسلم"},{"type":"salaf","ref":"صالح اسلاف کی دعاؤں سے"},{"type":"hadith","ref":"صحیح مسلم"},{"type":"quran","ref":"سورۃ ابراہیم، آیات ۴۰-۴۱"},{"type":"hadith","ref":"ابو داؤد — صحیح (البانی)"},{"type":"hadith","ref":"صحیح مسلم"},{"type":"quran","ref":"سورۃ الاحقاف، آیت ۱۵"},{"type":"hadith","ref":"ترمذی و ابن ماجہ — صحیح"},{"type":"hadith","ref":"صحیح مسلم — دعاء الاستفتاح"},{"type":"quran","ref":"سورۃ ابراہیم، آیت ۴۱"},{"type":"hadith","ref":"ترمذی — صحیح"},{"type":"hadith","ref":"ترمذی — صحیح"},{"type":"hadith","ref":"ترمذی و حاکم — صحیح"},{"type":"hadith","ref":"صحیح مسلم"},{"type":"hadith","ref":"احمد و ترمذی — صحیح"},{"type":"hadith","ref":"ابو داؤد و نسائی — صحیح"},{"type":"hadith","ref":"ابو داؤد و ترمذی — صحیح"},{"type":"salaf","ref":"صالح اسلاف کی دعاؤں سے"},{"type":"hadith","ref":"احمد — صحیح (البانی)"},{"type":"hadith","ref":"ترمذی — صحیح"},{"type":"hadith","ref":"مسلم و ابو داؤد"},{"type":"hadith","ref":"طبرانی — صحیح (البانی)"}],"quranLabel":"قرآنی دعا","salafLabel":"صالح اسلاف کی دعا","adaabTitle":"عرفہ کے دن دعا کے آداب","adaabItems":["قبلہ رخ ہوکر ہاتھ اٹھانا","طہارت اور پاکیزگی کا اہتمام","اللہ کی حمد اور نبی ﷺ پر درود سے ابتدا","اصرار، خشوع اور تکرار","آمین اور حمد سے اختتام"],"shareTitle":"دعائیں شیئر کریں","shareSubtitle":"خیر پھیلائیں — عرفہ کی دعائیں شیئر کریں","shareText":"عرفہ کے دن کی دعائیں — ٣٤ مأثور دعائیں مغفرت اور جہنم سے نجات کے لیے 🌙","copyLabel":"لنک کاپی کریں","copiedLabel":"کاپی ہوگیا ✓","platforms":[{"id":"whatsapp","label":"واٹس ایپ","color":"#25D366","icon":"whatsapp"},{"id":"telegram","label":"ٹیلیگرام","color":"#229ED9","icon":"telegram"},{"id":"twitter","label":"ٹویٹر / X","color":"#1DA1F2","icon":"twitter"},{"id":"facebook","label":"فیس بک","color":"#1877F2","icon":"facebook"},{"id":"email","label":"ای میل","color":"#EA4335","icon":"email"},{"id":"copy","label":"لنک کاپی","color":"#6C757D","icon":"copy"}]},"bn":{"dir":"ltr","lang":"bn","bismillah":"বিসমিল্লাহির রাহমানির রাহিম","heroTitle":"আরাফাতের দিনের <em>দোয়া সমূহ</em>","heroSub":"ক্ষমা ও জাহান্নাম থেকে মুক্তির দিন","hadith":"নবী করীম ﷺ বলেছেন: \"সর্বোত্তম দোয়া হলো আরাফাতের দিনের দোয়া, আর আমি এবং আমার পূর্বের নবীগণ যা বলেছি তার মধ্যে সর্বোত্তম কথা হলো:\"","tahlil":"লা ইলাহা ইল্লাল্লাহু ওয়াহদাহু লা শারিকা লাহু, লাহুল মুলকু ওয়া লাহুল হামদু ওয়া হুয়া আলা কুল্লি শাইয়িন কাদির।","sec1":"মাসূর দোয়া সমূহ","sec2":"ক্ষমা প্রার্থনার দোয়া","sec3":"সংশোধন ও হেদায়েতের দোয়া","sec4":"আখেরাত ও কবরের দোয়া","sec5":"সমাপনী দোয়া","takbeer":"আল্লাহু আকবার আল্লাহু আকবার আল্লাহু আকবার। লা ইলাহা ইল্লাল্লাহু ওয়াহদাহু লা শারিকা লাহু, লাহুল মুলকু ওয়া লাহুল হামদু ওয়া হুয়া আলা কুল্লি শাইয়িন কাদির। লা ইলাহা ইল্লাল্লাহু ওয়াহদাহু লা শারিকা লাহু।","closing":"সমস্ত প্রশংসা আল্লাহর জন্য যিনি আমাদের দোয়া করার আদেশ দিয়েছেন এবং কবুল করার প্রতিশ্রুতি দিয়েছেন। তাঁর নাম ও গুণাবলী পবিত্র। আল্লাহ রহমত বর্ষণ করুন আমাদের নবী মুহাম্মাদ ﷺ-এর উপর এবং তাঁর পরিবার, সাহাবী ও সকল অনুসরণকারীদের উপর।","counterTitle":"বিশ্বজুড়ে পেজ পরিদর্শনকারী","counterNote":"পেজ খোলার সাথে সাথে প্রতিটি ভিজিট স্বয়ংক্রিয়ভাবে রেকর্ড হয়।","footer":"আল্লাহ আপনাদের দোয়া কবুল করুন এবং জাহান্নাম থেকে মুক্তি দিন।","duas":["হে আল্লাহ! সমস্ত প্রশংসা তোমার জন্য যতক্ষণ তুমি সন্তুষ্ট না হও, তোমার জন্য যখন তুমি সন্তুষ্ট হও, তোমার জন্য সন্তুষ্টির পরেও এবং প্রতিটি অবস্থায় প্রতিটি মুহূর্তে। হে আল্লাহ! তোমার জন্য অফুরন্ত, পবিত্র ও বরকতময় প্রশংসা।","হে আল্লাহ! সমস্ত প্রশংসা তোমার জন্য যেমনটি তোমার মুখমণ্ডলের মহিমা ও তোমার বিশাল ক্ষমতার উপযুক্ত।","হে আল্লাহ! মুহাম্মাদ ﷺ ও তাঁর পরিবারের উপর সালাত পাঠাও যেমন তুমি ইব্রাহিম ও তাঁর পরিবারের উপর পাঠিয়েছিলে। নিশ্চয়ই তুমি প্রশংসনীয় ও মহিমান্বিত। হে আল্লাহ! মুহাম্মাদ ﷺ ও তাঁর পরিবারের উপর বরকত দাও যেমন তুমি ইব্রাহিম ও তাঁর পরিবারের উপর দিয়েছিলে। নিশ্চয়ই তুমি প্রশংসনীয় ও মহিমান্বিত।","হে আল্লাহ! আমাদের দুনিয়ায় কল্যাণ দাও এবং আখেরাতেও কল্যাণ দাও, এবং আমাদের জাহান্নামের আজাব থেকে রক্ষা করো।","হে আমাদের প্রতিপালক! যদি আমরা ভুলে যাই বা ভুল করি তাহলে আমাদের পাকড়াও করো না। হে আমাদের প্রতিপালক! আমাদের পূর্ববর্তীদের উপর যেমন বোঝা চাপিয়েছিলে তেমন বোঝা আমাদের উপর চাপিও না।","হে আল্লাহ! আমাদের কোনো পাপ ক্ষমা না করে ছেড়ো না, কোনো দোষ আড়াল না করে ছেড়ো না, কোনো দুঃখ দূর না করে ছেড়ো না, এবং কোনো ঋণ পরিশোধ না করে ছেড়ো না — হে সর্বশ্রেষ্ঠ দয়ালু।","হে আল্লাহ! তুমি আমার প্রতিপালক, তুমি ছাড়া কোনো ইলাহ নেই। তুমি আমাকে সৃষ্টি করেছ এবং আমি তোমার বান্দা। আমি সাধ্যমতো তোমার অঙ্গীকারে অটল আছি। আমি আমার কৃতকর্মের অনিষ্ট থেকে তোমার আশ্রয় চাই। আমি তোমার নিয়ামতের কথা স্বীকার করি এবং আমার পাপের কথাও। পাপ ক্ষমা করো, কেননা তুমি ছাড়া পাপ কেউ ক্ষমা করতে পারে না।","হে আল্লাহ! নিশ্চয়ই তুমি ক্ষমাশীল ও মহানুভব, তুমি ক্ষমা করতে ভালোবাসো — সুতরাং আমাদের ক্ষমা করো।","হে আল্লাহ! আমি তোমার কাছে জান্নাত চাই এবং যা তার নিকটবর্তী করে তাও চাই। জাহান্নাম থেকে আশ্রয় চাই এবং যা তার নিকটবর্তী করে তা থেকেও। এবং তোমার কাছে চাই যে তুমি আমার জন্য যে ফয়সালাই করো তা কল্যাণকর করো।","হে আমাদের প্রতিপালক! হেদায়েত দেওয়ার পরে আমাদের অন্তর বাঁকিয়ে দিও না, তোমার পক্ষ থেকে আমাদের রহমত দাও — নিশ্চয়ই তুমি মহান দাতা। হে আমাদের প্রতিপালক! আমরা নিজেদের উপর অত্যাচার করেছি, যদি তুমি ক্ষমা না করো ও দয়া না করো তাহলে আমরা অবশ্যই ক্ষতিগ্রস্তদের দলভুক্ত হবো।","হে আল্লাহ! আমার ও আমার পাপের মধ্যে এতটুকু দূরত্ব করো যতটুকু তুমি পূর্ব ও পশ্চিমের মধ্যে করেছ। আমাকে আমার পাপ থেকে এমনভাবে পরিষ্কার করো যেভাবে সাদা কাপড় ময়লা থেকে হয়। আমার পাপ পানি, বরফ ও শিলা দিয়ে ধুয়ে দাও।","হে আল্লাহ! আমি কবরের আজাব থেকে, জাহান্নামের আজাব থেকে, জীবন ও মৃত্যুর ফিতনা থেকে এবং মাসীহ দাজ্জালের ফিতনা থেকে তোমার আশ্রয় চাই।","হে আল্লাহ! আমি তোমার নিয়ামত চলে যাওয়া থেকে, তোমার সুস্থতার পরিবর্তন থেকে, তোমার শাস্তি হঠাৎ আসা থেকে এবং তোমার সমস্ত ক্রোধ থেকে তোমার আশ্রয় চাই।","হে আমাদের প্রতিপালক! আমরা তোমার কাছে এমন ক্ষমা চাই যা কোনো পাপ বাকি রাখে না, এমন আবরণ চাই যা বাতাস ছিঁড়তে পারে না ও বর্শা ভেদ করতে পারে না, এবং এমন রহমত চাই যা আমাদের জাহান্নাম থেকে রক্ষা করে জান্নাতে প্রবেশ করায়। নিশ্চয়ই তুমি দোয়া শ্রবণকারী।","হে আল্লাহ! আমার দীন সংশোধন করো যা আমার সকল বিষয়ের রক্ষাকবচ; আমার দুনিয়া সংশোধন করো যেখানে আমার জীবিকা; আমার আখেরাত সংশোধন করো যেখানে আমার ফিরে যেতে হবে। জীবনকে আমার জন্য প্রতিটি কল্যাণে বৃদ্ধির মাধ্যম করো এবং মৃত্যুকে প্রতিটি অনিষ্ট থেকে মুক্তির মাধ্যম করো।","হে আমার প্রতিপালক! আমাকে ও আমার সন্তানদের নামাজ কায়েমকারী করো। হে আমাদের প্রতিপালক! আমার দোয়া কবুল করো। হে আমাদের প্রতিপালক! আমাকে, আমার পিতামাতাকে ও সকল মুমিনদের সেই দিন ক্ষমা করো যেদিন হিসাব প্রতিষ্ঠিত হবে।","আমি আল্লাহর কাছে মাগফিরাত চাই — তিনি ছাড়া কোনো ইলাহ নেই, তিনি চিরঞ্জীব ও চিরপ্রতিষ্ঠিত — এবং আমি তাঁর কাছে তওবা করি।","হে আমাদের প্রতিপালক! তোমার পক্ষ থেকে রহমত দাও এবং আমাদের বিষয়ে সঠিক দিকনির্দেশনার ব্যবস্থা করো। হে আমাদের প্রতিপালক! আমরা ঈমান এনেছি, তাই আমাদের ক্ষমা করো ও দয়া করো — তুমি সর্বোত্তম দয়ালু।","হে আমার প্রতিপালক! তুমি আমার ও আমার পিতামাতার উপর যে নিয়ামত দিয়েছ তার শুকরিয়া আদায় করার এবং তোমার পছন্দনীয় সৎকাজ করার তওফিক দাও। আমার সন্তান-সন্ততিতে কল্যাণ দাও। আমি তোমার কাছে তওবা করলাম এবং আমি মুসলমানদের অন্তর্ভুক্ত।","হে আল্লাহ! দুই ফেরেশতার প্রশ্নের সময় আমাকে সুদৃঢ় রাখো। আমার কবরকে জান্নাতের বাগানসমূহ থেকে একটি বাগান করো এবং জাহান্নামের গর্তসমূহ থেকে গর্ত করো না। হে আল্লাহ! আমি দুনিয়ার ফিতনাসমূহ থেকে তোমার আশ্রয় চাই।","হে আল্লাহ! তুমি বাদশাহ, তুমি ছাড়া কোনো ইলাহ নেই। তুমি আমার প্রতিপালক এবং আমি তোমার বান্দা। আমি নিজের উপর অত্যাচার করেছি এবং আমার পাপ স্বীকার করছি। সমস্ত পাপ ক্ষমা করো — কেননা তুমি ছাড়া কেউ পারে না। আমাকে সর্বোত্তম চরিত্রের দিকে পরিচালিত করো — তুমি ছাড়া কেউ পারে না। মন্দ চরিত্র আমার থেকে দূরে রাখো — তুমি ছাড়া কেউ পারে না। লাব্বাইক ওয়া সা'দাইক, সমস্ত কল্যাণ তোমার হাতে। আমি তোমার কাছে ক্ষমা চাই ও তওবা করি।","হে আমাদের প্রতিপালক! আমাকে, আমার পিতামাতাকে ও সকল মুমিনদের সেই দিন ক্ষমা করো যেদিন হিসাব প্রতিষ্ঠিত হবে।","হে আল্লাহ! হারাম থেকে বাঁচতে তোমার হালাল দিয়ে আমাকে যথেষ্ট করো এবং তোমার ফজল দিয়ে তোমার ছাড়া সকলের থেকে আমাকে বেনিয়াজ করো।","হে আল্লাহ! আমার আত্মাকে তাকওয়া দাও ও পবিত্র করো — তুমি তা পবিত্র করার জন্য সর্বোত্তম। তুমিই তার অভিভাবক ও প্রতিপালক, হে বিশ্বজগতের প্রতিপালক। হে আল্লাহ! আমি তোমার কাছে দুঃখী গরিবের মতো চাই ও অসহায় মিসকিনের মতো দোয়া করি।","হে আল্লাহ! অন্তর ও দৃষ্টি পরিবর্তনকারী! আমাদের অন্তরকে তোমার আনুগত্যের দিকে ফিরিয়ে দাও। হে আল্লাহ! আমাদের বাড়িয়ে দাও, কমিও না; দাও, বঞ্চিত করো না; আমাদের অগ্রাধিকার দাও, আমাদের উপর অন্যদের দিও না। হে আল্লাহ! সকল বিষয়ে আমাদের পরিণতি সুন্দর করো এবং দুনিয়ার লাঞ্ছনা ও আখেরাতের আজাব থেকে রক্ষা করো।","হে আল্লাহ! বিনা হিসাবে ও পূর্ববর্তী কোনো শাস্তি ছাড়াই আমাদের জান্নাতে প্রবেশ করাও।","হে আল্লাহ! আমাদের পিতামাতার উপর রহম করো, তাদের ক্ষমা করো, তাদের পাপগুলো মাফ করো এবং তাদের তোমার প্রশস্ত জান্নাতে প্রবেশ করাও। এবং আমাদের তাদের সাথে মিলিয়ে দাও — হে বিশ্বজগতের প্রতিপালক।","হে আল্লাহ! তোমার জিকির করতে, তোমার শুকরিয়া আদায় করতে এবং সুন্দরভাবে তোমার ইবাদত করতে আমাকে সাহায্য করো।","হে আল্লাহ! আমি তোমার কাছে জান্নাত চাই এবং যা তার নিকটবর্তী করে তাও চাই, এবং তোমার কাছে চাই যে তুমি আমার জন্য যে ফয়সালাই করো তা কল্যাণকর করো।","হে আল্লাহ! হে ব্যাপক ক্ষমাশীল, আমরা তোমার কাছে দোয়া করি যে আমাদের সকল পাপ থেকে পবিত্র করো, তোমার কাছে আমাদের উচ্চতম মর্যাদায় উন্নীত করো, এবং জীবনে ও মৃত্যুর পরেও সকল কল্যাণের সর্বোচ্চ লক্ষ্যে আমাদের পৌঁছে দাও।","হে আল্লাহ! আমি তোমার বান্দা, তোমার বান্দার পুত্র, তোমার বাঁদির পুত্র। আমার কপাল তোমার হাতে; তোমার বিধান আমার উপর বলবৎ; তোমার ফয়সালা আমার উপর ন্যায্য। আমি তোমার কাছে তোমার প্রতিটি নামের মাধ্যমে চাই — যে নামে তুমি নিজেকে নামকরণ করেছ, বা তোমার কিতাবে নাজিল করেছ, বা তোমার কোনো সৃষ্টিকে শিখিয়েছ, বা তোমার কাছে গায়েবের জ্ঞানে সংরক্ষিত রেখেছ — কুরআনুল কারীমকে আমার হৃদয়ের বসন্ত, বুকের আলো, দুঃখের নিরাময় এবং উদ্বেগ ও পেরেশানি দূরকারী বানাও।","হে আল্লাহ! আমি তোমার কাছে তাকদিরের পরে তৃপ্তি চাই, মৃত্যুর পরে সুখময় জীবন চাই, তোমার সম্মানিত মুখমণ্ডলের দিদারের আনন্দ চাই এবং তোমার সাথে সাক্ষাতের আগ্রহ চাই — কোনো ক্ষতিকর বিপদ ও পথভ্রষ্টকারী ফিতনা ছাড়া। হে আল্লাহ! আমি তোমার আশ্রয় চাই যেন আমাকে জঘন্যতম বার্ধক্যে না পৌঁছানো হয়।","হে আল্লাহ! আমি তোমার নিয়ামত চলে যাওয়া থেকে, তোমার সুস্থতার পরিবর্তন থেকে, তোমার শাস্তি হঠাৎ আসা থেকে এবং তোমার সকল ক্রোধ থেকে তোমার আশ্রয় চাই। আমি চাপা পড়া, পড়ে যাওয়া, ডুবে যাওয়া, পুড়ে যাওয়া ও বার্ধক্য থেকে আশ্রয় চাই; মৃত্যুর সময় শয়তানের বিভ্রান্তি থেকে; বিষক্রিয়ায় মৃত্যু থেকে; এবং ধ্বংসের দিকে নিয়ে যাওয়া লোভ থেকে।","হে আল্লাহ! আমাদের আমলের সর্বোত্তম অংশ তার শেষাংশ করো, আমাদের জীবনের সর্বোত্তম অংশ তার পরিসমাপ্তি করো এবং আমাদের দিনগুলোর সর্বোত্তম দিন সেই দিন করো যেদিন আমরা তোমার সাথে সাক্ষাৎ করবো। হে আল্লাহ! যা গত হয়েছে তা ক্ষমা করো এবং যা বাকি আছে তা সংশোধন করো।"],"sources":[{"type":"hadith","ref":"তাবারানী — হাসান (আলবানী)"},{"type":"hadith","ref":"ইবনে মাজাহ"},{"type":"hadith","ref":"বুখারী ও মুসলিম"},{"type":"hadith","ref":"বুখারী ও মুসলিম"},{"type":"quran","ref":"সূরা আল-বাকারা, ২:২৮৬"},{"type":"hadith","ref":"তিরমিযী — সহীহ"},{"type":"hadith","ref":"সহীহ বুখারী — সাইয়িদুল ইস্তিগফার"},{"type":"hadith","ref":"তিরমিযী ও ইবনে মাজাহ — সহীহ"},{"type":"hadith","ref":"আবু দাউদ ও তিরমিযী — সহীহ"},{"type":"quran","ref":"সূরা আলে ইমরান, ৩:৮-৯"},{"type":"hadith","ref":"বুখারী ও মুসলিম"},{"type":"hadith","ref":"বুখারী ও মুসলিম"},{"type":"hadith","ref":"সহীহ মুসলিম"},{"type":"salaf","ref":"সালাফদের দোয়া থেকে"},{"type":"hadith","ref":"সহীহ মুসলিম"},{"type":"quran","ref":"সূরা ইব্রাহিম, ১৪:৪০-৪১"},{"type":"hadith","ref":"আবু দাউদ — সহীহ (আলবানী)"},{"type":"hadith","ref":"সহীহ মুসলিম"},{"type":"quran","ref":"সূরা আল-আহকাফ, ৪৬:১৫"},{"type":"hadith","ref":"তিরমিযী ও ইবনে মাজাহ — সহীহ"},{"type":"hadith","ref":"সহীহ মুসলিম — দু'আ আল-ইফতিতাহ"},{"type":"quran","ref":"সূরা ইব্রাহিম, ১৪:৪১"},{"type":"hadith","ref":"তিরমিযী — সহীহ"},{"type":"hadith","ref":"তিরমিযী — সহীহ"},{"type":"hadith","ref":"তিরমিযী ও হাকিম — সহীহ"},{"type":"hadith","ref":"সহীহ মুসলিম"},{"type":"hadith","ref":"আহমাদ ও তিরমিযী — সহীহ"},{"type":"hadith","ref":"আবু দাউদ ও নাসাঈ — সহীহ"},{"type":"hadith","ref":"আবু দাউদ ও তিরমিযী — সহীহ"},{"type":"salaf","ref":"সালাফদের দোয়া থেকে"},{"type":"hadith","ref":"আহমাদ — সহীহ (আলবানী)"},{"type":"hadith","ref":"তিরমিযী — সহীহ"},{"type":"hadith","ref":"মুসলিম ও আবু দাউদ"},{"type":"hadith","ref":"তাবারানী — সহীহ (আলবানী)"}],"quranLabel":"কোরআনিক দোয়া","salafLabel":"সালাফের দোয়া","adaabTitle":"আরাফাতের দিন দোয়ার আদব","adaabItems":["কিবলামুখী হয়ে হাত তুলুন","পবিত্রতার সাথে থাকুন","আল্লাহর প্রশংসা ও নবী ﷺ-এর উপর দরূদ দিয়ে শুরু করুন","একাগ্রচিত্তে বারবার দোয়া করুন","আমীন ও প্রশংসা দিয়ে শেষ করুন"],"shareTitle":"দোয়া শেয়ার করুন","shareSubtitle":"কল্যাণ ছড়িয়ে দিন — আরাফাতের দোয়া শেয়ার করুন","shareText":"আরাফাতের দিনের দোয়া — ক্ষমা ও জাহান্নাম থেকে মুক্তির জন্য ৩৪টি মাসনুন দোয়া 🌙","copyLabel":"লিংক কপি করুন","copiedLabel":"কপি হয়েছে ✓","platforms":[{"id":"whatsapp","label":"হোয়াটসঅ্যাপ","color":"#25D366","icon":"whatsapp"},{"id":"telegram","label":"টেলিগ্রাম","color":"#229ED9","icon":"telegram"},{"id":"twitter","label":"টুইটার / X","color":"#1DA1F2","icon":"twitter"},{"id":"facebook","label":"ফেসবুক","color":"#1877F2","icon":"facebook"},{"id":"email","label":"ইমেইল","color":"#EA4335","icon":"email"},{"id":"copy","label":"লিংক কপি","color":"#6C757D","icon":"copy"}]},"id":{"dir":"ltr","lang":"id","bismillah":"Bismillahirrahmanirrahim","heroTitle":"Doa-Doa <em>Hari Arafah</em>","heroSub":"Hari Pengampunan dan Pembebasan dari Neraka","hadith":"Nabi ﷺ bersabda: \"Sebaik-baik doa adalah doa pada hari Arafah, dan sebaik-baik yang aku dan para nabi sebelumku ucapkan adalah:\"","tahlil":"Laa ilaaha illallaahu wahdahu laa syariika lah, lahul mulku wa lahul hamdu wa huwa 'alaa kulli syai'in qadiir.","sec1":"Doa-Doa yang Diriwayatkan","sec2":"Doa Istighfar","sec3":"Doa Kebaikan dan Hidayah","sec4":"Doa Akhirat dan Kubur","sec5":"Doa Penutup","takbeer":"Allahu Akbar, Allahu Akbar, Allahu Akbar. Laa ilaaha illallaahu wahdahu laa syariika lah, lahul mulku wa lahul hamdu wa huwa 'alaa kulli syai'in qadiir. Laa ilaaha illallaahu wahdahu laa syariika lah.","closing":"Segala puji bagi Allah yang memerintahkan kita untuk berdoa dan berjanji untuk mengabulkannya. Mahasuci nama dan sifat-Nya. Semoga Allah mencurahkan rahmat-Nya kepada Nabi kita Muhammad ﷺ, beserta keluarga, sahabat, dan semua pengikut beliau.","counterTitle":"Pengunjung Halaman dari Seluruh Dunia","counterNote":"Setiap kunjungan dicatat secara otomatis saat halaman dibuka.","footer":"Semoga Allah menerima doa-doa Anda dan membebaskan Anda dari api neraka.","duas":["Ya Allah, segala puji hanya milik-Mu hingga Engkau ridha, milik-Mu ketika ridha, milik-Mu setelah ridha-Mu, dan milik-Mu dalam setiap keadaan dan setiap saat. Ya Allah, bagi-Mu segala puji yang banyak, baik, dan diberkahi.","Ya Allah, bagi-Mu segala puji sebagaimana yang layak bagi keagungan wajah-Mu dan kebesaran kekuasaan-Mu.","Ya Allah, limpahkanlah shalawat kepada Muhammad ﷺ dan keluarga Muhammad sebagaimana Engkau limpahkan kepada Ibrahim dan keluarga Ibrahim. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia. Ya Allah, limpahkanlah keberkahan kepada Muhammad ﷺ dan keluarga Muhammad sebagaimana Engkau limpahkan kepada Ibrahim dan keluarga Ibrahim. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia.","Ya Allah, berikanlah kami kebaikan di dunia dan kebaikan di akhirat, dan lindungilah kami dari azab neraka.","Wahai Rabb kami, janganlah Engkau hukum kami jika kami lupa atau melakukan kesalahan. Wahai Rabb kami, janganlah Engkau bebankan kepada kami beban yang berat sebagaimana yang Engkau bebankan kepada orang-orang sebelum kami.","Ya Allah, janganlah Engkau biarkan dosa kami tanpa diampuni, aib kami tanpa ditutupi, kesusahan kami tanpa dihilangkan, dan hutang kami tanpa dilunasi — wahai Yang Maha Penyayang di antara para penyayang.","Ya Allah, Engkau adalah Rabbku, tiada ilah selain Engkau. Engkau telah menciptakanku dan aku adalah hamba-Mu. Aku berpegang pada janji dan ikrar-Mu semampuku. Aku berlindung kepada-Mu dari keburukan yang aku perbuat. Aku mengakui nikmat-Mu dan aku mengakui dosaku. Maka ampunilah aku, karena sesungguhnya tidak ada yang mengampuni dosa kecuali Engkau.","Ya Allah, sesungguhnya Engkau Maha Pemaaf lagi Maha Pemurah, Engkau mencintai maaf — maka maafkanlah kami.","Ya Allah, aku memohon kepada-Mu surga dan segala yang mendekatkan kepadanya berupa ucapan maupun perbuatan. Aku berlindung kepada-Mu dari neraka dan segala yang mendekatkan kepadanya. Aku memohon kepada-Mu agar menjadikan setiap ketetapan yang Engkau tetapkan untukku adalah kebaikan.","Wahai Rabb kami, janganlah Engkau palingkan hati-hati kami setelah Engkau memberi petunjuk kepada kami, dan anugerahkanlah kepada kami rahmat dari sisi-Mu — sesungguhnya Engkau Maha Pemberi. Wahai Rabb kami, kami telah menzalimi diri kami sendiri; jika Engkau tidak mengampuni kami dan merahmati kami, niscaya kami termasuk orang-orang yang rugi.","Ya Allah, jauhkanlah antara aku dan kesalahan-kesalahanku sebagaimana Engkau menjauhkan antara timur dan barat. Ya Allah, bersihkanlah aku dari kesalahan-kesalahanku sebagaimana pakaian putih dibersihkan dari kotoran. Ya Allah, cucilah aku dari kesalahan-kesalahanku dengan air, salju, dan es.","Ya Allah, aku berlindung kepada-Mu dari azab kubur, azab neraka, fitnah kehidupan dan kematian, serta fitnah Al-Masih Ad-Dajjal.","Ya Allah, aku berlindung kepada-Mu dari hilangnya nikmat-Mu, berubahnya keselamatan-Mu, datangnya azab-Mu secara tiba-tiba, dan segala kemurkaan-Mu.","Wahai Rabb kami, kami memohon ampunan yang tidak menyisakan dosa, perlindungan yang tidak dapat dirobek angin maupun tombak, dan rahmat yang melindungi kami dari neraka dan memasukkan kami ke dalam surga. Sesungguhnya Engkau Maha Mendengar doa.","Ya Allah, perbaikilah agamaku yang merupakan penjaga seluruh urusanku; perbaikilah duniaku yang menjadi tempat penghidupanku; perbaikilah akhiratku yang menjadi tempat kembaliku. Jadikanlah kehidupan sebagai tambahan bagiku dalam setiap kebaikan, dan jadikanlah kematian sebagai istirahat bagiku dari setiap keburukan.","Wahai Rabbku, jadikanlah aku dan keturunanku sebagai orang-orang yang mendirikan shalat. Wahai Rabb kami, kabulkanlah doaku. Wahai Rabb kami, ampunilah aku, kedua orang tuaku, dan orang-orang mukmin pada hari ketika perhitungan ditegakkan.","Aku memohon ampun kepada Allah — tiada ilah selain Dia, Yang Mahahidup lagi terus-menerus mengurus makhluk-Nya — dan aku bertaubat kepada-Nya.","Wahai Rabb kami, berikanlah kami rahmat dari sisi-Mu dan siapkanlah bagi kami petunjuk dalam urusan kami. Wahai Rabb kami, kami telah beriman, maka ampunilah kami dan sayangilah kami — Engkau adalah sebaik-baik yang memberikan kasih sayang.","Wahai Rabbku, ilhamkanlah kepadaku untuk selalu bersyukur atas nikmat-Mu yang telah Engkau anugerahkan kepadaku dan kepada kedua orang tuaku, dan untuk mengerjakan amal shalih yang Engkau ridhai. Perbaikilah bagiku keturunanku. Sesungguhnya aku bertaubat kepada-Mu dan aku termasuk orang-orang yang berserah diri.","Ya Allah, teguhkanlah aku ketika dua malaikat bertanya. Ya Allah, jadikanlah kuburku sebagai taman dari taman-taman surga dan janganlah Engkau jadikannya sebagai liang dari liang-liang neraka. Ya Allah, aku berlindung kepada-Mu dari fitnah-fitnah dunia.","Ya Allah, Engkau adalah Raja, tiada ilah selain Engkau. Engkau adalah Rabbku dan aku adalah hamba-Mu. Aku telah menzalimi diriku sendiri dan aku mengakui dosaku. Maka ampunilah seluruh dosaku — tidak ada yang mengampuni dosa kecuali Engkau. Tunjukilah aku akhlak yang terbaik — tidak ada yang menunjuki kepada akhlak yang terbaik kecuali Engkau. Palingkanlah dariku akhlak yang buruk — tidak ada yang memalingkannya kecuali Engkau. Labbayk wa sa'dayk — segala kebaikan ada di tangan-Mu. Aku memohon ampun kepada-Mu wahai Rabbku dan aku bertaubat kepada-Mu.","Wahai Rabb kami, ampunilah aku, kedua orang tuaku, dan orang-orang mukmin pada hari ketika perhitungan ditegakkan.","Ya Allah, cukupkanlah aku dengan yang halal sehingga terjauh dari yang haram, dan kayakanlah aku dengan karunia-Mu sehingga tidak membutuhkan selain-Mu.","Ya Allah, berikanlah ketakwaan kepada jiwaku dan sucikanlah ia — Engkau adalah sebaik-baik yang mensucikannya. Engkaulah pelindungnya dan penguasanya wahai Rabb semesta alam. Ya Allah, aku memohon kepada-Mu dengan permohonan orang yang sangat menderita dan sangat membutuhkan.","Ya Allah, Zat yang membolak-balikkan hati dan pandangan, palingkanlah hati-hati kami kepada ketaatan-Mu. Ya Allah, tambahkanlah kami dan janganlah Engkau kurangi; berikanlah kepada kami dan janganlah Engkau halangi; utamakanlah kami dan janganlah Engkau mengutamakan orang lain atas kami. Ya Allah, jadikanlah akhir dari semua urusan kami adalah baik, dan selamatkanlah kami dari kehinaan dunia dan azab akhirat.","Ya Allah, masukkanlah kami ke dalam surga tanpa hisab dan tanpa azab sebelumnya.","Ya Allah, sayangilah bapak-bapak dan ibu-ibu kami; ampunilah mereka, maafkanlah kesalahan-kesalahan mereka, dan masukkanlah mereka ke dalam surga-Mu yang luas. Pertemukanlah kami dengan mereka wahai Rabb semesta alam.","Ya Allah, bantulah aku untuk selalu berdzikir kepada-Mu, bersyukur kepada-Mu, dan beribadah kepada-Mu dengan sebaik-baiknya.","Ya Allah, aku memohon kepada-Mu surga dan segala yang mendekatkan kepadanya dalam ucapan maupun perbuatan, dan aku memohon kepada-Mu agar menjadikan setiap ketetapan yang Engkau tetapkan untukku adalah kebaikan.","Ya Allah, wahai Yang Maha Luas Ampunan-Nya, kami berdoa agar Engkau menyucikan kami dari segala dosa, meninggikan derajat kami di sisi-Mu ke tingkat tertinggi, dan mengantarkan kami ke tujuan-tujuan tertinggi dari seluruh kebaikan dalam kehidupan dan setelah kematian.","Ya Allah, sesungguhnya aku adalah hamba-Mu, putra hamba-Mu, putra hamba perempuan-Mu. Ubun-ubunku ada di tangan-Mu; keputusan-Mu atasku pasti berlaku; ketetapan-Mu atasku adalah adil. Aku memohon kepada-Mu dengan setiap nama yang menjadi milik-Mu — yang dengannya Engkau menamai diri-Mu, atau yang Engkau turunkan dalam kitab-Mu, atau yang Engkau ajarkan kepada salah satu makhluk-Mu, atau yang Engkau simpan dalam ilmu gaib di sisi-Mu — agar Engkau menjadikan Al-Qur'an Al-Azhim sebagai musim semi hatiku, cahaya dadaku, penghilang kesedihanku, dan perginya kegelisahan serta kesusahanku.","Ya Allah, aku memohon kepada-Mu keridhaan setelah ketetapan-Mu, kehidupan yang sejuk setelah kematian, kelezatan memandang wajah-Mu yang mulia, dan kerinduan untuk berjumpa dengan-Mu — tanpa kesulitan yang membahayakan dan fitnah yang menyesatkan. Ya Allah, aku berlindung kepada-Mu dari dikembalikan ke usia yang paling hina.","Ya Allah, aku berlindung kepada-Mu dari hilangnya nikmat-Mu, berubahnya keselamatan-Mu, datangnya azab-Mu secara tiba-tiba, dan segala kemurkaan-Mu. Aku berlindung kepada-Mu dari tertimpa reruntuhan, terjatuh, tenggelam, terbakar, dan pikun; dari godaan setan saat menghadapi kematian; dari mati terkena racun; dan dari keserakahan yang menjerumuskan.","Ya Allah, jadikanlah sebaik-baik amal kami adalah penutupnya, sebaik-baik umur kami adalah akhirnya, dan sebaik-baik hari kami adalah hari ketika kami berjumpa dengan-Mu. Ya Allah, ampunilah kami atas apa yang telah berlalu dan perbaikilah bagi kami apa yang tersisa."],"sources":[{"type":"hadith","ref":"Al-Thabrani — Hasan (Al-Albani)"},{"type":"hadith","ref":"Ibnu Majah"},{"type":"hadith","ref":"Muttafaq 'alaih"},{"type":"hadith","ref":"Muttafaq 'alaih"},{"type":"quran","ref":"Surah Al-Baqarah 2:286"},{"type":"hadith","ref":"Al-Tirmidzi — Sahih"},{"type":"hadith","ref":"Sahih Al-Bukhâri — Sayyid Al-Istighfar"},{"type":"hadith","ref":"Al-Tirmidzi & Ibnu Majah — Sahih"},{"type":"hadith","ref":"Abu Dawud & Al-Tirmidzi — Sahih"},{"type":"quran","ref":"Surah Âli 'Imran 3:8-9"},{"type":"hadith","ref":"Muttafaq 'alaih"},{"type":"hadith","ref":"Muttafaq 'alaih"},{"type":"hadith","ref":"Sahih Muslim"},{"type":"salaf","ref":"Dari doa-doa Salaf"},{"type":"hadith","ref":"Sahih Muslim"},{"type":"quran","ref":"Surah Ibrahîm 14:40-41"},{"type":"hadith","ref":"Abu Dawud — Sahih (Al-Albani)"},{"type":"hadith","ref":"Sahih Muslim"},{"type":"quran","ref":"Surah Al-Ahqaf 46:15"},{"type":"hadith","ref":"Al-Tirmidzi & Ibnu Majah — Sahih"},{"type":"hadith","ref":"Sahih Muslim — Doa Iftitah"},{"type":"quran","ref":"Surah Ibrahîm 14:41"},{"type":"hadith","ref":"Al-Tirmidzi — Sahih"},{"type":"hadith","ref":"Al-Tirmidzi — Sahih"},{"type":"hadith","ref":"Al-Tirmidzi & Al-Hakim — Sahih"},{"type":"hadith","ref":"Sahih Muslim"},{"type":"hadith","ref":"Ahmad & Al-Tirmidzi — Sahih"},{"type":"hadith","ref":"Abu Dawud & Al-Nasa'i — Sahih"},{"type":"hadith","ref":"Abu Dawud & Al-Tirmidzi — Sahih"},{"type":"salaf","ref":"Dari doa-doa Salaf"},{"type":"hadith","ref":"Ahmad — Sahih (Al-Albani)"},{"type":"hadith","ref":"Al-Tirmidzi — Sahih"},{"type":"hadith","ref":"Muslim & Abu Dawud"},{"type":"hadith","ref":"Al-Thabrani — Sahih (Al-Albani)"}],"quranLabel":"Doa Qur'ani","salafLabel":"Dari Doa Salaf","adaabTitle":"Adab Berdoa di Hari Arafah","adaabItems":["Menghadap kiblat dan mengangkat tangan","Dalam keadaan suci dan bersih","Memulai dengan hamdalah dan shalawat kepada Nabi ﷺ","Bersungguh-sungguh, khusyuk, dan mengulang-ulang","Mengakhiri dengan Aamiin dan hamdalah"],"shareTitle":"Bagikan Doa-Doa Ini","shareSubtitle":"Sebarkan kebaikan — bagikan doa-doa hari Arafah","shareText":"Doa-Doa Hari Arafah — 34 doa ma'tsur untuk pengampunan dan kebebasan dari api neraka 🌙","copyLabel":"Salin Tautan","copiedLabel":"Tersalin ✓","platforms":[{"id":"whatsapp","label":"WhatsApp","color":"#25D366","icon":"whatsapp"},{"id":"telegram","label":"Telegram","color":"#229ED9","icon":"telegram"},{"id":"twitter","label":"Twitter / X","color":"#1DA1F2","icon":"twitter"},{"id":"facebook","label":"Facebook","color":"#1877F2","icon":"facebook"},{"id":"email","label":"Email","color":"#EA4335","icon":"email"},{"id":"copy","label":"Salin Tautan","color":"#6C757D","icon":"copy"}]},"pa":{"dir":"ltr","lang":"pa","bismillah":"ਬਿਸਮਿੱਲਾਹਿਰ ਰਹਿਮਾਨਿਰ ਰਹੀਮ","heroTitle":"ਅਰਫ਼ਾ ਦੇ ਦਿਨ ਦੀਆਂ <em>ਦੁਆਵਾਂ</em>","heroSub":"ਬਖ਼ਸ਼ਿਸ਼ ਅਤੇ ਜਹੱਨਮ ਤੋਂ ਮੁਕਤੀ ਦਾ ਦਿਨ","hadith":"ਨਬੀ ﷺ ਨੇ ਫ਼ਰਮਾਇਆ: \"ਸਭ ਤੋਂ ਵਧੀਆ ਦੁਆ ਅਰਫ਼ਾ ਦੇ ਦਿਨ ਦੀ ਦੁਆ ਹੈ, ਅਤੇ ਸਭ ਤੋਂ ਵਧੀਆ ਗੱਲ ਜੋ ਮੈਂ ਅਤੇ ਮੇਰੇ ਤੋਂ ਪਹਿਲਾਂ ਦੇ ਨਬੀਆਂ ਨੇ ਕਹੀ ਉਹ ਇਹ ਹੈ:\"","tahlil":"ਲਾ ਇਲਾਹਾ ਇੱਲਲਾਹੁ ਵਹਿਦਹੂ ਲਾ ਸ਼ਰੀਕਾ ਲਹੂ، ਲਹੁਲ ਮੁਲਕੁ ਵ ਲਹੁਲ ਹਮਦੁ ਵ ਹੁਵਾ ਅਲਾ ਕੁੱਲਿ ਸ਼ਈਇਨ ਕਦੀਰ।","sec1":"ਮਸੂਰ ਦੁਆਵਾਂ","sec2":"ਮੁਆਫ਼ੀ ਦੀਆਂ ਦੁਆਵਾਂ","sec3":"ਸੁਧਾਰ ਅਤੇ ਹਿਦਾਇਤ ਦੀਆਂ ਦੁਆਵਾਂ","sec4":"ਆਖਿਰਤ ਅਤੇ ਕਬਰ ਦੀਆਂ ਦੁਆਵਾਂ","sec5":"ਅੰਤਿਮ ਦੁਆਵਾਂ","takbeer":"ਅੱਲਾਹੁ ਅਕਬਰ، ਅੱਲਾਹੁ ਅਕਬਰ، ਅੱਲਾਹੁ ਅਕਬਰ। ਲਾ ਇਲਾਹਾ ਇੱਲਲਾਹੁ ਵਹਿਦਹੂ ਲਾ ਸ਼ਰੀਕਾ ਲਹੂ، ਲਹੁਲ ਮੁਲਕੁ ਵ ਲਹੁਲ ਹਮਦੁ ਵ ਹੁਵਾ ਅਲਾ ਕੁੱਲਿ ਸ਼ਈਇਨ ਕਦੀਰ। ਲਾ ਇਲਾਹਾ ਇੱਲਲਾਹੁ ਵਹਿਦਹੂ ਲਾ ਸ਼ਰੀਕਾ ਲਹੂ।","closing":"ਸਾਰੀ ਤਾਰੀਫ਼ ਅੱਲਾਹ ਲਈ ਹੈ ਜਿਸ ਨੇ ਸਾਨੂੰ ਦੁਆ ਕਰਨ ਦਾ ਹੁਕਮ ਦਿੱਤਾ ਅਤੇ ਕਬੂਲੀਅਤ ਦਾ ਵਾਅਦਾ ਕੀਤਾ। ਉਸ ਦੇ ਨਾਮ ਅਤੇ ਸਿਫ਼ਤਾਂ ਪਾਕ ਹਨ। ਅੱਲਾਹ ਦੀਆਂ ਰਹਿਮਤਾਂ ਹੋਣ ਸਾਡੇ ਨਬੀ ਮੁਹੰਮਦ ﷺ ਉੱਤੇ ਅਤੇ ਉਨ੍ਹਾਂ ਦੇ ਪਰਿਵਾਰ، ਸਾਥੀਆਂ ਅਤੇ ਸਾਰੇ ਪੈਰੋਕਾਰਾਂ ਉੱਤੇ।","counterTitle":"ਦੁਨੀਆ ਭਰ ਤੋਂ ਸਫ਼ੇ ਦੇ ਸੈਲਾਨੀ","counterNote":"ਸਫ਼ਾ ਖੁੱਲ੍ਹਣ ਤੇ ਹਰ ਵਿਜ਼ਿਟ ਆਪਣੇ ਆਪ ਰਿਕਾਰਡ ਹੋ ਜਾਂਦੀ ਹੈ।","footer":"ਅੱਲਾਹ ਤੁਹਾਡੀਆਂ ਦੁਆਵਾਂ ਕਬੂਲ ਕਰੇ ਅਤੇ ਤੁਹਾਨੂੰ ਜਹੱਨਮ ਤੋਂ ਆਜ਼ਾਦ ਕਰੇ।","duas":["ਹੇ ਅੱਲਾਹ! ਸਾਰੀ ਤਾਰੀਫ਼ ਤੇਰੀ ਹੈ ਜਦੋਂ ਤੱਕ ਤੂੰ ਖੁਸ਼ ਨਾ ਹੋ ਜਾਵੇ, ਜਦੋਂ ਤੂੰ ਖੁਸ਼ ਹੋਵੇ, ਖੁਸ਼ੀ ਤੋਂ ਬਾਅਦ ਵੀ, ਅਤੇ ਹਰ ਹਾਲ ਵਿੱਚ ਹਰ ਵੇਲੇ। ਹੇ ਅੱਲਾਹ! ਤੇਰੀ ਬਹੁਤ ਜ਼ਿਆਦਾ, ਪਾਕ ਅਤੇ ਬਰਕਤ ਭਰੀ ਤਾਰੀਫ਼ ਹੈ।","ਹੇ ਅੱਲਾਹ! ਸਾਰੀ ਤਾਰੀਫ਼ ਤੇਰੀ ਹੈ ਜਿਵੇਂ ਕਿ ਤੇਰੇ ਚਿਹਰੇ ਦੀ ਸ਼ਾਨ ਅਤੇ ਤੇਰੀ ਵੱਡੀ ਸ਼ਕਤੀ ਦੇ ਲਾਇਕ ਹੈ।","ਹੇ ਅੱਲਾਹ! ਮੁਹੰਮਦ ﷺ ਅਤੇ ਆਲੇ ਮੁਹੰਮਦ ਉੱਤੇ ਰਹਿਮਤਾਂ ਭੇਜ ਜਿਵੇਂ ਤੂੰ ਇਬਰਾਹੀਮ ਅਤੇ ਆਲੇ ਇਬਰਾਹੀਮ ਉੱਤੇ ਭੇਜੀਆਂ। ਬੇਸ਼ੱਕ ਤੂੰ ਤਾਰੀਫ਼ ਦੇ ਲਾਇਕ ਅਤੇ ਵੱਡਿਆਈ ਵਾਲਾ ਹੈਂ। ਹੇ ਅੱਲਾਹ! ਮੁਹੰਮਦ ﷺ ਅਤੇ ਆਲੇ ਮੁਹੰਮਦ ਉੱਤੇ ਬਰਕਤਾਂ ਨਾਜ਼ਲ ਕਰ ਜਿਵੇਂ ਤੂੰ ਇਬਰਾਹੀਮ ਅਤੇ ਆਲੇ ਇਬਰਾਹੀਮ ਉੱਤੇ ਕੀਤੀਆਂ। ਬੇਸ਼ੱਕ ਤੂੰ ਤਾਰੀਫ਼ ਦੇ ਲਾਇਕ ਅਤੇ ਵੱਡਿਆਈ ਵਾਲਾ ਹੈਂ।","ਹੇ ਅੱਲਾਹ! ਸਾਨੂੰ ਦੁਨੀਆ ਵਿੱਚ ਭਲਾਈ ਦੇ ਅਤੇ ਆਖਿਰਤ ਵਿੱਚ ਵੀ ਭਲਾਈ ਦੇ, ਅਤੇ ਸਾਨੂੰ ਅੱਗ ਦੇ ਅਜ਼ਾਬ ਤੋਂ ਬਚਾ।","ਹੇ ਸਾਡੇ ਰੱਬ! ਜੇ ਅਸੀਂ ਭੁੱਲ ਜਾਈਏ ਜਾਂ ਗਲਤੀ ਕਰੀਏ ਤਾਂ ਸਾਨੂੰ ਨਾ ਫੜ। ਹੇ ਸਾਡੇ ਰੱਬ! ਸਾਡੇ ਉੱਤੇ ਉਹੋ ਜਿਹਾ ਬੋਝ ਨਾ ਪਾ ਜਿਹੋ ਜਿਹਾ ਤੂੰ ਸਾਡੇ ਤੋਂ ਪਹਿਲਿਆਂ ਉੱਤੇ ਪਾਇਆ।","ਹੇ ਅੱਲਾਹ! ਸਾਡਾ ਕੋਈ ਗੁਨਾਹ ਨਾ ਛੱਡ ਬਿਨਾਂ ਮੁਆਫ਼ੀ ਦੇ, ਕੋਈ ਐਬ ਨਾ ਛੱਡ ਬਿਨਾਂ ਛੁਪਾਏ, ਕੋਈ ਦੁੱਖ ਨਾ ਛੱਡ ਬਿਨਾਂ ਦੂਰ ਕੀਤੇ, ਅਤੇ ਕੋਈ ਕਰਜ਼ਾ ਨਾ ਛੱਡ ਬਿਨਾਂ ਅਦਾ ਕੀਤੇ — ਹੇ ਸਭ ਤੋਂ ਵੱਧ ਰਹਿਮ ਕਰਨ ਵਾਲੇ।","ਹੇ ਅੱਲਾਹ! ਤੂੰ ਮੇਰਾ ਰੱਬ ਹੈਂ, ਤੇਰੇ ਸਿਵਾ ਕੋਈ ਇਲਾਹ ਨਹੀਂ। ਤੂੰ ਮੈਨੂੰ ਪੈਦਾ ਕੀਤਾ ਅਤੇ ਮੈਂ ਤੇਰਾ ਬੰਦਾ ਹਾਂ। ਮੈਂ ਆਪਣੀ ਤਾਕਤ ਅਨੁਸਾਰ ਤੇਰੇ ਵਾਅਦੇ ਉੱਤੇ ਕਾਇਮ ਹਾਂ। ਮੈਂ ਆਪਣੇ ਕੀਤੇ ਦੀ ਬੁਰਾਈ ਤੋਂ ਤੇਰੀ ਪਨਾਹ ਮੰਗਦਾ ਹਾਂ। ਮੈਂ ਤੇਰੀਆਂ ਨਿਆਮਤਾਂ ਦਾ ਇਕਰਾਰ ਕਰਦਾ ਹਾਂ ਅਤੇ ਆਪਣੇ ਗੁਨਾਹ ਦਾ ਵੀ। ਮੈਨੂੰ ਮੁਆਫ਼ ਕਰ ਦੇ ਕਿਉਂਕਿ ਤੇਰੇ ਸਿਵਾ ਕੋਈ ਗੁਨਾਹ ਮੁਆਫ਼ ਨਹੀਂ ਕਰ ਸਕਦਾ।","ਹੇ ਅੱਲਾਹ! ਬੇਸ਼ੱਕ ਤੂੰ ਮੁਆਫ਼ ਕਰਨ ਵਾਲਾ ਅਤੇ ਕਰੀਮ ਹੈਂ, ਮੁਆਫ਼ੀ ਨੂੰ ਪਸੰਦ ਕਰਦਾ ਹੈਂ — ਪਸ ਸਾਨੂੰ ਮੁਆਫ਼ ਕਰ ਦੇ।","ਹੇ ਅੱਲਾਹ! ਮੈਂ ਤੇਰੇ ਕੋਲੋਂ ਜੰਨਤ ਮੰਗਦਾ ਹਾਂ ਅਤੇ ਉਹ ਗੱਲ ਅਤੇ ਕੰਮ ਜੋ ਉਸ ਦੇ ਨੇੜੇ ਕਰੇ। ਅਤੇ ਜਹੱਨਮ ਤੋਂ ਪਨਾਹ ਮੰਗਦਾ ਹਾਂ ਅਤੇ ਉਹ ਗੱਲ ਅਤੇ ਕੰਮ ਤੋਂ ਜੋ ਉਸ ਦੇ ਨੇੜੇ ਕਰੇ। ਅਤੇ ਮੰਗਦਾ ਹਾਂ ਕਿ ਜੋ ਵੀ ਫ਼ੈਸਲਾ ਮੇਰੇ ਲਈ ਕਰੇ ਉਸ ਨੂੰ ਬਿਹਤਰ ਬਣਾ ਦੇ।","ਹੇ ਸਾਡੇ ਰੱਬ! ਹਿਦਾਇਤ ਦੇਣ ਤੋਂ ਬਾਅਦ ਸਾਡੇ ਦਿਲਾਂ ਨੂੰ ਟੇਢੇ ਨਾ ਕਰ। ਸਾਨੂੰ ਆਪਣੇ ਵੱਲੋਂ ਰਹਿਮਤ ਦੇ — ਬੇਸ਼ੱਕ ਤੂੰ ਬਹੁਤ ਦੇਣ ਵਾਲਾ ਹੈਂ। ਹੇ ਸਾਡੇ ਰੱਬ! ਅਸੀਂ ਆਪਣੇ ਆਪ ਉੱਤੇ ਜ਼ੁਲਮ ਕੀਤਾ — ਜੇ ਤੂੰ ਸਾਨੂੰ ਮੁਆਫ਼ ਨਾ ਕੀਤਾ ਅਤੇ ਰਹਿਮ ਨਾ ਕੀਤਾ ਤਾਂ ਅਸੀਂ ਜ਼ਰੂਰ ਘਾਟੇ ਵਾਲਿਆਂ ਵਿੱਚੋਂ ਹੋਵਾਂਗੇ।","ਹੇ ਅੱਲਾਹ! ਮੇਰੇ ਅਤੇ ਮੇਰੇ ਗੁਨਾਹਾਂ ਵਿਚਕਾਰ ਉਹੋ ਜਿਹਾ ਫ਼ਾਸਲਾ ਕਰ ਜਿਹੋ ਜਿਹਾ ਤੂੰ ਪੂਰਬ ਅਤੇ ਪੱਛਮ ਵਿਚਕਾਰ ਕੀਤਾ। ਮੈਨੂੰ ਮੇਰੇ ਗੁਨਾਹਾਂ ਤੋਂ ਸਾਫ਼ ਕਰ ਜਿਵੇਂ ਚਿੱਟਾ ਕੱਪੜਾ ਮੈਲ ਤੋਂ ਸਾਫ਼ ਕੀਤਾ ਜਾਂਦਾ ਹੈ। ਮੇਰੇ ਗੁਨਾਹਾਂ ਨੂੰ ਪਾਣੀ, ਬਰਫ਼ ਅਤੇ ਗੜਿਆਂ ਨਾਲ ਧੋ ਦੇ।","ਹੇ ਅੱਲਾਹ! ਮੈਂ ਕਬਰ ਦੇ ਅਜ਼ਾਬ ਤੋਂ, ਜਹੱਨਮ ਦੇ ਅਜ਼ਾਬ ਤੋਂ, ਜ਼ਿੰਦਗੀ ਅਤੇ ਮੌਤ ਦੇ ਫ਼ਿਤਨਿਆਂ ਤੋਂ ਅਤੇ ਮਸੀਹ ਦੱਜਾਲ ਦੇ ਫ਼ਿਤਨੇ ਤੋਂ ਤੇਰੀ ਪਨਾਹ ਮੰਗਦਾ ਹਾਂ।","ਹੇ ਅੱਲਾਹ! ਮੈਂ ਤੇਰੀਆਂ ਨਿਆਮਤਾਂ ਦੇ ਖੁੱਸ ਜਾਣ ਤੋਂ, ਤੇਰੀ ਸਿਹਤ ਦੇ ਬਦਲ ਜਾਣ ਤੋਂ, ਤੇਰੇ ਅਜ਼ਾਬ ਦੇ ਅਚਾਨਕ ਆਉਣ ਤੋਂ ਅਤੇ ਤੇਰੀ ਹਰ ਨਾਰਾਜ਼ਗੀ ਤੋਂ ਤੇਰੀ ਪਨਾਹ ਮੰਗਦਾ ਹਾਂ।","ਹੇ ਸਾਡੇ ਰੱਬ! ਅਸੀਂ ਤੇਰੇ ਕੋਲੋਂ ਅਜਿਹੀ ਮੁਆਫ਼ੀ ਮੰਗਦੇ ਹਾਂ ਜੋ ਕੋਈ ਗੁਨਾਹ ਨਾ ਛੱਡੇ, ਅਜਿਹਾ ਪਰਦਾ ਮੰਗਦੇ ਹਾਂ ਜਿਸ ਨੂੰ ਨਾ ਹਵਾ ਫਾੜੇ ਅਤੇ ਨਾ ਨੇਜ਼ਾ ਵਿੰਨ੍ਹੇ, ਅਤੇ ਅਜਿਹੀ ਰਹਿਮਤ ਮੰਗਦੇ ਹਾਂ ਜੋ ਸਾਨੂੰ ਅੱਗ ਤੋਂ ਬਚਾਵੇ ਅਤੇ ਜੰਨਤ ਵਿੱਚ ਦਾਖ਼ਲ ਕਰੇ — ਬੇਸ਼ੱਕ ਤੂੰ ਦੁਆਵਾਂ ਸੁਣਨ ਵਾਲਾ ਹੈਂ।","ਹੇ ਅੱਲਾਹ! ਮੇਰੇ ਦੀਨ ਦੀ ਇਸਲਾਹ ਕਰ ਜੋ ਮੇਰੇ ਸਾਰੇ ਮਾਮਲਿਆਂ ਦੀ ਬੁਨਿਆਦ ਹੈ; ਮੇਰੀ ਦੁਨੀਆ ਦੀ ਇਸਲਾਹ ਕਰ ਜਿੱਥੇ ਮੇਰੀ ਰੋਜ਼ੀ ਹੈ; ਮੇਰੀ ਆਖਿਰਤ ਦੀ ਇਸਲਾਹ ਕਰ ਜਿੱਥੇ ਮੇਰੀ ਵਾਪਸੀ ਹੈ। ਜ਼ਿੰਦਗੀ ਨੂੰ ਮੇਰੇ ਲਈ ਹਰ ਭਲਾਈ ਵਿੱਚ ਵਾਧੇ ਦਾ ਜ਼ਰੀਆ ਬਣਾ ਅਤੇ ਮੌਤ ਨੂੰ ਮੇਰੇ ਲਈ ਹਰ ਬੁਰਾਈ ਤੋਂ ਆਰਾਮ ਦਾ ਜ਼ਰੀਆ ਬਣਾ।","ਹੇ ਮੇਰੇ ਰੱਬ! ਮੈਨੂੰ ਅਤੇ ਮੇਰੀ ਔਲਾਦ ਨੂੰ ਨਮਾਜ਼ ਕਾਇਮ ਕਰਨ ਵਾਲਾ ਬਣਾ। ਹੇ ਸਾਡੇ ਰੱਬ! ਮੇਰੀ ਦੁਆ ਕਬੂਲ ਕਰ। ਹੇ ਸਾਡੇ ਰੱਬ! ਮੈਨੂੰ, ਮੇਰੇ ਮਾਂ-ਬਾਪ ਅਤੇ ਸਾਰੇ ਮੋਮਿਨਾਂ ਨੂੰ ਉਸ ਦਿਨ ਮੁਆਫ਼ ਕਰ ਜਿਸ ਦਿਨ ਹਿਸਾਬ ਕਾਇਮ ਹੋਵੇਗਾ।","ਮੈਂ ਅੱਲਾਹ ਤੋਂ ਮੁਆਫ਼ੀ ਮੰਗਦਾ ਹਾਂ — ਜਿਸ ਤੋਂ ਸਿਵਾ ਕੋਈ ਇਲਾਹ ਨਹੀਂ, ਜੋ ਹਮੇਸ਼ਾ ਜ਼ਿੰਦਾ ਅਤੇ ਕਾਇਮ ਹੈ — ਅਤੇ ਮੈਂ ਉਸ ਵੱਲ ਤੌਬਾ ਕਰਦਾ ਹਾਂ।","ਹੇ ਸਾਡੇ ਰੱਬ! ਆਪਣੇ ਵੱਲੋਂ ਸਾਨੂੰ ਰਹਿਮਤ ਦੇ ਅਤੇ ਸਾਡੇ ਮਾਮਲੇ ਵਿੱਚ ਸਾਡੇ ਲਈ ਸਿੱਧੀ ਰਾਹ ਬਣਾ। ਹੇ ਸਾਡੇ ਰੱਬ! ਅਸੀਂ ਈਮਾਨ ਲਿਆਂਦਾ ਪਸ ਸਾਨੂੰ ਮੁਆਫ਼ ਕਰ ਅਤੇ ਰਹਿਮ ਕਰ — ਤੂੰ ਸਭ ਤੋਂ ਵਧੀਆ ਰਹਿਮ ਕਰਨ ਵਾਲਾ ਹੈਂ।","ਹੇ ਮੇਰੇ ਰੱਬ! ਮੈਨੂੰ ਤੋਫ਼ੀਕ ਦੇ ਕਿ ਮੈਂ ਤੇਰੀਆਂ ਉਨ੍ਹਾਂ ਨਿਆਮਤਾਂ ਦਾ ਸ਼ੁਕਰ ਅਦਾ ਕਰਾਂ ਜੋ ਤੂੰ ਮੈਨੂੰ ਅਤੇ ਮੇਰੇ ਮਾਂ-ਬਾਪ ਨੂੰ ਦਿੱਤੀਆਂ ਹਨ, ਅਤੇ ਅਜਿਹੇ ਨੇਕ ਕੰਮ ਕਰਾਂ ਜੋ ਤੈਨੂੰ ਪਸੰਦ ਹੋਣ, ਅਤੇ ਮੇਰੀ ਔਲਾਦ ਵਿੱਚ ਭਲਾਈ ਦੇ। ਮੈਂ ਤੇਰੇ ਵੱਲ ਤੌਬਾ ਕੀਤੀ ਅਤੇ ਮੈਂ ਮੁਸਲਮਾਨਾਂ ਵਿੱਚੋਂ ਹਾਂ।","ਹੇ ਅੱਲਾਹ! ਦੋ ਫ਼ਰਿਸ਼ਤਿਆਂ ਦੇ ਸਵਾਲਾਂ ਵੇਲੇ ਮੈਨੂੰ ਡੱਟਿਆ ਰੱਖ। ਮੇਰੀ ਕਬਰ ਨੂੰ ਜੰਨਤ ਦੇ ਬਾਗ਼ਾਂ ਵਿੱਚੋਂ ਇੱਕ ਬਾਗ਼ ਬਣਾ ਅਤੇ ਜਹੱਨਮ ਦੇ ਟੋਇਆਂ ਵਿੱਚੋਂ ਕੋਈ ਟੋਆ ਨਾ ਬਣਾ। ਹੇ ਅੱਲਾਹ! ਮੈਂ ਦੁਨੀਆ ਦੇ ਫ਼ਿਤਨਿਆਂ ਤੋਂ ਤੇਰੀ ਪਨਾਹ ਮੰਗਦਾ ਹਾਂ।","ਹੇ ਅੱਲਾਹ! ਤੂੰ ਬਾਦਸ਼ਾਹ ਹੈਂ, ਤੇਰੇ ਸਿਵਾ ਕੋਈ ਇਲਾਹ ਨਹੀਂ। ਤੂੰ ਮੇਰਾ ਰੱਬ ਹੈਂ ਅਤੇ ਮੈਂ ਤੇਰਾ ਬੰਦਾ ਹਾਂ। ਮੈਂ ਆਪਣੇ ਆਪ ਉੱਤੇ ਜ਼ੁਲਮ ਕੀਤਾ ਅਤੇ ਆਪਣੇ ਗੁਨਾਹ ਦਾ ਇਕਰਾਰ ਕਰਦਾ ਹਾਂ। ਮੇਰੇ ਸਾਰੇ ਗੁਨਾਹ ਮੁਆਫ਼ ਕਰ — ਤੇਰੇ ਸਿਵਾ ਕੋਈ ਨਹੀਂ ਕਰ ਸਕਦਾ। ਮੈਨੂੰ ਵਧੀਆ ਅਖ਼ਲਾਕ ਵੱਲ ਅਗਵਾਈ ਦੇ — ਤੇਰੇ ਸਿਵਾ ਕੋਈ ਨਹੀਂ ਦੇ ਸਕਦਾ। ਅਤੇ ਬੁਰੇ ਅਖ਼ਲਾਕ ਮੇਰੇ ਤੋਂ ਦੂਰ ਕਰ — ਤੇਰੇ ਸਿਵਾ ਕੋਈ ਨਹੀਂ ਕਰ ਸਕਦਾ। ਲੱਬੈਕ ਵ ਸਅਦੈਕ — ਸਾਰੀ ਭਲਾਈ ਤੇਰੇ ਹੱਥਾਂ ਵਿੱਚ ਹੈ। ਮੈਂ ਤੇਰੇ ਕੋਲੋਂ ਮੁਆਫ਼ੀ ਮੰਗਦਾ ਹਾਂ ਅਤੇ ਤੇਰੇ ਵੱਲ ਤੌਬਾ ਕਰਦਾ ਹਾਂ।","ਹੇ ਸਾਡੇ ਰੱਬ! ਮੈਨੂੰ, ਮੇਰੇ ਮਾਂ-ਬਾਪ ਅਤੇ ਸਾਰੇ ਮੋਮਿਨਾਂ ਨੂੰ ਉਸ ਦਿਨ ਮੁਆਫ਼ ਕਰ ਜਿਸ ਦਿਨ ਹਿਸਾਬ ਕਾਇਮ ਹੋਵੇਗਾ।","ਹੇ ਅੱਲਾਹ! ਆਪਣੇ ਹਲਾਲ ਰਾਹੀਂ ਮੈਨੂੰ ਆਪਣੇ ਹਰਾਮ ਤੋਂ ਬੇਨਿਆਜ਼ ਕਰ ਅਤੇ ਆਪਣੇ ਫ਼ਜ਼ਲ ਨਾਲ ਮੈਨੂੰ ਤੇਰੇ ਸਿਵਾ ਸਭ ਤੋਂ ਬੇਪਰਵਾਹ ਕਰ।","ਹੇ ਅੱਲਾਹ! ਮੇਰੀ ਰੂਹ ਨੂੰ ਪਰਹੇਜ਼ਗਾਰੀ ਦੇ ਅਤੇ ਉਸ ਨੂੰ ਪਾਕ ਕਰ — ਤੂੰ ਪਾਕ ਕਰਨ ਵਾਲਿਆਂ ਵਿੱਚੋਂ ਸਭ ਤੋਂ ਵਧੀਆ ਹੈਂ। ਤੂੰ ਉਸ ਦਾ ਨਿਗਾਹਬਾਨ ਅਤੇ ਮਾਲਕ ਹੈਂ — ਹੇ ਸਾਰੇ ਜਹਾਨਾਂ ਦੇ ਰੱਬ। ਹੇ ਅੱਲਾਹ! ਮੈਂ ਤੇਰੇ ਕੋਲੋਂ ਉਸ ਗ਼ਰੀਬ ਮਸਕੀਨ ਵਾਂਗੂ ਮੰਗਦਾ ਹਾਂ ਅਤੇ ਉਸ ਬੇਕਸ ਮਿਸਕੀਨ ਵਾਂਗੂ ਦੁਆ ਕਰਦਾ ਹਾਂ।","ਹੇ ਅੱਲਾਹ! ਦਿਲਾਂ ਅਤੇ ਨਜ਼ਰਾਂ ਨੂੰ ਫੇਰਨ ਵਾਲੇ! ਸਾਡੇ ਦਿਲਾਂ ਨੂੰ ਆਪਣੀ ਇਤਾਅਤ ਵੱਲ ਕਰ ਦੇ। ਹੇ ਅੱਲਾਹ! ਸਾਡੇ ਵਿੱਚ ਵਾਧਾ ਕਰ ਅਤੇ ਘਟਾ ਨਾ; ਦੇ ਅਤੇ ਮਹਿਰੂਮ ਨਾ ਕਰ; ਸਾਨੂੰ ਤਰਜੀਹ ਦੇ ਅਤੇ ਸਾਡੇ ਉੱਤੇ ਦੂਜਿਆਂ ਨੂੰ ਤਰਜੀਹ ਨਾ ਦੇ। ਹੇ ਅੱਲਾਹ! ਸਾਡੇ ਸਾਰੇ ਮਾਮਲਿਆਂ ਦਾ ਅੰਜਾਮ ਭਲਾ ਕਰ ਅਤੇ ਦੁਨੀਆ ਦੀ ਰੁਸਵਾਈ ਅਤੇ ਆਖਿਰਤ ਦੇ ਅਜ਼ਾਬ ਤੋਂ ਬਚਾ।","ਹੇ ਅੱਲਾਹ! ਸਾਨੂੰ ਬਿਨਾਂ ਹਿਸਾਬ ਅਤੇ ਬਿਨਾਂ ਪਹਿਲਾਂ ਦੇ ਅਜ਼ਾਬ ਦੇ ਜੰਨਤ ਵਿੱਚ ਦਾਖ਼ਲ ਕਰ।","ਹੇ ਅੱਲਾਹ! ਸਾਡੇ ਬਾਪ-ਦਾਦਾ ਅਤੇ ਮਾਵਾਂ ਉੱਤੇ ਰਹਿਮ ਕਰ, ਉਨ੍ਹਾਂ ਨੂੰ ਮੁਆਫ਼ ਕਰ, ਉਨ੍ਹਾਂ ਦੀਆਂ ਬੁਰਾਈਆਂ ਤੋਂ ਦਰਗੁਜ਼ਰ ਕਰ ਅਤੇ ਉਨ੍ਹਾਂ ਨੂੰ ਆਪਣੀਆਂ ਵਿਸ਼ਾਲ ਜੰਨਤਾਂ ਵਿੱਚ ਦਾਖ਼ਲ ਕਰ। ਅਤੇ ਸਾਨੂੰ ਉਨ੍ਹਾਂ ਨਾਲ ਮਿਲਾ ਦੇ — ਹੇ ਸਾਰੇ ਜਹਾਨਾਂ ਦੇ ਰੱਬ।","ਹੇ ਅੱਲਾਹ! ਮੈਨੂੰ ਆਪਣਾ ਜ਼ਿਕਰ, ਆਪਣਾ ਸ਼ੁਕਰ ਅਤੇ ਵਧੀਆ ਢੰਗ ਨਾਲ ਆਪਣੀ ਇਬਾਦਤ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰ।","ਹੇ ਅੱਲਾਹ! ਮੈਂ ਤੇਰੇ ਕੋਲੋਂ ਜੰਨਤ ਮੰਗਦਾ ਹਾਂ ਅਤੇ ਉਹ ਗੱਲ ਅਤੇ ਕੰਮ ਜੋ ਉਸ ਦੇ ਨੇੜੇ ਕਰੇ, ਅਤੇ ਮੰਗਦਾ ਹਾਂ ਕਿ ਜੋ ਵੀ ਫ਼ੈਸਲਾ ਮੇਰੇ ਲਈ ਕਰੇ ਉਸ ਨੂੰ ਬਿਹਤਰ ਬਣਾ ਦੇ।","ਹੇ ਅੱਲਾਹ! ਹੇ ਵਿਸ਼ਾਲ ਮਾਫ਼ੀ ਵਾਲੇ, ਅਸੀਂ ਤੇਰੇ ਕੋਲੋਂ ਦੁਆ ਕਰਦੇ ਹਾਂ ਕਿ ਸਾਨੂੰ ਸਾਰੇ ਗੁਨਾਹਾਂ ਤੋਂ ਪਾਕ ਕਰ, ਤੇਰੇ ਕੋਲ ਸਭ ਤੋਂ ਉੱਚੇ ਦਰਜਿਆਂ ਉੱਤੇ ਚੁੱਕ, ਅਤੇ ਜ਼ਿੰਦਗੀ ਅਤੇ ਮੌਤ ਤੋਂ ਬਾਅਦ ਵੀ ਸਾਰੀਆਂ ਭਲਾਈਆਂ ਦੇ ਸਭ ਤੋਂ ਉੱਚੇ ਮਕਸਦਾਂ ਤੱਕ ਪਹੁੰਚਾ۔","ਹੇ ਅੱਲਾਹ! ਮੈਂ ਤੇਰਾ ਬੰਦਾ ਹਾਂ, ਤੇਰੇ ਬੰਦੇ ਦਾ ਪੁੱਤਰ, ਤੇਰੀ ਬੰਦੀ ਦਾ ਪੁੱਤਰ। ਮੇਰੀ ਪੇਸ਼ਾਨੀ ਤੇਰੇ ਹੱਥ ਵਿੱਚ ਹੈ; ਤੇਰਾ ਫ਼ੈਸਲਾ ਮੇਰੇ ਉੱਤੇ ਯਕੀਨੀ ਹੈ; ਤੇਰਾ ਹੁਕਮ ਮੇਰੇ ਉੱਤੇ ਇਨਸਾਫ਼ ਵਾਲਾ ਹੈ। ਮੈਂ ਤੇਰੇ ਕੋਲੋਂ ਤੇਰੇ ਹਰ ਉਸ ਨਾਮ ਦੇ ਜ਼ਰੀਏ ਮੰਗਦਾ ਹਾਂ ਜਿਸ ਨਾਲ ਤੂੰ ਆਪਣੇ ਆਪ ਨੂੰ ਨਾਮ ਦਿੱਤਾ, ਜਾਂ ਆਪਣੀ ਕਿਤਾਬ ਵਿੱਚ ਨਾਜ਼ਲ ਕੀਤਾ, ਜਾਂ ਆਪਣੀ ਕਿਸੇ ਮਖ਼ਲੂਕ ਨੂੰ ਸਿਖਾਇਆ, ਜਾਂ ਆਪਣੇ ਕੋਲ ਗੈਬ ਦੇ ਇਲਮ ਵਿੱਚ ਰੱਖਿਆ: ਕਿ ਕੁਰਾਨੇ ਕਰੀਮ ਨੂੰ ਮੇਰੇ ਦਿਲ ਦੀ ਬਹਾਰ, ਮੇਰੀ ਛਾਤੀ ਦਾ ਨੂਰ, ਮੇਰੇ ਗ਼ਮ ਦੀ ਦਵਾ ਅਤੇ ਮੇਰੀ ਫ਼ਿਕਰ ਅਤੇ ਪਰੇਸ਼ਾਨੀ ਦਾ ਖ਼ਾਤਮਾ ਬਣਾ ਦੇ।","ਹੇ ਅੱਲਾਹ! ਮੈਂ ਤੇਰੇ ਕੋਲੋਂ ਫ਼ੈਸਲੇ ਤੋਂ ਬਾਅਦ ਤਸੱਲੀ, ਮੌਤ ਤੋਂ ਬਾਅਦ ਸੁਖਾਵੀਂ ਜ਼ਿੰਦਗੀ, ਤੇਰੇ ਕਰੀਮ ਚਿਹਰੇ ਦੇ ਦੀਦਾਰ ਦੀ ਲੱਜ਼ਤ ਅਤੇ ਤੇਰੀ ਮੁਲਾਕਾਤ ਦਾ ਸ਼ੌਕ ਮੰਗਦਾ ਹਾਂ — ਬਿਨਾਂ ਕਿਸੇ ਨੁਕਸਾਨਦੇਹ ਮੁਸੀਬਤ ਅਤੇ ਗੁਮਰਾਹ ਕਰਨ ਵਾਲੇ ਫ਼ਿਤਨੇ ਦੇ। ਹੇ ਅੱਲਾਹ! ਮੈਂ ਤੇਰੀ ਪਨਾਹ ਮੰਗਦਾ ਹਾਂ ਕਿ ਮੈਨੂੰ ਸਭ ਤੋਂ ਬੁਰੀ ਉਮਰ ਤੱਕ ਨਾ ਪਹੁੰਚਾਇਆ ਜਾਵੇ।","ਹੇ ਅੱਲਾਹ! ਮੈਂ ਤੇਰੀਆਂ ਨਿਆਮਤਾਂ ਦੇ ਖੁੱਸਣ, ਤੇਰੀ ਸਿਹਤ ਦੇ ਬਦਲਣ, ਤੇਰੇ ਅਜ਼ਾਬ ਦੇ ਅਚਾਨਕ ਆਉਣ ਅਤੇ ਤੇਰੀ ਹਰ ਨਾਰਾਜ਼ਗੀ ਤੋਂ ਤੇਰੀ ਪਨਾਹ ਮੰਗਦਾ ਹਾਂ। ਮੈਂ ਢਹਿਣ, ਡਿੱਗਣ, ਡੁੱਬਣ, ਸੜਨ ਅਤੇ ਬੁਢਾਪੇ ਦੀ ਕਮਜ਼ੋਰੀ ਤੋਂ ਪਨਾਹ ਮੰਗਦਾ ਹਾਂ; ਮੌਤ ਵੇਲੇ ਸ਼ੈਤਾਨ ਦੀ ਗੁਮਰਾਹੀ ਤੋਂ; ਜ਼ਹਿਰੀਲੇ ਜਾਨਵਰ ਦੇ ਕੱਟਣ ਨਾਲ ਮੌਤ ਤੋਂ; ਅਤੇ ਅਜਿਹੇ ਲਾਲਚ ਤੋਂ ਜੋ ਤਬਾਹੀ ਵੱਲ ਲੈ ਜਾਵੇ।","ਹੇ ਅੱਲਾਹ! ਸਾਡੇ ਕੰਮਾਂ ਦਾ ਸਭ ਤੋਂ ਵਧੀਆ ਹਿੱਸਾ ਉਨ੍ਹਾਂ ਦਾ ਆਖਿਰੀ ਹਿੱਸਾ ਬਣਾ, ਸਾਡੀਆਂ ਉਮਰਾਂ ਦਾ ਸਭ ਤੋਂ ਵਧੀਆ ਹਿੱਸਾ ਉਨ੍ਹਾਂ ਦਾ ਅੰਤ ਬਣਾ, ਅਤੇ ਸਾਡੇ ਦਿਨਾਂ ਦਾ ਸਭ ਤੋਂ ਵਧੀਆ ਦਿਨ ਉਹ ਦਿਨ ਬਣਾ ਜਦੋਂ ਅਸੀਂ ਤੈਨੂੰ ਮਿਲਾਂਗੇ। ਹੇ ਅੱਲਾਹ! ਜੋ ਲੰਘ ਗਿਆ ਉਸ ਨੂੰ ਮੁਆਫ਼ ਕਰ ਅਤੇ ਜੋ ਬਾਕੀ ਹੈ ਉਸ ਨੂੰ ਸੁਧਾਰ ਦੇ۔"],"sources":[{"type":"hadith","ref":"ਤਬਰਾਨੀ — ਹਸਨ (ਅਲਬਾਨੀ)"},{"type":"hadith","ref":"ਇਬਨ ਮਾਜਹ"},{"type":"hadith","ref":"ਬੁਖ਼ਾਰੀ ਅਤੇ ਮੁਸਲਿਮ"},{"type":"hadith","ref":"ਬੁਖ਼ਾਰੀ ਅਤੇ ਮੁਸਲਿਮ"},{"type":"quran","ref":"ਸੂਰਤ ਅਲ-ਬਕਰਾ ੨:੨੮੬"},{"type":"hadith","ref":"ਤਿਰਮਿਜ਼ੀ — ਸਹੀਹ"},{"type":"hadith","ref":"ਸਹੀਹ ਬੁਖ਼ਾਰੀ — ਸੱਯਿਦੁਲ ਇਸਤਗ਼ਫ਼ਾਰ"},{"type":"hadith","ref":"ਤਿਰਮਿਜ਼ੀ ਅਤੇ ਇਬਨ ਮਾਜਹ — ਸਹੀਹ"},{"type":"hadith","ref":"ਅਬੂ ਦਾਊਦ ਅਤੇ ਤਿਰਮਿਜ਼ੀ — ਸਹੀਹ"},{"type":"quran","ref":"ਸੂਰਤ ਆਲ-ਇਮਰਾਨ ੩:੮-੯"},{"type":"hadith","ref":"ਬੁਖ਼ਾਰੀ ਅਤੇ ਮੁਸਲਿਮ"},{"type":"hadith","ref":"ਬੁਖ਼ਾਰੀ ਅਤੇ ਮੁਸਲਿਮ"},{"type":"hadith","ref":"ਸਹੀਹ ਮੁਸਲਿਮ"},{"type":"salaf","ref":"ਸਲਫ਼ ਦੀਆਂ ਦੁਆਵਾਂ ਤੋਂ"},{"type":"hadith","ref":"ਸਹੀਹ ਮੁਸਲਿਮ"},{"type":"quran","ref":"ਸੂਰਤ ਇਬਰਾਹੀਮ ੧੪:੪੦-੪੧"},{"type":"hadith","ref":"ਅਬੂ ਦਾਊਦ — ਸਹੀਹ (ਅਲਬਾਨੀ)"},{"type":"hadith","ref":"ਸਹੀਹ ਮੁਸਲਿਮ"},{"type":"quran","ref":"ਸੂਰਤ ਅਲ-ਅਹਕਾਫ਼ ੪੬:੧੫"},{"type":"hadith","ref":"ਤਿਰਮਿਜ਼ੀ ਅਤੇ ਇਬਨ ਮਾਜਹ — ਸਹੀਹ"},{"type":"hadith","ref":"ਸਹੀਹ ਮੁਸਲਿਮ — ਦੁਆ ਇਫ਼ਤਿਤਾਹ"},{"type":"quran","ref":"ਸੂਰਤ ਇਬਰਾਹੀਮ ੧੪:੪੧"},{"type":"hadith","ref":"ਤਿਰਮਿਜ਼ੀ — ਸਹੀਹ"},{"type":"hadith","ref":"ਤਿਰਮਿਜ਼ੀ — ਸਹੀਹ"},{"type":"hadith","ref":"ਤਿਰਮਿਜ਼ੀ ਅਤੇ ਹਾਕਿਮ — ਸਹੀਹ"},{"type":"hadith","ref":"ਸਹੀਹ ਮੁਸਲਿਮ"},{"type":"hadith","ref":"ਅਹਿਮਦ ਅਤੇ ਤਿਰਮਿਜ਼ੀ — ਸਹੀਹ"},{"type":"hadith","ref":"ਅਬੂ ਦਾਊਦ ਅਤੇ ਨਸਾਈ — ਸਹੀਹ"},{"type":"hadith","ref":"ਅਬੂ ਦਾਊਦ ਅਤੇ ਤਿਰਮਿਜ਼ੀ — ਸਹੀਹ"},{"type":"salaf","ref":"ਸਲਫ਼ ਦੀਆਂ ਦੁਆਵਾਂ ਤੋਂ"},{"type":"hadith","ref":"ਅਹਿਮਦ — ਸਹੀਹ (ਅਲਬਾਨੀ)"},{"type":"hadith","ref":"ਤਿਰਮਿਜ਼ੀ — ਸਹੀਹ"},{"type":"hadith","ref":"ਮੁਸਲਿਮ ਅਤੇ ਅਬੂ ਦਾਊਦ"},{"type":"hadith","ref":"ਤਬਰਾਨੀ — ਸਹੀਹ (ਅਲਬਾਨੀ)"}],"quranLabel":"ਕੁਰਆਨੀ ਦੁਆ","salafLabel":"ਸਲਫ਼ ਦੀ ਦੁਆ","adaabTitle":"ਅਰਫ਼ਾ ਦੇ ਦਿਨ ਦੁਆ ਦੇ ਆਦਾਬ","adaabItems":["ਕਿਬਲੇ ਵੱਲ ਮੂੰਹ ਕਰਕੇ ਹੱਥ ਚੁੱਕਣਾ","ਪਾਕੀਜ਼ਗੀ ਦਾ ਧਿਆਨ ਰੱਖਣਾ","ਅੱਲਾਹ ਦੀ ਹਮਦ ਅਤੇ ਨਬੀ ﷺ ਉੱਤੇ ਦਰੂਦ ਤੋਂ ਸ਼ੁਰੂਆਤ","ਇਕਾਗਰਤਾ ਅਤੇ ਦੁਹਰਾਉਣ ਨਾਲ ਦੁਆ ਕਰਨਾ","ਆਮੀਨ ਅਤੇ ਹਮਦ ਨਾਲ ਸਮਾਪਤੀ"],"shareTitle":"ਦੁਆਵਾਂ ਸਾਂਝੀਆਂ ਕਰੋ","shareSubtitle":"ਭਲਾਈ ਫੈਲਾਓ — ਅਰਫ਼ਾ ਦੀਆਂ ਦੁਆਵਾਂ ਸਾਂਝੀਆਂ ਕਰੋ","shareText":"ਅਰਫ਼ਾ ਦੇ ਦਿਨ ਦੀਆਂ ਦੁਆਵਾਂ — ਬਖ਼ਸ਼ਿਸ਼ ਅਤੇ ਜਹੱਨਮ ਤੋਂ ਮੁਕਤੀ ਲਈ ੩੪ ਦੁਆਵਾਂ 🌙","copyLabel":"ਲਿੰਕ ਕਾਪੀ ਕਰੋ","copiedLabel":"ਕਾਪੀ ਹੋ ਗਿਆ ✓","platforms":[{"id":"whatsapp","label":"ਵਟਸਐਪ","color":"#25D366","icon":"whatsapp"},{"id":"telegram","label":"ਟੈਲੀਗ੍ਰਾਮ","color":"#229ED9","icon":"telegram"},{"id":"twitter","label":"ਟਵਿੱਟਰ / X","color":"#1DA1F2","icon":"twitter"},{"id":"facebook","label":"ਫੇਸਬੁੱਕ","color":"#1877F2","icon":"facebook"},{"id":"email","label":"ਈਮੇਲ","color":"#EA4335","icon":"email"},{"id":"copy","label":"ਲਿੰਕ ਕਾਪੀ","color":"#6C757D","icon":"copy"}]}};
+
+/* ═══════════════════════════════════════════════
+   LANGUAGE SWITCHER
+═══════════════════════════════════════════════ */
+const LABELS={ar:'عربي',en:'English',fr:'Français',ur:'اردو',bn:'বাংলা',id:'Bahasa',pa:'ਪੰਜਾਬੀ'};
+
+function setLang(code){
+  const t=T[code]; if(!t) return;
+  const html=document.documentElement;
+  html.setAttribute('lang',t.lang);
+  html.setAttribute('dir',t.dir);
+  html.setAttribute('data-lang',code);
+
+  // Lang bar buttons
+  document.querySelectorAll('.lang-btn').forEach(b=>{
+    const active=b.textContent.trim()===LABELS[code];
+    b.classList.toggle('active',active);
+    b.setAttribute('aria-current',active?'true':'false');
   });
 
-  // Intersection Observer for card animations
-  const cards = document.querySelectorAll('.dua-card');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
+  // Bismillah
+  document.getElementById('bismillahFab').textContent=t.bismillah;
+
+  // Hero
+  document.getElementById('heroTitle').innerHTML=t.heroTitle;
+  document.getElementById('heroSub').textContent=t.heroSub;
+
+  // Hadith intro
+  document.getElementById('hadithText').textContent=t.hadith;
+
+  // Tahlil (all)
+  document.querySelectorAll('.tahlilText').forEach(el=>el.textContent=t.tahlil);
+
+  // Section labels
+  ['sec1','sec2','sec3','sec4','sec5'].forEach((id,i)=>{
+    const el=document.getElementById(id);
+    if(el) el.textContent=t['sec'+(i+1)];
+  });
+
+  // Duas — fix direction per language
+  const isRTL=t.dir==='rtl';
+  document.querySelectorAll('.dua').forEach(el=>{
+    const i=parseInt(el.getAttribute('data-i'));
+    el.textContent=t.duas[i];
+    el.setAttribute('dir',isRTL?'rtl':'ltr');
+    el.style.textAlign=isRTL?'right':'left';
+  });
+
+  // Source badges
+  document.querySelectorAll('.src-badge').forEach(el=>{
+    const i=parseInt(el.getAttribute('data-src'));
+    if(!t.sources||!t.sources[i]) return;
+    const s=t.sources[i];
+    const icon=s.type==='quran'?'📖':s.type==='salaf'?'✦':'📜';
+    el.textContent=icon+' '+s.ref;
+    el.className='src-badge src-'+s.type;
+  });
+
+  // Quran card labels
+  const ql=t.quranLabel||'';
+  document.querySelectorAll('.card[data-type="quran"]').forEach(c=>{
+    c.setAttribute('data-qlabel',ql);
+  });
+
+  // Adaab card
+  const atEl=document.getElementById('adaabTitle');
+  if(atEl) atEl.textContent=t.adaabTitle||'';
+  const ul=document.getElementById('adaabList');
+  if(ul){
+    ul.innerHTML='';
+    (t.adaabItems||[]).forEach(item=>{
+      const li=document.createElement('li');
+      li.textContent=item;
+      ul.appendChild(li);
     });
-  }, { threshold: 0.1 });
-  cards.forEach(card => observer.observe(card));
+  }
+
+  // Takbeer
+  document.querySelectorAll('.takbeerText').forEach(el=>el.textContent=t.takbeer);
+
+  // Closing
+  const cl=document.getElementById('closingText');
+  if(cl) cl.textContent=t.closing;
+
+  // Counter
+  const ct=document.getElementById('counterTitle');
+  const cn=document.getElementById('counterNote');
+  if(ct) ct.textContent=t.counterTitle;
+  if(cn) cn.textContent=t.counterNote;
+
+  // Footer
+  const ft=document.getElementById('footerText');
+  if(ft) ft.textContent=t.footer;
+
+  updateShareUI(code);
+  localStorage.setItem('prefLang',code);
+}
+
+/* ═══════════════════════════════════════════════
+   SPLASH SCREEN
+═══════════════════════════════════════════════ */
+function enterLang(code){
+  const splash=document.getElementById('splash');
+  splash.classList.add('fade-out');
+  setLang(code);
+  setTimeout(()=>{
+    splash.style.display='none';
+    splash.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+    document.getElementById('backBtn').classList.add('visible');
+  window.scrollTo({top:0,behavior:'instant'});
+},580);
+}
+
+document.getElementById('backBtn').addEventListener('click',()=>{
+  const splash=document.getElementById('splash');
+  splash.style.cssText='display:flex;opacity:0;transform:scale(1.04)';
+  splash.removeAttribute('aria-hidden');
+  splash.classList.remove('fade-out');
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    splash.style.transition='opacity .4s ease,transform .4s ease';
+    splash.style.opacity='1';
+    splash.style.transform='scale(1)';
+  }));
+  document.body.style.overflow='hidden';
+});
+
+// Keyboard nav for splash cards
+document.querySelectorAll('.sp-card').forEach(card=>{
+  card.addEventListener('keydown',e=>{
+    if(e.key==='Enter'||e.key===' '){e.preventDefault();card.click();}
+  });
+});
+
+/* ═══════════════════════════════════════════════
+   STARS
+═══════════════════════════════════════════════ */
+(function(){
+  const starsEl=document.getElementById('stars');
+  const N=window.innerWidth<400?60:90;
+  const frag=document.createDocumentFragment();
+  for(let i=0;i<N;i++){
+    const s=document.createElement('span');
+    const sz=Math.random()<.12?3:Math.random()<.35?2:1;
+    s.style.cssText=`top:${(Math.random()*100).toFixed(1)}%;left:${(Math.random()*100).toFixed(1)}%;width:${sz}px;height:${sz}px;--d:${(2+Math.random()*5).toFixed(1)}s;--dl:${(Math.random()*8).toFixed(1)}s;opacity:${(.12+Math.random()*.88).toFixed(2)}`;
+    frag.appendChild(s);
+  }
+  starsEl.appendChild(frag);
+})();
+
+/* ═══════════════════════════════════════════════
+   SCROLL PROGRESS
+═══════════════════════════════════════════════ */
+(function(){
+  const pb=document.getElementById('progressBar');
+  let ticking=false;
+  const update=()=>{
+    const sy=window.scrollY,dh=document.documentElement.scrollHeight-window.innerHeight;
+    pb.style.height=(dh>0?(sy/dh*100).toFixed(2):0)+'%';
+    ticking=false;
+  };
+  window.addEventListener('scroll',()=>{
+    if(!ticking){ticking=true;requestAnimationFrame(update);}
+  },{passive:true});
+})();
+
+/* ═══════════════════════════════════════════════
+   INTERSECTION OBSERVER — card reveal
+═══════════════════════════════════════════════ */
+(function(){
+  const cards=document.querySelectorAll('.card,.hcard,.tlcard,.tkcard,.clcard,.vcounter-card,.adaab-card');
+  const io=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}
+    });
+  },{threshold:0.06,rootMargin:'0px 0px -20px 0px'});
+  cards.forEach(c=>io.observe(c));
+})();
+
+/* ═══════════════════════════════════════════════
+   OCEAN AMBIENT SOUND
+═══════════════════════════════════════════════ */
+(function(){
+  const btn=document.getElementById('soundBtn');
+  const ico=document.getElementById('soundIcon');
+  let actx=null,masterGain=null,activeNodes=[],on=false;
+
+  function noise(sec){
+    const sr=actx.sampleRate,len=sr*sec,buf=actx.createBuffer(1,len,sr),d=buf.getChannelData(0);
+    for(let i=0;i<len;i++) d[i]=Math.random()*2-1;
+    return buf;
+  }
+  function start(){
+    if(!actx) actx=new(window.AudioContext||window.webkitAudioContext)();
+    if(actx.state==='suspended') actx.resume();
+    const mg=actx.createGain(); mg.gain.setValueAtTime(.001,actx.currentTime); mg.connect(actx.destination);
+    masterGain=mg; activeNodes=[];
+    // Surf layer
+    const s=actx.createBufferSource(); s.buffer=noise(4); s.loop=true;
+    const bp=actx.createBiquadFilter(); bp.type='bandpass'; bp.frequency.value=480; bp.Q.value=.55;
+    const g1=actx.createGain(); g1.gain.value=.52;
+    s.connect(bp); bp.connect(g1); g1.connect(mg); s.start(); activeNodes.push(s);
+    // Swell layer
+    const w=actx.createBufferSource(); w.buffer=noise(6); w.loop=true; w.playbackRate.value=.7;
+    const lp=actx.createBiquadFilter(); lp.type='lowpass'; lp.frequency.value=320;
+    const g2=actx.createGain(); g2.gain.value=.38;
+    const lfo=actx.createOscillator(); lfo.frequency.value=.12;
+    const lg=actx.createGain(); lg.gain.value=.2;
+    lfo.connect(lg); lg.connect(g2.gain); lfo.start();
+    w.connect(lp); lp.connect(g2); g2.connect(mg); w.start(actx.currentTime+.25); activeNodes.push(w,lfo);
+    mg.gain.cancelScheduledValues(actx.currentTime);
+    mg.gain.setValueAtTime(.001,actx.currentTime);
+    mg.gain.exponentialRampToValueAtTime(.16,actx.currentTime+3.5);
+  }
+  function stop(){
+    if(!masterGain||!actx) return;
+    masterGain.gain.cancelScheduledValues(actx.currentTime);
+    masterGain.gain.setValueAtTime(masterGain.gain.value,actx.currentTime);
+    masterGain.gain.exponentialRampToValueAtTime(.001,actx.currentTime+2.2);
+    setTimeout(()=>{activeNodes.forEach(n=>{try{n.stop()}catch(e){}});activeNodes=[];try{masterGain.disconnect()}catch(e){}masterGain=null;},2400);
+  }
+  btn.addEventListener('click',()=>{
+    on=!on;
+    if(on){start();ico.textContent='🔊';btn.classList.add('on');btn.setAttribute('aria-pressed','true');}
+    else{stop();ico.textContent='🔇';btn.classList.remove('on');btn.setAttribute('aria-pressed','false');}
+  });
+  document.addEventListener('touchstart',()=>{if(actx&&actx.state==='suspended')actx.resume();},{once:true,passive:true});
+})();
+
+/* ═══════════════════════════════════════════════
+   INIT
+═══════════════════════════════════════════════ */
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    var b = document.getElementById('backBtn');
+    if (b && b.classList.contains('visible')) b.click();
+  }
+  if (e.key === 'm' || e.key === 'M') {
+    var sb = document.getElementById('soundBtn');
+    if (sb) sb.click();
+  }
+});
+
+(function(){
+  const saved=localStorage.getItem('prefLang');
+  if(saved&&T[saved]){
+    document.getElementById('splash').style.display='none';
+    document.getElementById('splash').setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+    document.getElementById('backBtn').classList.add('visible');
+    setLang(saved);
+  } else {
+    document.body.style.overflow='hidden';
+    // Still populate Arabic as default so content is ready
+    setLang('ar');
+  }
+})();
+
+/* ╔══════════════════════════════════════════════════════════╗
+   ║               SHARE SYSTEM                              ║
+   ╚══════════════════════════════════════════════════════════╝ */
+
+// Current page URL (works even on file:// during dev)
+// ═══════════════════════════════════════════════════════
+//  SITE CONFIGURATION — ضع رابط موقعك هنا
+// ═══════════════════════════════════════════════════════
+const SITE_URL = 'https://arafa-day-prayers.pages.dev'; // ← ضع رابطك هنا
+
+function getShareURL() {
+  // In production: use actual page URL
+  if (location.protocol !== 'file:' && location.hostname !== 'localhost') {
+    return location.href.split('#')[0];
+  }
+  // In dev (file:// or localhost): use configured URL
+  return SITE_URL !== 'YOUR_SITE_URL_HERE' ? SITE_URL : location.href.split('#')[0];
+}
+
+// Build full share message from current language
+function getSharePayload() {
+  const code = document.documentElement.getAttribute('data-lang') || 'ar';
+  const t = T[code];
+  const text = t.shareText || '';
+  const url = getShareURL();
+  return { text, url, full: text + '\n' + url };
+}
+
+// Platform share handlers
+function doShare(platform) {
+  const { text, url, full } = getSharePayload();
+  const enc = encodeURIComponent;
+
+  const actions = {
+    whatsapp: () => {
+      const wa = `https://wa.me/?text=${enc(full)}`;
+      window.open(wa, '_blank', 'noopener,noreferrer');
+    },
+    telegram: () => {
+      const tg = `https://t.me/share/url?url=${enc(url)}&text=${enc(text)}`;
+      window.open(tg, '_blank', 'noopener,noreferrer');
+    },
+    twitter: () => {
+      const tw = `https://twitter.com/intent/tweet?text=${enc(text)}&url=${enc(url)}`;
+      window.open(tw, '_blank', 'noopener,noreferrer');
+    },
+    facebook: () => {
+      const fb = `https://www.facebook.com/sharer/sharer.php?u=${enc(url)}&quote=${enc(text)}`;
+      window.open(fb, '_blank', 'noopener,noreferrer');
+    },
+    email: () => {
+      const code = document.documentElement.getAttribute('data-lang') || 'ar';
+      const t = T[code];
+      const subject = enc(t.shareTitle || 'أدعية يوم عرفة');
+      const body = enc(full);
+      window.location.href = `mailto:?subject=${subject}&body=${body}`;
+    },
+    copy: async () => {
+      const btn = document.querySelector('[data-platform="copy"]');
+      const code = document.documentElement.getAttribute('data-lang') || 'ar';
+      const t = T[code];
+      try {
+        await navigator.clipboard.writeText(full);
+      } catch (e) {
+        // Fallback for older browsers
+        const ta = document.createElement('textarea');
+        ta.value = full;
+        ta.style.cssText = 'position:fixed;opacity:0;top:0;left:0';
+        document.body.appendChild(ta);
+        ta.focus(); ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+      }
+      // Success feedback
+      if (btn) {
+        btn.classList.add('copy-success');
+        const lbl = document.getElementById('share-lbl-copy');
+        const origText = lbl ? lbl.textContent : '';
+        if (lbl) lbl.textContent = t.copiedLabel || '✓';
+        setTimeout(() => {
+          if (btn) btn.classList.remove('copy-success');
+          if (lbl) lbl.textContent = origText;
+        }, 2200);
+      }
+    },
+  };
+
+  if (actions[platform]) actions[platform]();
+}
+
+// Native Web Share API (iOS/Android)
+function doNativeShare() {
+  const { text, url } = getSharePayload();
+  const code = document.documentElement.getAttribute('data-lang') || 'ar';
+  const t = T[code];
+  if (navigator.share) {
+    navigator.share({
+      title: t.shareTitle || 'أدعية يوم عرفة',
+      text: text,
+      url: url,
+    }).catch(() => {});
+  }
+}
+
+// Update share section text when language changes
+function updateShareUI(code) {
+  const t = T[code];
+  if (!t || !t.shareTitle) return;
+
+  // Title & subtitle
+  const titleEl = document.getElementById('shareTitle');
+  const subtitleEl = document.getElementById('shareSubtitle');
+  if (titleEl) titleEl.textContent = t.shareTitle;
+  if (subtitleEl) subtitleEl.textContent = t.shareSubtitle;
+
+  // Platform labels
+  (t.platforms || []).forEach(p => {
+    const lbl = document.getElementById('share-lbl-' + p.id);
+    if (lbl) lbl.textContent = p.label;
+    // Also update aria-label on button
+    const btn = document.querySelector(`[data-platform="${p.id}"]`);
+    if (btn) btn.setAttribute('aria-label', p.label);
+  });
+
+  // Native share label
+  const nativeLbl = document.getElementById('shareNativeLabel');
+  if (nativeLbl) nativeLbl.textContent = t.shareTitle || 'مشاركة';
+
+  // Hadith quote — always Arabic (sacred text)
+  // stays as is
+
+  // Show native share button if API available
+  const nativeRow = document.getElementById('shareNativeRow');
+  if (nativeRow) {
+    if (navigator.share) {
+      nativeRow.classList.add('visible');
+    }
+  }
+}
+
+// Register share section for IntersectionObserver reveal
+// Share section reveal — called after io is defined
+function initShareReveal() {
+  const shareEl = document.getElementById('shareSection');
+  if (!shareEl) return;
+  if (typeof io !== 'undefined') {
+    io.observe(shareEl);
+  } else {
+    setTimeout(() => shareEl.classList.add('visible'), 500);
+  }
+}
+
 </script>
 </body>
 </html>
